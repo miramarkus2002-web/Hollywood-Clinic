@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Read what our clients say about their experience at Hollywood Clinic Cairo.">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="reviews.eyebrow">From Our Clients</p>
+      <h1 data-i18n="reviews.page.title">All Reviews</h1>
+      <p data-i18n="reviews.page.subtitle">Honest experiences from women who've trusted us with their care.</p>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <span data-i18n="reviews.page.title">All Reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container">
+
+      <div class="text-center" style="margin-bottom: 3rem">
+        <button type="button" class="btn btn-primary" data-open-review-form data-i18n="reviews.leave">Leave a Review</button>
+      </div>
+
+      <div id="allReviewsStatus" class="text-center" style="color:var(--muted); padding:3rem 0">
+        <p data-i18n="reviews.loading">Loading reviews...</p>
+      </div>
+
+      <div class="user-reviews-grid" id="allReviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ════ REVIEW SUBMISSION MODAL (same as home page) ════ -->
+  <div class="review-modal" id="reviewModal" hidden role="dialog" aria-modal="true" aria-labelledby="reviewModalTitle">
+    <div class="review-modal-backdrop" data-close-review-form></div>
+    <div class="review-modal-content">
+      <button type="button" class="review-modal-close" data-close-review-form aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h3 id="reviewModalTitle" data-i18n="reviews.form.title">Share Your Experience</h3>
+      <p class="review-modal-sub" data-i18n="reviews.form.sub">Your review will be visible on the site once we've reviewed it. Usually within 24 hours.</p>
+
+      <form id="reviewForm" class="review-form" novalidate>
+        <div class="form-group">
+          <label class="form-label" data-i18n="reviews.form.name">Your Name</label>
+          <input type="text" name="name" class="form-input" required maxlength="60">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="reviews.form.treatment">Treatment You Had</label>
+          <input type="text" name="treatment" class="form-input" required maxlength="80" placeholder="e.g. Lip Fillers, Botox, Hair PRP">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="reviews.form.rating">Your Rating</label>
+          <div class="rating-stars" data-rating-input>
+            <button type="button" class="rating-star" data-rating-value="1" aria-label="1 star">★</button>
+            <button type="button" class="rating-star" data-rating-value="2" aria-label="2 stars">★</button>
+            <button type="button" class="rating-star" data-rating-value="3" aria-label="3 stars">★</button>
+            <button type="button" class="rating-star" data-rating-value="4" aria-label="4 stars">★</button>
+            <button type="button" class="rating-star active" data-rating-value="5" aria-label="5 stars">★</button>
+          </div>
+          <input type="hidden" name="rating" value="5">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="reviews.form.comment">Your Review</label>
+          <textarea name="comment" class="form-textarea" required minlength="10" maxlength="1000" rows="5"></textarea>
+          <p class="form-hint"><span data-i18n="reviews.form.comment.hint">Tell us about your experience.</span> <span id="reviewCharCount">0/1000</span></p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="reviews.form.email">Email (optional)</label>
+          <input type="email" name="email" class="form-input" maxlength="120">
+          <p class="form-hint" data-i18n="reviews.form.email.hint">Only used if we need to follow up. Never displayed publicly.</p>
+        </div>
+        <button type="submit" class="btn btn-primary" id="reviewSubmitBtn" style="width:100%;padding:1rem" data-i18n="reviews.form.submit">Submit Review</button>
+        <p class="review-form-status" id="reviewFormStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/reviews.js"></script>
+  <script>
+    // ═══════════════════════════════════════════════════════════
+    // Reviews page — load all approved reviews + modal form
+    // ═══════════════════════════════════════════════════════════
+    (function () {
+      const grid = document.getElementById('allReviewsGrid');
+      const statusBox = document.getElementById('allReviewsStatus');
+      const modal = document.getElementById('reviewModal');
+      const form = document.getElementById('reviewForm');
+      const submitBtn = document.getElementById('reviewSubmitBtn');
+      const statusEl = document.getElementById('reviewFormStatus');
+      const charCount = document.getElementById('reviewCharCount');
+      const ratingStars = document.querySelectorAll('[data-rating-input] .rating-star');
+      const ratingInput = form.querySelector('input[name=rating]');
+      const commentField = form.querySelector('textarea[name=comment]');
+
+      function getLang() { return (window.I18N && window.I18N.current()) || 'en'; }
+      function formatDate(iso) {
+        const d = new Date(iso);
+        return d.toLocaleDateString(getLang() === 'ar' ? 'ar-EG' : 'en-US', { year: 'numeric', month: 'long' });
+      }
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      }
+
+      function renderReviews(reviews) {
+        const lang = getLang();
+        statusBox.style.display = 'none';
+        if (!reviews.length) {
+          statusBox.style.display = 'block';
+          statusBox.innerHTML = `<p>${lang === 'ar' ? 'لم تُنشر مراجعات بعد. كوني الأولى!' : 'No reviews published yet. Be the first!'}</p>`;
+          return;
+        }
+        grid.innerHTML = reviews.map(r => {
+          const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+          return `
+            <article class="user-review-card">
+              <div class="user-review-stars">${stars}</div>
+              <p class="user-review-text">${escapeHtml(r.comment)}</p>
+              <div class="user-review-meta">
+                <strong>${escapeHtml(r.name)}</strong>
+                <span>${escapeHtml(r.treatment)} · ${formatDate(r.created_at)}</span>
+              </div>
+            </article>
+          `;
+        }).join('');
+      }
+
+      function loadReviews() {
+        if (!window.HCReviews || !window.HCReviews.isConfigured()) {
+          const lang = getLang();
+          statusBox.innerHTML = `<p>${lang === 'ar' ? 'نظام المراجعات قيد الإعداد.' : 'Reviews system is being set up.'}</p>`;
+          return;
+        }
+        window.HCReviews.fetchApproved({ limit: 100 }).then(renderReviews);
+      }
+      loadReviews();
+
+      // ─── Modal open/close ──────────────────────────────
+      document.querySelectorAll('[data-open-review-form]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          modal.hidden = false;
+          document.body.style.overflow = 'hidden';
+          form.reset();
+          ratingInput.value = '5';
+          updateStarVisual(5);
+          updateCharCount();
+          statusEl.textContent = '';
+          statusEl.className = 'review-form-status';
+        });
+      });
+      document.querySelectorAll('[data-close-review-form]').forEach(btn => btn.addEventListener('click', closeModal));
+      function closeModal() {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+      }
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+      // ─── Rating stars ──────────────────────────────────
+      ratingStars.forEach(star => {
+        star.addEventListener('click', () => {
+          const v = parseInt(star.dataset.ratingValue, 10);
+          ratingInput.value = String(v);
+          updateStarVisual(v);
+        });
+        star.addEventListener('mouseenter', () => updateStarVisual(parseInt(star.dataset.ratingValue, 10)));
+      });
+      const ratingContainer = document.querySelector('[data-rating-input]');
+      if (ratingContainer) ratingContainer.addEventListener('mouseleave', () => updateStarVisual(parseInt(ratingInput.value, 10)));
+      function updateStarVisual(v) {
+        ratingStars.forEach(s => s.classList.toggle('active', parseInt(s.dataset.ratingValue, 10) <= v));
+      }
+      commentField.addEventListener('input', updateCharCount);
+      function updateCharCount() { charCount.textContent = `${commentField.value.length}/1000`; }
+
+      // ─── Submit ───────────────────────────────────────
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const lang = getLang();
+        const data = Object.fromEntries(new FormData(form).entries());
+        if (!data.name || !data.treatment || !data.comment || data.comment.length < 10) {
+          statusEl.textContent = lang === 'ar' ? 'من فضلكِ املئي كل الحقول المطلوبة (المراجعة 10 أحرف على الأقل).' : 'Please fill all required fields (review at least 10 characters).';
+          statusEl.className = 'review-form-status error';
+          return;
+        }
+        if (!window.HCReviews || !window.HCReviews.isConfigured()) {
+          statusEl.textContent = lang === 'ar' ? 'نظام المراجعات قيد الإعداد.' : 'Reviews system is being set up.';
+          statusEl.className = 'review-form-status error';
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.textContent = lang === 'ar' ? 'جارٍ الإرسال...' : 'Submitting...';
+        const result = await window.HCReviews.submitReview(data);
+        submitBtn.disabled = false;
+        submitBtn.textContent = lang === 'ar' ? 'إرسال المراجعة' : 'Submit Review';
+        if (result.success) {
+          statusEl.textContent = lang === 'ar' ? 'شكراً جزيلاً! ستظهر مراجعتكِ بعد المراجعة.' : 'Thank you! Your review will appear after moderation.';
+          statusEl.className = 'review-form-status success';
+          form.reset(); ratingInput.value = '5'; updateStarVisual(5); updateCharCount();
+          setTimeout(closeModal, 3000);
+        } else {
+          statusEl.textContent = (lang === 'ar' ? 'تعذّر الإرسال. ' : 'Could not submit. ') + (result.error || '');
+          statusEl.className = 'review-form-status error';
+        }
+      });
+
+      // Re-render on language toggle
+      const langBtn = document.querySelector('[data-lang-toggle]');
+      if (langBtn) langBtn.addEventListener('click', () => setTimeout(loadReviews, 100));
+    })();
+  </script>
+</body>
+</html>

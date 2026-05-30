@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrafacial in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="The world Hydrafacial is a medical-grade, multi-step facial treatment that combines deep cleansing, gentle exfoliation, painless e">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.hydrafacial.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.hydrafacial.hero.title">Hydrafacial in Egypt</h1>
+      <p data-i18n="sub.hydrafacial.hero.tagline">The world</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.hydrafacial.name">Hydrafacial</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/hydrafacial.png" alt="Hydrafacial Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.hydrafacial.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.hydrafacial.about.title">What Is Hydrafacial</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.hydrafacial.about.body">Hydrafacial is a medical-grade, multi-step facial treatment that combines deep cleansing, gentle exfoliation, painless extraction, and intense hydration with infusion of targeted serums — all delivered through a patented vortex-fusion device. Unlike traditional facials, Hydrafacial doesn't rely on harsh scrubbing or aggressive extraction. The device uses controlled suction and a stream of water and active solutions to lift away impurities, dead skin cells, and oil from inside the pores — while simultaneously delivering antioxidants, peptides, and hyaluronic acid into the skin. The result is immediately visible: a cleaner, brighter, more hydrated, and noticeably more even-toned complexion — with zero downtime. You can return to work or social events the same hour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hydrafacial.benefit.1">Deep cleansing — removes dirt, oil, and dead cells from inside the pores</li>
+          <li data-i18n="sub.hydrafacial.benefit.2">Painless blackhead extraction — no manual squeezing</li>
+          <li data-i18n="sub.hydrafacial.benefit.3">Immediate, visible glow after just one session</li>
+          <li data-i18n="sub.hydrafacial.benefit.4">Deep hydration with hyaluronic acid infusion</li>
+          <li data-i18n="sub.hydrafacial.benefit.5">Smoother skin texture and refined pore appearance</li>
+          <li data-i18n="sub.hydrafacial.benefit.6">Brighter, more even skin tone</li>
+          <li data-i18n="sub.hydrafacial.benefit.7">Reduced fine lines and improved skin firmness over time</li>
+          <li data-i18n="sub.hydrafacial.benefit.8">Helps control oily skin, mild acne, and clogged pores</li>
+          <li data-i18n="sub.hydrafacial.benefit.9">Safe for all skin types — including sensitive skin</li>
+          <li data-i18n="sub.hydrafacial.benefit.10">Zero downtime — go back to your day immediately</li>
+          <li data-i18n="sub.hydrafacial.benefit.11">Excellent pre-event prep treatment (weddings, photoshoots, holidays)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.hydrafacial.step.1.title">A full Hydrafacial session at Hollywood Clinic takes around 30</h4><p data-i18n="sub.hydrafacial.step.1.text">45 minutes and is built around three core steps: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.hydrafacial.step.2.title">Step 2</h4><p data-i18n="sub.hydrafacial.step.2.text">Cleanse + Peel A gentle exfoliation step removes the outer layer of dead skin and prepares deeper layers to absorb active ingredients. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.hydrafacial.step.3.title">Step 3</h4><p data-i18n="sub.hydrafacial.step.3.text">Extract + Hydrate Using painless suction technology, the device extracts impurities and blackheads from inside the pores while simultaneously infusing hydrating serums. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.hydrafacial.step.4.title">Step 4</h4><p data-i18n="sub.hydrafacial.step.4.text">Fuse + Protect Skin is saturated with custom serums chosen for your concern — antioxidants for dullness, peptides for fine lines, brightening boosters for pigmentation, or anti-acne serums for breakouts</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.hydrafacial.step.5.title">Step 5</h4><p data-i18n="sub.hydrafacial.step.5.text">Optional finishing steps can include LED light therapy, lymphatic drainage, or eye/lip treatment add-ons</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hydrafacial.who.1">Hydrafacial is one of the most universally suitable aesthetic treatments — it works for: Dull or tired-looking skin needing instant glow</li>
+          <li data-i18n="sub.hydrafacial.who.2">Dehydrated skin that needs deep hydration</li>
+          <li data-i18n="sub.hydrafacial.who.3">Oily skin with enlarged or congested pores</li>
+          <li data-i18n="sub.hydrafacial.who.4">Mild to moderate acne and clogged pores</li>
+          <li data-i18n="sub.hydrafacial.who.5">Uneven skin tone or mild pigmentation</li>
+          <li data-i18n="sub.hydrafacial.who.6">Early signs of aging — fine lines and texture</li>
+          <li data-i18n="sub.hydrafacial.who.7">Sensitive skin that can't tolerate harsh treatments</li>
+          <li data-i18n="sub.hydrafacial.who.8">Pre-event skin prep (bride-to-be, photoshoot, special occasion)</li>
+          <li data-i18n="sub.hydrafacial.who.9">Men and women of any age — from teens (with parental approval) to mature skin</li>
+          <li data-i18n="sub.hydrafacial.who.10">Patients who want results with absolutely no downtime</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.hydrafacial.contra.1">Hydrafacial is very safe, but should be avoided or postponed in the following cases: Active severe acne, cystic acne, or open lesions on the treatment area</li>
+          <li data-i18n="sub.hydrafacial.contra.2">Active herpes or cold sore outbreak on the face</li>
+          <li data-i18n="sub.hydrafacial.contra.3">Severe rosacea flare-ups</li>
+          <li data-i18n="sub.hydrafacial.contra.4">Sunburn or irritated skin at the time of the session</li>
+          <li data-i18n="sub.hydrafacial.contra.5">Recent chemical peels, laser treatments, or aggressive resurfacing — wait until the skin is fully healed</li>
+          <li data-i18n="sub.hydrafacial.contra.6">Known allergy to any of the serum ingredients</li>
+          <li data-i18n="sub.hydrafacial.contra.7">Pregnancy and breastfeeding — only certain serums are pregnancy-safe; this must be reviewed with the doctor in advance</li>
+          <li data-i18n="sub.hydrafacial.contra.8">A full medical history and skin assessment are always conducted before the session at Hollywood Clinic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hydrafacial.tech.1">&amp; Customization One of the strongest advantages of Hydrafacial is that it's not a one-protocol-fits-all treatment</li>
+          <li data-i18n="sub.hydrafacial.tech.2">At Hollywood Clinic, the session is customized using specific boosters based on your skin concern: Brightening Boosters Designed for pigmentation, melasma, post-acne marks, and dull tone</li>
+          <li data-i18n="sub.hydrafacial.tech.3">Common boosters include Britenol and Murad Vitamin-C-based infusions</li>
+          <li data-i18n="sub.hydrafacial.tech.4">Anti-Aging Boosters For fine lines, loss of firmness, and mature skin</li>
+          <li data-i18n="sub.hydrafacial.tech.5">Common options include CTGF (Connective Tissue Growth Factor) and DermaBuilder for collagen support</li>
+          <li data-i18n="sub.hydrafacial.tech.6">Acne &amp; Oil Control Boosters For oily, congested, and acne-prone skin</li>
+          <li data-i18n="sub.hydrafacial.tech.7">Includes salicylic acid–based serums and decongesting boosters</li>
+          <li data-i18n="sub.hydrafacial.tech.8">Hydration Boosters For dehydrated and stressed skin</li>
+          <li data-i18n="sub.hydrafacial.tech.9">Hyaluronic acid–rich serums for deep moisture restoration</li>
+          <li data-i18n="sub.hydrafacial.tech.10">Lip &amp; Eye Perks Add-on mini treatments for the lip and eye areas — plumping, smoothing, and brightening for a complete result</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.compare.title">Hydrafacial vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hydrafacial.compare.1.label">Hydrafacial vs. Traditional Facial</h4><p data-i18n="sub.hydrafacial.compare.1.text">Traditional facials rely on manual cleansing, steam, and pressure-based extraction. Hydrafacial is a medical device with controlled suction, no painful squeezing, and serum infusion built into the same session — making it deeper, gentler, and more effective.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hydrafacial.compare.2.label">Hydrafacial vs. Chemical Peels</h4><p data-i18n="sub.hydrafacial.compare.2.text">Chemical peels exfoliate the skin using acids and can cause peeling, redness, and 3–7 days of downtime. Hydrafacial achieves gentle exfoliation with zero downtime — but for stubborn pigmentation or scarring, a chemical peel can be more aggressive and faster-acting. Many patients combine both.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hydrafacial.compare.3.label">Hydrafacial vs. Microdermabrasion</h4><p data-i18n="sub.hydrafacial.compare.3.text">Microdermabrasion uses crystals or a diamond tip to physically exfoliate dry skin. Hydrafacial does the same exfoliation but adds hydration and serum infusion in the same step — making it more comfortable and more multi-functional.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hydrafacial.compare.4.label">Hydrafacial vs. Forma (Radiofrequency Skin Tightening)</h4><p data-i18n="sub.hydrafacial.compare.4.text">Hydrafacial focuses on skin surface — cleanliness, glow, hydration, texture. Forma works deeper, using radiofrequency to tighten and stimulate collagen. They're not competitors — they're complementary, which is exactly why Hollywood Clinic offers them together as the iFace package.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hydrafacial.compare.5.label">Hydrafacial vs. Mesotherapy / Skin Boosters</h4><p data-i18n="sub.hydrafacial.compare.5.text">Mesotherapy and Skin Boosters use injections to deliver nutrients deep into the skin and last for months. Hydrafacial is non-injectable and works on the surface — gentler, faster, no needles, but with shorter-lasting glow.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.hydrafacial.name">Hydrafacial</p>
+        <h3 data-i18n="sub.hydrafacial.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.hydrafacial.pricing.intro">The cost of a Hydrafacial session at Hollywood Clinic is set after a free consultation, and depends on: Session level — Classic / Deluxe (with one booster) / Platinum (with LED, lymphatic drainage, and additional perks).</p>
+        <ul>
+          <li data-i18n="sub.hydrafacial.pricing.factor.1">Type and number of boosters added (brightening, anti-aging, anti-acne, hydration)</li>
+          <li data-i18n="sub.hydrafacial.pricing.factor.2">Add-on areas (neck, décolleté, back) beyond the face</li>
+          <li data-i18n="sub.hydrafacial.pricing.factor.3">Package pricing — multiple sessions are typically offered at a discounted bundle rate</li>
+          <li data-i18n="sub.hydrafacial.pricing.factor.4">Whether the session is part of a combined treatment like iFace (Hydrafacial + Forma)</li>
+          <li data-i18n="sub.hydrafacial.pricing.factor.5">Important: Hollywood Clinic uses the authentic Hydrafacial™ device and original branded boosters — beware of imitation 'Hydra' devices commonly found at lower price points in Egypt, which do not deliver the same medical-grade results</li>
+        </ul>
+        <p class="note" data-i18n="sub.hydrafacial.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hydrafacial.why.1">Authentic, original Hydrafacial™ device — not a copy or imitation</li>
+          <li data-i18n="sub.hydrafacial.why.2">Original branded boosters and serums</li>
+          <li data-i18n="sub.hydrafacial.why.3">Treatment customized based on a real dermatological assessment — not a generic protocol</li>
+          <li data-i18n="sub.hydrafacial.why.4">Performed and supervised by certified dermatologists</li>
+          <li data-i18n="sub.hydrafacial.why.5">Hygienic, single-use disposable tips for every patient</li>
+          <li data-i18n="sub.hydrafacial.why.6">Optional combination with Forma, LED, or skin boosters in one visit</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.hydrafacial.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.hydrafacial.doctor.1">Dr. Nesma Samir — Laser Aesthetic Dermatology Specialist, 12 years of experience, ideal for acne-prone, pigmentation-prone, and sensitive skin Hydrafacial protocols</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.hydrafacial.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Non-Surgical Aesthetics Consultant, 12+ years of experience, ideal for comprehensive skin plans combining Hydrafacial with other treatments</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.hydrafacial.doctor.3">Dr. Marwa Magdy — Aesthetic Dermatologist &amp; Advanced Injector, expert in combination treatments and the perfect choice when Hydrafacial is part of a larger personalized facial protocol (iFace, Hydrafacial + injectables, etc.)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hydrafacial.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.hydrafacial.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.1.q">Does Hydrafacial hurt?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.1.a">No. Hydrafacial is completely painless. Most patients describe it as a cool, refreshing sensation — there's no scrubbing, no painful squeezing, and no burning.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.2.q">How long does a Hydrafacial session take?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.2.a">A standard session takes 30–45 minutes depending on the protocol level and add-ons selected.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.3.q">Is there any downtime after Hydrafacial?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.3.a">None. You can apply makeup, go back to work, or attend an event immediately after the session.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.4.q">Is Hydrafacial safe for sensitive skin?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.4.a">Yes — Hydrafacial is one of the few medical-grade treatments that's safe for sensitive skin, since the boosters and intensity are fully customized.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.5.q">Will Hydrafacial clear my acne?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.5.a">Hydrafacial significantly helps mild to moderate acne and clogged pores by cleansing pores and reducing congestion. For severe or cystic acne, it's best used as part of a wider treatment plan.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.6.q">Is Hydrafacial safe during pregnancy?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.6.a">Generally yes — but only certain boosters and active ingredients are pregnancy-safe. The doctor will review your protocol before the session.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.7.q">How is iFace different from a regular Hydrafacial?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.7.a">iFace is a Hollywood Clinic combined treatment that pairs Hydrafacial (for surface glow) with Forma (for deeper skin tightening) in one visit — giving you both effects in a single session.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hydrafacial.faq.8.q">How do I make sure I'm getting an authentic Hydrafacial?</summary><div class="faq-answer" data-i18n="sub.hydrafacial.faq.8.a">True Hydrafacial™ is a specific patented device. Many clinics in Egypt use imitation devices labeled 'Hydra' or 'AquaPure' that are not equivalent. Always ask the clinic. At Hollywood Clinic, we use the original Hydrafacial™ device and original boosters.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

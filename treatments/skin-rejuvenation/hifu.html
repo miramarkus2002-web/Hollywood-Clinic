@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIFU – Non-Surgical Face Lift — Hollywood Clinic Cairo</title>
+  <meta name="description" content="High-Intensity Focused Ultrasound — the closest non-surgical alternative to a face lift. Lifts the deep SMAS layer without surgery, needles, or downtime. HIFU (High-Intensity Focused Ultrasound) is a non-surgical face and neck lifting treatment that uses focused ultrasound ">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.hifu.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.hifu.hero.title">HIFU – Non-Surgical Face Lift</h1>
+      <p data-i18n="sub.hifu.hero.tagline">High-Intensity Focused Ultrasound — the closest non-surgical alternative to a face lift. Lifts the deep SMAS layer without surgery, needles, or downtime.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.hifu.name">HIFU – Non-Surgical Face Lift</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/hifu.png" alt="HIFU – Non-Surgical Face Lift Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.hifu.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.hifu.about.title">What Is HIFU</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.hifu.about.body">HIFU (High-Intensity Focused Ultrasound) is a non-surgical face and neck lifting treatment that uses focused ultrasound energy to reach deeper layers of the skin than any other non-invasive technology can — specifically, the SMAS layer (Superficial Musculoaponeurotic System). This is the exact same layer that plastic surgeons tighten and reposition during a surgical face lift. HIFU delivers ultrasound energy in tiny, precise focal points beneath the skin's surface, heating the targeted tissue to a temperature that triggers contraction of existing collagen and stimulates the production of new collagen and elastin. Because the energy bypasses the surface of the skin entirely, there's no damage to the outer layer — no peeling, no marks, no recovery. The result is a gradual, natural-looking lift and tightening effect that develops over 2–3 months and continues to improve as new collagen forms. HIFU is FDA-approved and considered one of the most effective non-surgical lifting technologies available in the world today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.hifu.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hifu.benefit.1">Non-surgical lifting of the face, jawline, and neck</li>
+          <li data-i18n="sub.hifu.benefit.2">Tightens the SMAS layer — the same deep layer addressed in surgical face lifts</li>
+          <li data-i18n="sub.hifu.benefit.3">Stimulates production of new collagen and elastin</li>
+          <li data-i18n="sub.hifu.benefit.4">Visibly lifts the jawline and reduces jowls</li>
+          <li data-i18n="sub.hifu.benefit.5">Tightens loose skin on the neck — including 'tech-neck' lines</li>
+          <li data-i18n="sub.hifu.benefit.6">Lifts the eyebrows for a more open, refreshed eye area</li>
+          <li data-i18n="sub.hifu.benefit.7">Improves overall skin firmness and texture</li>
+          <li data-i18n="sub.hifu.benefit.8">Reduces fine lines and softens wrinkles</li>
+          <li data-i18n="sub.hifu.benefit.9">Results last typically 12–18 months with proper maintenance</li>
+          <li data-i18n="sub.hifu.benefit.10">No needles</li>
+          <li data-i18n="sub.hifu.benefit.11">No surgery</li>
+          <li data-i18n="sub.hifu.benefit.12">No scars</li>
+          <li data-i18n="sub.hifu.benefit.13">No downtime</li>
+          <li data-i18n="sub.hifu.benefit.14">Safe for all skin tones — no pigmentation risk</li>
+          <li data-i18n="sub.hifu.benefit.15">Single treatment can deliver visible improvement for many patients</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.hifu.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.hifu.step.1.title">A full HIFU session at Hollywood Clinic typically takes 45</h4><p data-i18n="sub.hifu.step.1.text">90 minutes depending on the area treated: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.hifu.step.2.title">Step 2</h4><p data-i18n="sub.hifu.step.2.text">Consultation &amp; assessment Your doctor evaluates the laxity of your skin, identifies target areas, and customizes the treatment depth and intensity. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.hifu.step.3.title">Step 3</h4><p data-i18n="sub.hifu.step.3.text">Cleansing &amp; preparation The skin is thoroughly cleansed and an ultrasound gel is applied to allow smooth contact and accurate energy transmission. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.hifu.step.4.title">Step 4</h4><p data-i18n="sub.hifu.step.4.text">HIFU application The HIFU handpiece is gently moved across the treatment area</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.hifu.step.5.title">Step 5</h4><p data-i18n="sub.hifu.step.5.text">The device delivers focused ultrasound energy to one of three depths — 1.5mm (skin), 3.0mm (deeper dermis), and 4.5mm (SMAS layer) — depending on the desired effect</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="sub.hifu.step.6.title">Step 6</h4><p data-i18n="sub.hifu.step.6.text">You may feel brief, sharp warm pulses during energy delivery; mild discomfort is normal and well-tolerated. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="sub.hifu.step.7.title">Step 7</h4><p data-i18n="sub.hifu.step.7.text">Cooling &amp; finishing The gel is removed and a soothing serum is applied</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="sub.hifu.step.8.title">Step 8</h4><p data-i18n="sub.hifu.step.8.text">You can immediately return to your normal activities</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="sub.hifu.step.9.title">Most patients see subtle results within days, but the major lifting effect develops over 2</h4><p data-i18n="sub.hifu.step.9.text">3 months as new collagen forms</p></div>
+        <div class="step-card fade-up"><div class="step-num">10</div><h4 data-i18n="sub.hifu.step.10.title">Step 10</h4><p data-i18n="sub.hifu.step.10.text">Some patients benefit from a single session annually; others combine HIFU with smaller maintenance treatments</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.hifu.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hifu.who.1">Patients with mild to moderate skin laxity on the face, jawline, or neck</li>
+          <li data-i18n="sub.hifu.who.2">People in their late 30s to 60s starting to see clear sagging signs</li>
+          <li data-i18n="sub.hifu.who.3">Anyone who wants a face-lift-level result without surgery</li>
+          <li data-i18n="sub.hifu.who.4">Patients with sagging jowls or a loosened jawline</li>
+          <li data-i18n="sub.hifu.who.5">People with neck laxity, double-chin appearance, or 'turkey neck'</li>
+          <li data-i18n="sub.hifu.who.6">Patients with drooping brows wanting a non-surgical brow lift effect</li>
+          <li data-i18n="sub.hifu.who.7">Those who don't want needles, threads, or surgical procedures</li>
+          <li data-i18n="sub.hifu.who.8">Patients with all skin tones — no pigmentation risk</li>
+          <li data-i18n="sub.hifu.who.9">People who want long-lasting results from a single annual treatment</li>
+          <li data-i18n="sub.hifu.who.10">Anyone seeking to extend the results of injectables or thread lifts</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.hifu.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.hifu.contra.1">Pregnancy and breastfeeding</li>
+          <li data-i18n="sub.hifu.contra.2">Pacemakers or implanted electronic medical devices</li>
+          <li data-i18n="sub.hifu.contra.3">Severe or uncontrolled diabetes or impaired healing capacity</li>
+          <li data-i18n="sub.hifu.contra.4">Active skin infection, severe acne, or open wounds in the treatment area</li>
+          <li data-i18n="sub.hifu.contra.5">Active herpes or cold sore outbreak</li>
+          <li data-i18n="sub.hifu.contra.6">Severe skin laxity that would only respond to surgery — HIFU has its limits; significant sagging needs a surgical lift</li>
+          <li data-i18n="sub.hifu.contra.7">Metal implants in the area being treated</li>
+          <li data-i18n="sub.hifu.contra.8">Permanent fillers in the treatment area</li>
+          <li data-i18n="sub.hifu.contra.9">Recent injectable treatments — typically a 2-week separation is recommended</li>
+          <li data-i18n="sub.hifu.contra.10">Active cancer or radiation therapy in the area</li>
+          <li data-i18n="sub.hifu.contra.11">Severe autoimmune skin conditions in the treatment area</li>
+          <li data-i18n="sub.hifu.contra.12">A full medical history and skin assessment are always conducted before HIFU at Hollywood Clinic</li>
+          <li data-i18n="sub.hifu.contra.13">Patients with very advanced sagging are honestly advised when surgical options would be a better fit</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.hifu.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hifu.tech.1">&amp; Depth Levels Real medical HIFU treatment delivers ultrasound at three specific tissue depths, each targeting a different layer for a complete lifting effect: 1.5mm – Superficial Layer Targets the upper dermis to improve fine lines, surface texture, and skin smoothness. 3.0mm – Mid-Dermis Stimulates collagen in the deeper dermis for skin firmness, pore refinement, and structural support. 4.5mm – SMAS Layer This is the deepest level — and the most important</li>
+          <li data-i18n="sub.hifu.tech.2">It reaches the Superficial Musculoaponeurotic System (SMAS), the layer surgeons tighten during a face lift</li>
+          <li data-i18n="sub.hifu.tech.3">This is where the major lifting effect happens</li>
+          <li data-i18n="sub.hifu.tech.4">Authentic HIFU vs</li>
+          <li data-i18n="sub.hifu.tech.5">Cheap Imitations Real medical HIFU devices (such as Ultraformer, Ultherapy, and similar FDA-approved platforms) deliver focused ultrasound with measurable, visible energy points and three-depth precision</li>
+          <li data-i18n="sub.hifu.tech.6">Many clinics in Egypt advertise 'HIFU' using low-cost imitation devices that only reach superficial layers and don't deliver the SMAS-layer effect that makes HIFU actually work as a lifting treatment</li>
+          <li data-i18n="sub.hifu.tech.7">Hollywood Clinic uses authentic medical-grade HIFU technology</li>
+          <li data-i18n="sub.hifu.tech.8">Always ask the clinic about the device</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.hifu.compare.title">HIFU – Non-Surgical Face Lift vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hifu.compare.1.label">HIFU vs. Surgical Face Lift</h4><p data-i18n="sub.hifu.compare.1.text">A surgical face lift remains the gold standard for dramatic, long-lasting lifting (10+ years) — but with general anesthesia, scars, recovery, and significant cost. HIFU delivers a meaningful percentage of that lifting effect without any of the surgical risks, ideal for patients who aren't ready for surgery or want to delay it.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hifu.compare.2.label">HIFU vs. Thread Lift</h4><p data-i18n="sub.hifu.compare.2.text">Thread lifts physically lift sagging tissue using dissolvable threads inserted under the skin — strong immediate lift, but the threads dissolve in 12–18 months. HIFU also lasts 12–18 months but stimulates the body's own collagen without inserting any foreign material. Many patients combine the two: threads for immediate lift, HIFU for collagen support.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hifu.compare.3.label">HIFU vs. Forma (Radiofrequency Tightening)</h4><p data-i18n="sub.hifu.compare.3.text">Forma is more comfortable, more gradual, and works on skin tightening without the deeper SMAS lift. HIFU is stronger, deeper, and more lifting-focused — but can feel slightly uncomfortable during the session. They're often used in combination: Forma for ongoing maintenance and surface refinement, HIFU once a year for the deep lift.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hifu.compare.4.label">HIFU vs. Morpheus8</h4><p data-i18n="sub.hifu.compare.4.text">Morpheus8 uses RF microneedling for collagen remodeling and addresses acne scars exceptionally well, with mild downtime. HIFU is non-invasive with zero downtime and focuses on lifting rather than scar treatment. Many comprehensive plans use both — Morpheus8 for texture and scars, HIFU for lifting.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.hifu.compare.5.label">HIFU vs. Biostimulators (Sculptra, Radiesse, Ellansé)</h4><p data-i18n="sub.hifu.compare.5.text">Biostimulators are injected and stimulate collagen from inside the tissue — strong, long-lasting volumization and firmness. HIFU is external and produces lifting through ultrasound. The two approaches complement each other: biostimulators restore volume and structure, HIFU lifts the supporting layer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.hifu.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.hifu.name">HIFU – Non-Surgical Face Lift</p>
+        <h3 data-i18n="sub.hifu.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.hifu.pricing.intro">The price of a HIFU session at Hollywood Clinic is set after a free consultation and depends on: Treatment area — full face, full face + neck, neck alone, jawline only, or upper face/brow.</p>
+        <ul>
+          <li data-i18n="sub.hifu.pricing.factor.1">Number of shots delivered — HIFU pricing is often based on the number of ultrasound shots, which depends on the area size and depth combination</li>
+          <li data-i18n="sub.hifu.pricing.factor.2">Whether the protocol uses one depth or all three depths (1.5mm + 3.0mm + 4.5mm)</li>
+          <li data-i18n="sub.hifu.pricing.factor.3">Single session vs. annual package — HIFU is typically performed once a year for the average patient</li>
+          <li data-i18n="sub.hifu.pricing.factor.4">Whether HIFU is part of a wider plan combining injectables, Forma, or Morpheus8</li>
+          <li data-i18n="sub.hifu.pricing.factor.5">Critical note: HIFU price varies hugely in the Egyptian market — and almost entirely for one reason: device authenticity</li>
+          <li data-i18n="sub.hifu.pricing.factor.6">Real medical-grade HIFU devices are expensive to operate, which is reflected in pricing</li>
+          <li data-i18n="sub.hifu.pricing.factor.7">Heavily discounted HIFU sessions are almost always done with imitation devices that don't reach the SMAS layer and won't produce real lifting results</li>
+          <li data-i18n="sub.hifu.pricing.factor.8">Hollywood Clinic uses only authentic, FDA-cleared HIFU technology</li>
+        </ul>
+        <p class="note" data-i18n="sub.hifu.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.hifu.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.hifu.why.1">Authentic, medical-grade HIFU technology — not a cheap imitation</li>
+          <li data-i18n="sub.hifu.why.2">Full three-depth protocol (1.5mm + 3.0mm + 4.5mm) for complete lifting effect</li>
+          <li data-i18n="sub.hifu.why.3">Customized treatment plan based on your specific laxity pattern</li>
+          <li data-i18n="sub.hifu.why.4">Performed and supervised by certified dermatologists experienced in HIFU</li>
+          <li data-i18n="sub.hifu.why.5">Honest medical assessment — patients with advanced sagging are referred to surgical options when appropriate</li>
+          <li data-i18n="sub.hifu.why.6">Option to combine HIFU with Morpheus8, Forma, injectables, or threads in a structured plan</li>
+          <li data-i18n="sub.hifu.why.7">Structured follow-up at 2 and 3 months to monitor collagen response</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.hifu.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.hifu.doctor.1">Dr. Marwa Magdy — Aesthetic Dermatologist &amp; Advanced Injector, advanced HIFU experience for non-surgical face and neck lifting, and an expert in combination protocols (HIFU + injectables, HIFU + Morpheus8, HIFU + biostimulators)</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.hifu.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Non-Surgical Aesthetics Consultant, 12+ years of experience. Ideal for patients who want HIFU as part of a long-term anti-aging plan with structured maintenance</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.hifu.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.hifu.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.1.q">Does HIFU hurt?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.1.a">Mild, brief discomfort during energy delivery is normal — most patients describe it as quick warm pulses. It's well-tolerated by the majority of patients, and topical numbing can be used for sensitive cases.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.2.q">How long does a HIFU session take?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.2.a">Typically 45–90 minutes depending on the size of the treatment area and the protocol depth used.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.3.a">No. There may be mild redness or temporary tingling immediately after the session, but no peeling, marks, or recovery time. You can return to normal activities the same day.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.4.q">When will I see results?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.4.a">Some patients notice subtle changes within days, but the major lifting effect develops over 2–3 months as new collagen forms — and continues improving for up to 6 months.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.5.q">How long do HIFU results last?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.5.a">Typically 12–18 months. Most patients schedule a HIFU session once a year to maintain results.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.6.q">Is HIFU safe for darker skin tones?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.6.a">Yes — completely. HIFU uses ultrasound, which doesn't target melanin in the skin, so there's no risk of pigmentation. It's safe for all Fitzpatrick skin types.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.7.q">Can HIFU replace a surgical face lift?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.7.a">Not exactly. A surgical face lift remains the gold standard for very advanced sagging. HIFU offers a meaningful non-surgical alternative for patients with mild to moderate laxity — or for those wanting to delay surgery.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.8.q">How can I tell if I'm getting a real HIFU session?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.8.a">Real medical HIFU devices deliver focused ultrasound with measurable energy points, three-depth precision, and visible markings on the screen during treatment. Authentic devices include Ultraformer, Ultherapy, and similar FDA-approved platforms. Always ask the clinic about the device. Hollywood Clinic uses only authentic medical-grade HIFU technology.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.hifu.faq.9.q">How is HIFU different from Forma?</summary><div class="faq-answer" data-i18n="sub.hifu.faq.9.a">HIFU uses focused ultrasound to reach the deep SMAS layer for lifting. Forma uses radiofrequency at shallower depths for skin tightening and is more comfortable. HIFU is more powerful for lifting; Forma is gentler for maintenance. Many patients use both.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

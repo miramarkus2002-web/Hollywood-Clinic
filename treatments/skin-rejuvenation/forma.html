@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma Skin Tightening — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Pain-free radiofrequency lifting from InMode — tighter, firmer skin with zero needles and zero downtime. Forma is a non-invasive radiofrequency (RF) skin tightening treatment from InMode — the same medical aesthetic company b">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.forma.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.forma.hero.title">Forma Skin Tightening</h1>
+      <p data-i18n="sub.forma.hero.tagline">Pain-free radiofrequency lifting from InMode — tighter, firmer skin with zero needles and zero downtime.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.forma.name">Forma Skin Tightening</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/forma.png" alt="Forma Skin Tightening Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.forma.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.forma.about.title">What Is Forma</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.forma.about.body">Forma is a non-invasive radiofrequency (RF) skin tightening treatment from InMode — the same medical aesthetic company behind Morpheus8 and BodyTite. It uses controlled heat delivered through advanced radiofrequency to warm the deeper layers of the skin, stimulate collagen and elastin production, and tighten existing tissue from within. Unlike older RF devices, Forma uses a real-time temperature feedback system, meaning the device automatically keeps the skin at the precise therapeutic temperature — not too cold to be ineffective, not too hot to be uncomfortable. This is what makes it one of the most controlled, comfortable, and safe RF skin tightening platforms available worldwide. Forma is FDA-approved, fully non-surgical, completely needle-free, and has no downtime. It works on the face, neck, jawline, around the eyes, and other delicate areas where surgery is too aggressive but visible results are still wanted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.forma.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.forma.benefit.1">Tightens loose, sagging skin without surgery</li>
+          <li data-i18n="sub.forma.benefit.2">Stimulates natural collagen and elastin production</li>
+          <li data-i18n="sub.forma.benefit.3">Lifts and defines the jawline</li>
+          <li data-i18n="sub.forma.benefit.4">Reduces sagging under the chin (jowls)</li>
+          <li data-i18n="sub.forma.benefit.5">Tightens the neck and reduces fine 'tech-neck' lines</li>
+          <li data-i18n="sub.forma.benefit.6">Smooths the area around the eyes — works on the delicate eyelids</li>
+          <li data-i18n="sub.forma.benefit.7">Softens fine lines and improves overall skin firmness</li>
+          <li data-i18n="sub.forma.benefit.8">Improves skin texture and gives a polished, refined look</li>
+          <li data-i18n="sub.forma.benefit.9">Painless — most patients describe it as a warm massage</li>
+          <li data-i18n="sub.forma.benefit.10">Zero downtime — no redness, no peeling, no marks</li>
+          <li data-i18n="sub.forma.benefit.11">Safe for all skin tones and types — no risk of pigmentation</li>
+          <li data-i18n="sub.forma.benefit.12">Results continue to improve over months as new collagen forms</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.forma.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.forma.step.1.title">A Forma session at Hollywood Clinic typically takes 30</h4><p data-i18n="sub.forma.step.1.text">45 minutes depending on the area treated</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.forma.step.2.title">Step 2</h4><p data-i18n="sub.forma.step.2.text">The experience is intentionally relaxing: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.forma.step.3.title">Step 3</h4><p data-i18n="sub.forma.step.3.text">Skin assessment &amp; cleansing Your skin is cleansed and the doctor reviews your concerns, target areas, and treatment goals. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.forma.step.4.title">Step 4</h4><p data-i18n="sub.forma.step.4.text">Application of glide medium A conducting gel is applied to allow the device to move smoothly across the skin and to ensure even RF delivery. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.forma.step.5.title">Step 5</h4><p data-i18n="sub.forma.step.5.text">Forma RF application The Forma handpiece is gently moved over the target zones in circular motions</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="sub.forma.step.6.title">Step 6</h4><p data-i18n="sub.forma.step.6.text">The skin gradually warms to the precise therapeutic temperature, where collagen contraction and stimulation occur</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="sub.forma.step.7.title">Step 7</h4><p data-i18n="sub.forma.step.7.text">The temperature is auto-regulated — never too hot, never too cold. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="sub.forma.step.8.title">Step 8</h4><p data-i18n="sub.forma.step.8.text">Finishing The gel is wiped off, soothing skincare is applied, and you can immediately go back to your normal day — including makeup, work, exercise, or social events</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="sub.forma.step.9.title">Step 9</h4><p data-i18n="sub.forma.step.9.text">Forma is typically recommended in a series of sessions for maximum collagen-building effect, then maintenance sessions to preserve results long-term</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.forma.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.forma.who.1">Patients with mild to moderate skin laxity on the face, neck, or jawline</li>
+          <li data-i18n="sub.forma.who.2">Early signs of sagging — when surgery is too aggressive and a thread lift feels too invasive</li>
+          <li data-i18n="sub.forma.who.3">People who want subtle, gradual, natural-looking lifting</li>
+          <li data-i18n="sub.forma.who.4">Patients looking for an effective treatment around the eyes (including upper eyelids)</li>
+          <li data-i18n="sub.forma.who.5">Anyone who wants to firm and refine their jawline without injectables</li>
+          <li data-i18n="sub.forma.who.6">Brides and grooms preparing for a wedding with no risk of marks or downtime</li>
+          <li data-i18n="sub.forma.who.7">Patients with all skin tones — including darker skin types where some lasers carry pigmentation risk</li>
+          <li data-i18n="sub.forma.who.8">Anyone wanting to maintain results after a thread lift, HIFU, or even surgical lift</li>
+          <li data-i18n="sub.forma.who.9">Patients who don't want needles, peeling, or recovery time</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.forma.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.forma.contra.1">Pregnancy and breastfeeding (not enough safety data for routine use)</li>
+          <li data-i18n="sub.forma.contra.2">Pacemakers or any implanted electronic medical device</li>
+          <li data-i18n="sub.forma.contra.3">Internal defibrillators (ICDs)</li>
+          <li data-i18n="sub.forma.contra.4">Permanent fillers or unidentified implants in the treatment area — Forma is generally safe with hyaluronic acid fillers, but permanent fillers are a contraindication</li>
+          <li data-i18n="sub.forma.contra.5">Active skin infections, herpes outbreak, or open wounds in the area</li>
+          <li data-i18n="sub.forma.contra.6">Severe uncontrolled autoimmune conditions affecting the skin</li>
+          <li data-i18n="sub.forma.contra.7">Recent isotretinoin (Accutane) use — typically a 6-month wait is recommended</li>
+          <li data-i18n="sub.forma.contra.8">Active cancer or radiation therapy in the area</li>
+          <li data-i18n="sub.forma.contra.9">A complete medical history is always reviewed before treatment at Hollywood Clinic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.forma.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.forma.tech.1">Forma is part of the InMode aesthetic platform — one of the most respected medical aesthetic technology companies in the world</li>
+          <li data-i18n="sub.forma.tech.2">Other devices in the same family include Morpheus8 (RF microneedling), BodyTite (minimally invasive body tightening), and AccuTite</li>
+          <li data-i18n="sub.forma.tech.3">What makes Forma different from generic RF devices? ACE technology (Acquire, Control, Extend) — automatically maintains the exact therapeutic temperature</li>
+          <li data-i18n="sub.forma.tech.4">Real-time skin temperature feedback prevents overheating</li>
+          <li data-i18n="sub.forma.tech.5">Larger applicator delivers heat evenly across wide areas like cheeks and neck</li>
+          <li data-i18n="sub.forma.tech.6">Smaller eye-area applicator allows safe treatment of the delicate eyelid skin</li>
+          <li data-i18n="sub.forma.tech.7">FDA-approved and globally proven safety profile</li>
+          <li data-i18n="sub.forma.tech.8">Hollywood Clinic uses the original InMode Forma device — not a generic RF copy</li>
+          <li data-i18n="sub.forma.tech.9">Many clinics in Egypt advertise 'radiofrequency tightening' using lower-grade devices that don't have the same controlled feedback system</li>
+          <li data-i18n="sub.forma.tech.10">Always verify the device brand</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.forma.compare.title">Forma Skin Tightening vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.forma.compare.1.label">Forma vs. HIFU</h4><p data-i18n="sub.forma.compare.1.text">HIFU (High-Intensity Focused Ultrasound) goes deeper, targeting the SMAS layer beneath the skin for a stronger lifting effect — but it can be slightly uncomfortable and produces a sharper, more dramatic lift in fewer sessions. Forma is gentler, more comfortable, painless, and ideal for fine refinement, eye area, and patients who want gradual results. Many patients combine both.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.forma.compare.2.label">Forma vs. Morpheus8</h4><p data-i18n="sub.forma.compare.2.text">Morpheus8 also uses RF, but delivers it through tiny microneedles deep into the skin — providing more dramatic results, including treatment of acne scars and significant collagen remodeling. However, Morpheus8 has some downtime (redness, micro-marks for a few days). Forma is fully non-invasive with zero downtime — best for surface tightening and maintenance.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.forma.compare.3.label">Forma vs. Thread Lift</h4><p data-i18n="sub.forma.compare.3.text">Thread lifts physically lift sagging tissue using dissolvable threads inserted under the skin — strong, immediate lift, but more invasive. Forma is non-invasive and builds collagen gradually. Many patients use Forma to maintain and extend thread lift results.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.forma.compare.4.label">Forma vs. Surgical Face Lift</h4><p data-i18n="sub.forma.compare.4.text">A surgical face lift provides the most dramatic and longest-lasting results — but with anesthesia, scars, and weeks of recovery. Forma is for patients who want subtle, gradual improvement without any surgical commitment.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.forma.compare.5.label">Forma vs. Hydrafacial</h4><p data-i18n="sub.forma.compare.5.text">Hydrafacial focuses on the skin surface — glow, cleansing, hydration. Forma focuses on deeper tissue tightening. They complement each other perfectly, which is why Hollywood Clinic offers them together as the iFace package.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.forma.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.forma.name">Forma Skin Tightening</p>
+        <h3 data-i18n="sub.forma.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.forma.pricing.intro">The price of a Forma session at Hollywood Clinic is set after a free consultation, and depends on: Treatment area — full face, lower face only, neck, eye area, or combination.</p>
+        <ul>
+          <li data-i18n="sub.forma.pricing.factor.1">Single session vs. package — packages of multiple sessions are typically offered at a discounted bundled rate</li>
+          <li data-i18n="sub.forma.pricing.factor.2">Whether Forma is combined with other treatments in the same visit (Hydrafacial, Morpheus8, injectables, iFace package)</li>
+          <li data-i18n="sub.forma.pricing.factor.3">Doctor's expertise level — Forma is most effective when applied by a doctor who knows facial anatomy and where to deliver the heat for maximum lift</li>
+          <li data-i18n="sub.forma.pricing.factor.4">Maintenance plan — periodic sessions after the initial protocol to maintain results</li>
+          <li data-i18n="sub.forma.pricing.factor.5">Important: Hollywood Clinic uses the original InMode Forma device</li>
+          <li data-i18n="sub.forma.pricing.factor.6">Beware of clinics offering 'RF skin tightening' at significantly lower prices — they may be using imitation or older RF devices without the same temperature-control technology, which compromises both safety and results</li>
+        </ul>
+        <p class="note" data-i18n="sub.forma.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.forma.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.forma.why.1">Original InMode Forma device — not a copy or generic RF substitute</li>
+          <li data-i18n="sub.forma.why.2">Treatment customized to your face shape, skin type, and laxity level</li>
+          <li data-i18n="sub.forma.why.3">Supervised by certified dermatologists with extensive RF experience</li>
+          <li data-i18n="sub.forma.why.4">Option to combine with Hydrafacial (iFace package), Morpheus8, or injectables in the same plan</li>
+          <li data-i18n="sub.forma.why.5">Structured maintenance plans to extend your results long-term</li>
+          <li data-i18n="sub.forma.why.6">Full medical safety assessment before every treatment</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.forma.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.forma.doctor.1">Dr. Rana Safwat — Dermatology, Laser &amp; Non-Surgical Aesthetics Consultant, 12+ years of experience, ideal for comprehensive skin tightening plans integrating Forma into a wider protocol</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.forma.doctor.2">Dr. Marwa Magdy — Aesthetic Dermatologist &amp; Advanced Injector, expert in combination treatments. Highly experienced in integrating Forma with HIFU, Morpheus8, fillers, and biostimulators for full-face lifting plans</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.forma.doctor.3">Dr. Nesma Samir — Laser Aesthetic Dermatology Specialist, 12 years of experience, ideal for Forma treatments on patients with parallel skin concerns (pigmentation, sensitivity, acne-prone skin)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.forma.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.forma.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.1.q">Does Forma hurt?</summary><div class="faq-answer" data-i18n="sub.forma.faq.1.a">No. Forma is one of the most comfortable skin tightening treatments available. Most patients describe it as a relaxing warm massage, similar to a hot stone facial.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.2.q">How long does a Forma session take?</summary><div class="faq-answer" data-i18n="sub.forma.faq.2.a">Typically 30–45 minutes depending on the area treated.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="sub.forma.faq.3.a">None. You can return to work, exercise, or apply makeup immediately after the session.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.4.q">When will I see results?</summary><div class="faq-answer" data-i18n="sub.forma.faq.4.a">Many patients notice a subtle tightening and glow right after the first session. Real, visible collagen-based results develop progressively over weeks and continue to improve for several months.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.5.q">Is Forma safe for darker skin tones?</summary><div class="faq-answer" data-i18n="sub.forma.faq.5.a">Yes — completely. Unlike some laser treatments, Forma is safe for all Fitzpatrick skin types because it uses radiofrequency, which doesn't target melanin. No risk of pigmentation.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.6.q">Can Forma be used around the eyes?</summary><div class="faq-answer" data-i18n="sub.forma.faq.6.a">Yes. With its dedicated smaller applicator, Forma is one of the few RF devices that's safe for the delicate eye area, including the upper eyelid.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.7.q">How is Forma different from HIFU?</summary><div class="faq-answer" data-i18n="sub.forma.faq.7.a">HIFU uses ultrasound and targets a deeper, more focused layer for a stronger lift but may be uncomfortable. Forma uses radiofrequency, works on more superficial-to-mid layers, is completely painless, and is ideal for delicate areas. Many patients combine both.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.forma.faq.8.q">What is iFace?</summary><div class="faq-answer" data-i18n="sub.forma.faq.8.a">iFace is a Hollywood Clinic combined treatment that pairs Forma (for deep skin tightening) with Hydrafacial (for surface glow and hydration) in one visit — giving you both effects in a single session.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iFace — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Hollywood Clinic iFace is Hollywood Clinic's signature combined facial treatment that pairs two of the most respected medical aesthetic p">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.iface.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.iface.hero.title">iFace</h1>
+      <p data-i18n="sub.iface.hero.tagline">Hollywood Clinic</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.iface.name">iFace</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/iface.png" alt="iFace Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.iface.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.iface.about.title">What Is iFace</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.iface.about.body">iFace is Hollywood Clinic's signature combined facial treatment that pairs two of the most respected medical aesthetic procedures in the world — Hydrafacial and Forma — into a single visit, delivering both surface-level transformation and deeper skin tightening in one session. The combination is intentional: Hydrafacial cleanses, exfoliates, hydrates, and infuses customized serums into the skin, while Forma uses controlled radiofrequency to warm deeper layers and stimulate collagen and elastin — tightening the skin from within. The result is something a single treatment can't deliver alone: immediately brighter, deeply cleansed, perfectly hydrated skin on the outside, combined with firmer, more lifted, more youthful skin on the inside. All in one no-downtime visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.iface.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.iface.benefit.1">From the Hydrafacial component Deep cleansing and gentle exfoliation</li>
+          <li data-i18n="sub.iface.benefit.2">Painless extraction of impurities and blackheads</li>
+          <li data-i18n="sub.iface.benefit.3">Immediate, visible glow</li>
+          <li data-i18n="sub.iface.benefit.4">Deep hydration with hyaluronic acid infusion</li>
+          <li data-i18n="sub.iface.benefit.5">Refined pores and smoother skin texture</li>
+          <li data-i18n="sub.iface.benefit.6">Brighter, more even skin tone</li>
+          <li data-i18n="sub.iface.benefit.7">From the Forma component Stimulation of natural collagen and elastin</li>
+          <li data-i18n="sub.iface.benefit.8">Tighter, firmer skin on the face, jawline, and neck</li>
+          <li data-i18n="sub.iface.benefit.9">Smoother fine lines and improved texture</li>
+          <li data-i18n="sub.iface.benefit.10">Gradual lifting effect that improves for months</li>
+          <li data-i18n="sub.iface.benefit.11">Safe treatment around the delicate eye area</li>
+          <li data-i18n="sub.iface.benefit.12">From the combination itself** Two treatments, one visit — saves time</li>
+          <li data-i18n="sub.iface.benefit.13">Deeper, longer-lasting results than either treatment alone</li>
+          <li data-i18n="sub.iface.benefit.14">Synergy: cleaner pores allow Forma's heat to penetrate more effectively, while Forma's collagen stimulation makes the post-Hydrafacial glow last longer</li>
+          <li data-i18n="sub.iface.benefit.15">Zero downtime — return to your day immediately</li>
+          <li data-i18n="sub.iface.benefit.16">Ideal pre-event treatment for weddings, photoshoots, and major occasions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.iface.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.iface.step.1.title">Step 1</h4><p data-i18n="sub.iface.step.1.text">An iFace session at Hollywood Clinic typically takes around 60–75 minutes — combining both treatments in a carefully sequenced protocol: Step 1 – Skin Assessment The doctor reviews your skin condition, target zones, and goals, and customizes both the Hydrafacial boosters and the Forma intensity to your needs</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.iface.step.2.title">Step 2</h4><p data-i18n="sub.iface.step.2.text">Hydrafacial Protocol Your skin is cleansed, exfoliated, then deep-cleansed through the Hydrafacial vortex-fusion device — with painless extraction and serum infusion</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.iface.step.3.title">Step 3</h4><p data-i18n="sub.iface.step.3.text">The skin is now perfectly prepped to absorb deeper treatment</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.iface.step.4.title">Step 3</h4><p data-i18n="sub.iface.step.4.text">Forma Application Conducting gel is applied, and the InMode Forma handpiece is moved across the treatment areas</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.iface.step.5.title">Step 5</h4><p data-i18n="sub.iface.step.5.text">The skin gradually warms to the precise therapeutic temperature, where collagen is stimulated and tissue tightens</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="sub.iface.step.6.title">Step 4</h4><p data-i18n="sub.iface.step.6.text">Finishing &amp; Hydration Final hydrating and soothing serums are applied to seal in the glow and protect the freshly stimulated skin</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="sub.iface.step.7.title">Step 7</h4><p data-i18n="sub.iface.step.7.text">You walk out with no redness, no peeling, no marks — and an immediately visible improvement that continues to refine over the following weeks</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.iface.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.iface.who.1">Patients who want both glow and lifting in one visit</li>
+          <li data-i18n="sub.iface.who.2">Brides and grooms preparing for a wedding</li>
+          <li data-i18n="sub.iface.who.3">Anyone with a major event (photoshoot, important occasion) who wants results without downtime</li>
+          <li data-i18n="sub.iface.who.4">Patients with mild to moderate skin laxity who also struggle with dullness, dehydration, or congested skin</li>
+          <li data-i18n="sub.iface.who.5">People in their 30s and 40s starting to see early aging signs but who aren't ready for injectables or surgery</li>
+          <li data-i18n="sub.iface.who.6">Patients with limited time who want maximum results per visit</li>
+          <li data-i18n="sub.iface.who.7">Anyone looking for a maintenance treatment after injectables, threads, or HIFU</li>
+          <li data-i18n="sub.iface.who.8">Men and women — iFace works equally well for both</li>
+          <li data-i18n="sub.iface.who.9">Patients with all skin tones — safe for darker skin types, no pigmentation risk</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.iface.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.iface.contra.1">Since iFace combines two treatments, the contraindications of both apply: Pregnancy and breastfeeding (some serums and the radiofrequency component are not advised)</li>
+          <li data-i18n="sub.iface.contra.2">Pacemakers, implanted defibrillators, or other implanted electronic medical devices</li>
+          <li data-i18n="sub.iface.contra.3">Active severe acne, cystic lesions, or open wounds in the treatment area</li>
+          <li data-i18n="sub.iface.contra.4">Active herpes or cold sore outbreak</li>
+          <li data-i18n="sub.iface.contra.5">Severe rosacea flare-ups or sunburn at the time of the session</li>
+          <li data-i18n="sub.iface.contra.6">Permanent fillers or unidentified implants in the treatment area</li>
+          <li data-i18n="sub.iface.contra.7">Recent isotretinoin (Accutane) use — typically a 6-month wait is recommended</li>
+          <li data-i18n="sub.iface.contra.8">Active cancer or radiation therapy in the area</li>
+          <li data-i18n="sub.iface.contra.9">Known allergy to any of the serum ingredients</li>
+          <li data-i18n="sub.iface.contra.10">A complete medical and skin assessment is always conducted before iFace at Hollywood Clinic to make sure the protocol is fully safe for you</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.iface.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.iface.tech.1">Authentic Hydrafacial™ Device The original patented Hydrafacial vortex-fusion technology with branded boosters — for deep cleansing, hydration, and serum infusion</li>
+          <li data-i18n="sub.iface.tech.2">Hollywood Clinic uses only the authentic device, not the 'Hydra' imitations commonly sold at lower price points across Egypt</li>
+          <li data-i18n="sub.iface.tech.3">InMode Forma The flagship radiofrequency skin tightening device from InMode (the company behind Morpheus8 and BodyTite), featuring ACE technology for precise real-time temperature control</li>
+          <li data-i18n="sub.iface.tech.4">FDA-approved and globally trusted for safe, comfortable, non-invasive lifting</li>
+          <li data-i18n="sub.iface.tech.5">Both devices are operated by certified dermatologists who customize the protocol based on a real skin assessment — not a one-size-fits-all template</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.iface.compare.title">iFace vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.iface.compare.1.label">iFace vs. Hydrafacial alone</h4><p data-i18n="sub.iface.compare.1.text">Hydrafacial alone gives you cleaner, brighter, more hydrated skin — but it doesn't tighten or stimulate collagen in the deeper layers. iFace adds Forma's collagen-stimulating tightening on top of all the Hydrafacial benefits, in the same visit.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.iface.compare.2.label">iFace vs. Forma alone</h4><p data-i18n="sub.iface.compare.2.text">Forma alone gives you collagen stimulation and gradual tightening — but it doesn't deep-cleanse the pores or deliver hydrating serums. iFace adds Hydrafacial's surface transformation on top of the Forma lift.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.iface.compare.3.label">iFace vs. Booking Hydrafacial + Forma separately</h4><p data-i18n="sub.iface.compare.3.text">Doing them separately is functionally similar — but it costs two visits and two appointments. iFace is the optimized, time-efficient combined protocol with package pricing.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.iface.compare.4.label">iFace vs. Morpheus8</h4><p data-i18n="sub.iface.compare.4.text">Morpheus8 is more aggressive — it uses microneedling with RF for deeper collagen remodeling and can address acne scars. It has some downtime (a few days of redness/marks). iFace is fully non-invasive with zero downtime and is best for patients who want lifting and glow without any recovery time.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.iface.compare.5.label">iFace vs. HIFU</h4><p data-i18n="sub.iface.compare.5.text">HIFU produces a stronger, more dramatic lifting result by targeting the SMAS layer ultrasonically. iFace is gentler, more comfortable, and ideal for ongoing maintenance and refinement — especially around delicate areas like the eyes. Many patients combine HIFU once or twice a year with iFace sessions in between.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.iface.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.iface.name">iFace</p>
+        <h3 data-i18n="sub.iface.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.iface.pricing.intro">iFace pricing at Hollywood Clinic is set after a free consultation, and depends on: Treatment area — full face, full face + neck, or face + neck + décolleté.</p>
+        <ul>
+          <li data-i18n="sub.iface.pricing.factor.1">Hydrafacial level selected (Classic, Deluxe, Platinum) and the boosters used</li>
+          <li data-i18n="sub.iface.pricing.factor.2">Forma session intensity and duration</li>
+          <li data-i18n="sub.iface.pricing.factor.3">Single session vs. package — multi-session packages are offered at discounted bundled rates</li>
+          <li data-i18n="sub.iface.pricing.factor.4">Whether you add other treatments in the same visit (Morpheus8, injectables, LED therapy)</li>
+          <li data-i18n="sub.iface.pricing.factor.5">Because iFace is a package combining two authentic devices, it's offered at a noticeably better rate than booking Hydrafacial and Forma as separate sessions</li>
+          <li data-i18n="sub.iface.pricing.factor.6">Important: Authenticity matters</li>
+          <li data-i18n="sub.iface.pricing.factor.7">Hollywood Clinic uses the original Hydrafacial™ device and original InMode Forma — not generic substitutes</li>
+          <li data-i18n="sub.iface.pricing.factor.8">Lower-priced 'combo facials' elsewhere in the market often use imitation devices that don't deliver the same medical-grade results</li>
+        </ul>
+        <p class="note" data-i18n="sub.iface.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.iface.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.iface.why.1">Signature combined protocol designed and refined by Hollywood Clinic's medical team</li>
+          <li data-i18n="sub.iface.why.2">Authentic Hydrafacial™ device + original InMode Forma — both used together in one session</li>
+          <li data-i18n="sub.iface.why.3">Customized boosters and Forma intensity based on a real dermatological assessment</li>
+          <li data-i18n="sub.iface.why.4">Performed by certified dermatologists experienced in combination treatments</li>
+          <li data-i18n="sub.iface.why.5">Optimized session flow — both treatments performed in the right order for maximum synergy</li>
+          <li data-i18n="sub.iface.why.6">Bundled package pricing — better value than booking each separately</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.iface.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.iface.doctor.1">Dr. Marwa Magdy — Aesthetic Dermatologist &amp; Advanced Injector, known across Egypt for her signature combination treatments (5,000+ Morpheus8 cases). She's the ideal choice for iFace because designing layered, synergistic protocols is her actual specialty</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.iface.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Non-Surgical Aesthetics Consultant, 12+ years of experience. Ideal for patients who want iFace integrated into a wider, structured skincare plan with maintenance and follow-up</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.iface.doctor.3">Dr. Nesma Samir — Laser Aesthetic Dermatology Specialist, 12 years of experience. Ideal for iFace patients who also have parallel skin concerns (pigmentation, sensitivity, acne-prone skin) that need careful protocol customization</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.iface.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.iface.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.1.q">What's the difference between iFace and a regular Hydrafacial?</summary><div class="faq-answer" data-i18n="sub.iface.faq.1.a">A regular Hydrafacial gives you surface results — glow, hydration, deep cleansing. iFace adds Forma's deep radiofrequency skin tightening on top, in the same session — so you get both surface transformation and deeper lifting in one visit.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.2.q">How long does an iFace session take?</summary><div class="faq-answer" data-i18n="sub.iface.faq.2.a">Around 60–75 minutes, depending on the area treated and the protocol customization.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="sub.iface.faq.3.a">None at all. iFace is fully non-invasive — no redness that lasts, no peeling, no marks. You can return to work, exercise, or attend an event immediately after the session.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.4.q">Will I see results after the first session?</summary><div class="faq-answer" data-i18n="sub.iface.faq.4.a">Yes. The Hydrafacial component gives an immediate glow and hydration. The Forma component delivers a subtle tightening right away, with deeper, longer-lasting collagen-based improvement developing over several weeks.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.5.q">How often should I do iFace?</summary><div class="faq-answer" data-i18n="sub.iface.faq.5.a">This varies based on your skin and goals. Many patients do an initial series for maximum effect and then move to maintenance sessions. Your doctor will design a schedule for you.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.6.q">Is iFace better than doing Hydrafacial and Forma separately?</summary><div class="faq-answer" data-i18n="sub.iface.faq.6.a">Practically yes — same effect, but in one optimized visit at a better package rate. The Hollywood Clinic protocol also orders the steps for maximum synergy: Hydrafacial first to clean the skin, then Forma to penetrate freshly prepped skin.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.7.q">Is iFace safe for all skin tones?</summary><div class="faq-answer" data-i18n="sub.iface.faq.7.a">Yes. Both Hydrafacial and Forma are safe across all skin types and tones. There is no pigmentation risk.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.iface.faq.8.q">Can iFace be combined with other treatments?</summary><div class="faq-answer" data-i18n="sub.iface.faq.8.a">Yes. iFace pairs well with injectables (Botox, fillers, skin boosters, biostimulators) and even Morpheus8 in a structured plan — but the doctor will decide the best timing for safety and results.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

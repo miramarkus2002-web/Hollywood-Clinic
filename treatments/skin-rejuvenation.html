@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Rejuvenation — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Comprehensive skin rejuvenation at Hollywood Clinic Egypt — Botox, fillers, skin boosters, biostimulators, Hydrafacial, iFace, Forma, HIFU, and Morpheus8. Personalized plans by Egypt's top specialists.">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .treatment-hero-image {
+      width: 100%;
+      max-width: 760px;
+      aspect-ratio: 16/9;
+      margin: 0 auto 2.5rem;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25);
+    }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sub-treatments-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: 1fr;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 640px) { .sub-treatments-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 960px) { .sub-treatments-grid { grid-template-columns: repeat(3, 1fr); } }
+    .sub-card {
+      background: var(--white);
+      border: 1px solid var(--sky-dark);
+      border-radius: 1rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .sub-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px -12px rgba(11,29,58,0.15);
+    }
+    .sub-card-image {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: linear-gradient(135deg, #FAF6EB 0%, #E5D5A8 100%);
+      position: relative;
+    }
+    .sub-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .sub-card:hover .sub-card-image img { transform: scale(1.05); }
+    .sub-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      flex-grow: 1;
+    }
+    .sub-card-num {
+      font-family: var(--font-heading);
+      font-size: 0.875rem;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+    }
+    .sub-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin: 0;
+    }
+    .sub-card p {
+      font-size: 0.9375rem;
+      color: var(--body);
+      line-height: 1.6;
+      margin: 0;
+      flex-grow: 1;
+    }
+    .sub-card-link {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-top: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .sub-card-link::after { content: '→'; transition: transform 0.3s ease; }
+    .sub-card:hover .sub-card-link::after { transform: translateX(4px); }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li {
+      padding: 1rem 0; border-bottom: 1px solid var(--line);
+      display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem;
+    }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="rejuv.eyebrow">Treatment Category</p>
+      <h1 data-i18n="rejuv.title">Skin Rejuvenation</h1>
+      <p data-i18n="rejuv.tagline">Advanced injectables, devices, and protocols — one comprehensive approach to radiant, healthy skin.</p>
+      <div class="breadcrumb">
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <span data-i18n="rejuv.title">Skin Rejuvenation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../assets/images/skin-rejuvenation.png" alt="Hollywood Clinic Skin Rejuvenation Treatments">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="rejuv.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="rejuv.about.title">A Complete Skin Rejuvenation Suite</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="rejuv.about.p1">At Hollywood Clinic, skin rejuvenation is more than a single treatment — it's a full medical aesthetic strategy. From wrinkle prevention with Botox, to volume restoration with fillers, to deep skin remodeling with Morpheus8 — every solution is selected and combined based on your unique skin needs, age, lifestyle, and goals.</p>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.25rem" data-i18n="rejuv.about.p2">Our specialists never apply a one-size-fits-all protocol. After a thorough skin assessment, we build a personalized plan that may combine injectables, energy-based devices, and skin therapies for natural, lasting results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-treatments grid -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="rejuv.services.eyebrow">What's Included</p>
+        <h2 class="section-title" data-i18n="rejuv.services.title">Treatments We Offer</h2>
+        <p class="section-subtitle" data-i18n="rejuv.services.subtitle">Tap any treatment below to learn more, see how it works, and book your consultation.</p>
+      </div>
+      <div class="sub-treatments-grid">
+
+        <a href="skin-rejuvenation/botox.html" class="sub-card fade-up">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/botox.png" alt="Botox treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">01</span>
+            <h3 data-i18n="sub.botox.name">Botox</h3>
+            <p data-i18n="sub.botox.short">Smooths wrinkles and prevents new ones by relaxing targeted facial muscles. Refreshed, not frozen.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/filler.html" class="sub-card fade-up d1">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/filler.png" alt="Filler treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">02</span>
+            <h3 data-i18n="sub.filler.name">Filler</h3>
+            <p data-i18n="sub.filler.short">Restores lost volume in lips, cheeks, jawline, and under-eye — for natural, balanced results.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/skin-boosters.html" class="sub-card fade-up d2">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/skin-boosters.png" alt="Skin Boosters treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">03</span>
+            <h3 data-i18n="sub.skinboosters.name">Skin Boosters</h3>
+            <p data-i18n="sub.skinboosters.short">Deep hyaluronic hydration injections that restore glow, elasticity, and quality from within.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/biostimulators.html" class="sub-card fade-up">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/biostimulators.png" alt="Biostimulators treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">04</span>
+            <h3 data-i18n="sub.biostimulators.name">Biostimulators</h3>
+            <p data-i18n="sub.biostimulators.short">Stimulate your own collagen for firmer, denser skin and long-lasting natural rejuvenation.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/hydrafacial.html" class="sub-card fade-up d1">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/hydrafacial.png" alt="Hydrafacial treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">05</span>
+            <h3 data-i18n="sub.hydrafacial.name">Hydrafacial</h3>
+            <p data-i18n="sub.hydrafacial.short">Deep cleansing, exfoliation, and hydration in one session. Instant glow with zero downtime.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/iface.html" class="sub-card fade-up d2">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/iface.png" alt="iFace treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">06</span>
+            <h3 data-i18n="sub.iface.name">iFace</h3>
+            <p data-i18n="sub.iface.short">Our signature combination — Hydrafacial + Forma in one session for cleansing, hydration, and skin tightening.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/forma.html" class="sub-card fade-up">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/forma.png" alt="Forma treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">07</span>
+            <h3 data-i18n="sub.forma.name">Forma</h3>
+            <p data-i18n="sub.forma.short">Radiofrequency skin tightening — gentle warming that stimulates collagen and firms over time.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/hifu.html" class="sub-card fade-up d1">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/hifu.png" alt="HIFU treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">08</span>
+            <h3 data-i18n="sub.hifu.name">HIFU</h3>
+            <p data-i18n="sub.hifu.short">High-Intensity Focused Ultrasound for non-surgical lifting and tightening at the deepest skin layers.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+        <a href="skin-rejuvenation/morpheus8.html" class="sub-card fade-up d2">
+          <div class="sub-card-image">
+            <img src="../assets/images/sub-treatments/morpheus8.png" alt="Morpheus8 treatment" loading="lazy">
+          </div>
+          <div class="sub-card-body">
+            <span class="sub-card-num">09</span>
+            <h3 data-i18n="sub.morpheus8.name">Morpheus8</h3>
+            <p data-i18n="sub.morpheus8.short">Microneedling + radiofrequency for deep skin remodeling — scars, texture, pores, and tightening.</p>
+            <span class="sub-card-link" data-i18n="rejuv.learn">Learn More</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="rejuv.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="rejuv.why.title">Why Choose Us for Skin Rejuvenation</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+        <li data-i18n="rejuv.why.b1">Personalized plans — never one-size-fits-all protocols</li>
+        <li data-i18n="rejuv.why.b2">Combination treatments designed for compound, longer-lasting results</li>
+        <li data-i18n="rejuv.why.b3">FDA-approved devices and pharmaceutical-grade products only</li>
+        <li data-i18n="rejuv.why.b4">Specialists with 10+ years of clinical and aesthetic experience</li>
+        <li data-i18n="rejuv.why.b5">Natural results that preserve your unique features</li>
+        <li data-i18n="rejuv.why.b6">Built-in follow-up and maintenance plans</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="rejuv.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="rejuv.process.title">How It Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up">
+          <div class="step-num">1</div>
+          <h4 data-i18n="rejuv.s1.title">Free Consultation</h4>
+          <p data-i18n="rejuv.s1.text">In-depth skin assessment and discussion of your goals, concerns, and expectations.</p>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-num">2</div>
+          <h4 data-i18n="rejuv.s2.title">Personalized Plan</h4>
+          <p data-i18n="rejuv.s2.text">A custom treatment combination designed specifically for your skin and lifestyle.</p>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-num">3</div>
+          <h4 data-i18n="rejuv.s3.title">Treatment Sessions</h4>
+          <p data-i18n="rejuv.s3.text">Performed by our certified specialists using FDA-approved devices and products only.</p>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-num">4</div>
+          <h4 data-i18n="rejuv.s4.title">Follow-Up & Maintenance</h4>
+          <p data-i18n="rejuv.s4.text">Structured monitoring with maintenance plans to preserve and extend your results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta.title">Ready for Your Skin Rejuvenation Journey?</h2>
+      <p data-i18n="rejuv.cta.subtitle">Free consultation with our specialists. We'll design a plan tailored just for you.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

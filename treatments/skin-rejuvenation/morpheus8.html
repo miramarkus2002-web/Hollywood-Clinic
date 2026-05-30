@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morpheus8 in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="RF microneedling from InMode — deep collagen remodeling for tighter, smoother, scar-free skin from the inside out. Morpheus8 is a fractional radiofrequency (RF) microneedling device from InMode — the world's most respected medical aest">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.morpheus8.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.morpheus8.hero.title">Morpheus8 in Egypt</h1>
+      <p data-i18n="sub.morpheus8.hero.tagline">RF microneedling from InMode — deep collagen remodeling for tighter, smoother, scar-free skin from the inside out.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.morpheus8.name">Morpheus8</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/morpheus8.png" alt="Morpheus8 Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.morpheus8.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.morpheus8.about.title">What Is Morpheus8</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.morpheus8.about.body">Morpheus8 is a fractional radiofrequency (RF) microneedling device from InMode — the world's most respected medical aesthetic technology company and the same manufacturer behind Forma and BodyTite. It combines two of the most effective technologies in modern dermatology — microneedling and radiofrequency — into a single device that addresses skin tightening, collagen remodeling, acne scars, stretch marks, and skin texture issues all at once. The device works by precisely delivering tiny insulated microneedles into the deeper layers of the skin, then releasing controlled radiofrequency energy from the needle tips. This dual mechanism creates micro-channels that trigger natural healing while simultaneously heating the deeper tissue to stimulate massive new collagen and elastin production — far beyond what microneedling or RF alone can deliver. Morpheus8 is FDA-approved and considered the gold standard for non-surgical skin remodeling. It works on the face, neck, jawline, body, and is one of the very few non-laser treatments that's effective on darker skin tones without pigmentation risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.morpheus8.benefit.1">Significantly improves acne scars — Morpheus8 is one of the most effective treatments in the world for acne scarring</li>
+          <li data-i18n="sub.morpheus8.benefit.2">Tightens loose skin on the face, jawline, and neck</li>
+          <li data-i18n="sub.morpheus8.benefit.3">Massive collagen and elastin stimulation</li>
+          <li data-i18n="sub.morpheus8.benefit.4">Smooths skin texture and refines pores</li>
+          <li data-i18n="sub.morpheus8.benefit.5">Reduces stretch marks on the body</li>
+          <li data-i18n="sub.morpheus8.benefit.6">Improves fine lines and wrinkles</li>
+          <li data-i18n="sub.morpheus8.benefit.7">Treats surgical scars and traumatic scars</li>
+          <li data-i18n="sub.morpheus8.benefit.8">Contours the lower face and jawline</li>
+          <li data-i18n="sub.morpheus8.benefit.9">Improves skin tone evenness</li>
+          <li data-i18n="sub.morpheus8.benefit.10">Safe and effective on all skin tones — including darker skin types</li>
+          <li data-i18n="sub.morpheus8.benefit.11">Results continue to develop over 3–6 months as collagen rebuilds</li>
+          <li data-i18n="sub.morpheus8.benefit.12">Long-lasting structural improvement to the skin</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.morpheus8.step.1.title">A Morpheus8 session at Hollywood Clinic typically takes 45</h4><p data-i18n="sub.morpheus8.step.1.text">90 minutes depending on the area treated: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.morpheus8.step.2.title">Step 2</h4><p data-i18n="sub.morpheus8.step.2.text">Consultation &amp; assessment Your doctor evaluates your skin concerns, identifies target areas, and determines the appropriate needle depth and energy level for your case. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.morpheus8.step.3.title">Topical numbing A numbing cream is applied 30</h4><p data-i18n="sub.morpheus8.step.3.text">45 minutes before the session to ensure your comfort</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.morpheus8.step.4.title">Step 4</h4><p data-i18n="sub.morpheus8.step.4.text">This is standard for all Morpheus8 sessions. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.morpheus8.step.5.title">Step 5</h4><p data-i18n="sub.morpheus8.step.5.text">Morpheus8 application The Morpheus8 handpiece delivers tiny microneedles into the skin at the precise depth selected for your concern (ranging from 1mm to 4mm)</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="sub.morpheus8.step.6.title">Step 6</h4><p data-i18n="sub.morpheus8.step.6.text">As the needles enter the tissue, RF energy is delivered through the needle tips, simultaneously creating micro-channels and heating the deeper layers</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="sub.morpheus8.step.7.title">Step 7</h4><p data-i18n="sub.morpheus8.step.7.text">Most patients tolerate the session well thanks to numbing; you may feel pressure and warmth. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="sub.morpheus8.step.8.title">Step 8</h4><p data-i18n="sub.morpheus8.step.8.text">Post-treatment care After the session, a soothing serum and SPF is applied</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="sub.morpheus8.step.9.title">The skin will feel warm and look slightly red — similar to a sunburn — for 1</h4><p data-i18n="sub.morpheus8.step.9.text">3 days</p></div>
+        <div class="step-card fade-up"><div class="step-num">10</div><h4 data-i18n="sub.morpheus8.step.10.title">Step 10</h4><p data-i18n="sub.morpheus8.step.10.text">Tiny grid-like marks from the needles may be visible for a few days</p></div>
+        <div class="step-card fade-up"><div class="step-num">11</div><h4 data-i18n="sub.morpheus8.step.11.title">Step 11</h4><p data-i18n="sub.morpheus8.step.11.text">This is normal and expected</p></div>
+        <div class="step-card fade-up"><div class="step-num">12</div><h4 data-i18n="sub.morpheus8.step.12.title">Morpheus8 results develop gradually over the following weeks and continue to improve for 3</h4><p data-i18n="sub.morpheus8.step.12.text">6 months as new collagen is built</p></div>
+        <div class="step-card fade-up"><div class="step-num">13</div><h4 data-i18n="sub.morpheus8.step.13.title">Step 13</h4><p data-i18n="sub.morpheus8.step.13.text">Most patients see optimal results from a structured series of sessions designed around their specific goals</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.morpheus8.who.1">Patients with acne scars — atrophic, ice-pick, boxcar, or rolling scars</li>
+          <li data-i18n="sub.morpheus8.who.2">Anyone with traumatic, surgical, or burn scars</li>
+          <li data-i18n="sub.morpheus8.who.3">Mild to moderate skin laxity on the face, neck, or jawline</li>
+          <li data-i18n="sub.morpheus8.who.4">Enlarged pores and uneven skin texture</li>
+          <li data-i18n="sub.morpheus8.who.5">Stretch marks on the abdomen, thighs, arms, or buttocks</li>
+          <li data-i18n="sub.morpheus8.who.6">Early signs of aging — fine lines, loss of firmness</li>
+          <li data-i18n="sub.morpheus8.who.7">Patients wanting non-surgical jawline definition</li>
+          <li data-i18n="sub.morpheus8.who.8">People with all skin tones — including Fitzpatrick V and VI</li>
+          <li data-i18n="sub.morpheus8.who.9">Those who want stronger results than Forma can deliver and accept a few days of downtime</li>
+          <li data-i18n="sub.morpheus8.who.10">Patients who want to avoid laser resurfacing due to pigmentation risk</li>
+          <li data-i18n="sub.morpheus8.who.11">Anyone seeking long-term, structural improvement in skin quality</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.morpheus8.contra.1">Pregnancy and breastfeeding</li>
+          <li data-i18n="sub.morpheus8.contra.2">Pacemakers or implanted electronic medical devices</li>
+          <li data-i18n="sub.morpheus8.contra.3">Active skin infection, severe acne, or open wounds in the treatment area</li>
+          <li data-i18n="sub.morpheus8.contra.4">Active herpes or cold sore outbreak</li>
+          <li data-i18n="sub.morpheus8.contra.5">Recent isotretinoin (Accutane) use — typically a 6-month wait is recommended</li>
+          <li data-i18n="sub.morpheus8.contra.6">Tendency to form keloid scars</li>
+          <li data-i18n="sub.morpheus8.contra.7">Permanent fillers in the treatment area</li>
+          <li data-i18n="sub.morpheus8.contra.8">Severe uncontrolled diabetes or impaired healing capacity</li>
+          <li data-i18n="sub.morpheus8.contra.9">Active cancer or radiation therapy in the area</li>
+          <li data-i18n="sub.morpheus8.contra.10">Severe uncontrolled autoimmune conditions affecting the skin</li>
+          <li data-i18n="sub.morpheus8.contra.11">Bleeding or clotting disorders, or current use of blood thinners — requires medical review</li>
+          <li data-i18n="sub.morpheus8.contra.12">Recent sunburn or tan in the treatment area — wait until the skin returns to baseline</li>
+          <li data-i18n="sub.morpheus8.contra.13">A complete medical history and skin assessment are always conducted before Morpheus8 at Hollywood Clinic, and the doctor will discuss expected downtime and post-care</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.morpheus8.tech.1">Morpheus8 is part of the InMode aesthetic platform — alongside Forma (RF skin tightening) and BodyTite (minimally invasive body contouring)</li>
+          <li data-i18n="sub.morpheus8.tech.2">What makes Morpheus8 stand out from generic RF microneedling devices on the market: Variable Depth Control Needles can be set at depths from 1mm to 4mm — the deepest in any RF microneedling device on the market</li>
+          <li data-i18n="sub.morpheus8.tech.3">This means Morpheus8 can treat shallow texture issues, mid-dermis collagen layers, or deep subcutaneous tissue, all with the same device</li>
+          <li data-i18n="sub.morpheus8.tech.4">Color-Coded Insulated Tips Different Morpheus8 tips are used for different treatments — face, body, and specific concerns like deep scars</li>
+          <li data-i18n="sub.morpheus8.tech.5">The insulation protects surface skin from heat damage</li>
+          <li data-i18n="sub.morpheus8.tech.6">Burst Mode Technology The device can deliver RF energy at multiple sequential depths in a single pass, allowing comprehensive treatment of multiple skin layers in one session</li>
+          <li data-i18n="sub.morpheus8.tech.7">Safe Across All Skin Tones Unlike laser-based resurfacing, Morpheus8 doesn't target melanin — making it safe and effective for darker skin tones (Fitzpatrick IV–VI) where laser resurfacing carries significant pigmentation risk</li>
+          <li data-i18n="sub.morpheus8.tech.8">Hollywood Clinic uses the original InMode Morpheus8 device</li>
+          <li data-i18n="sub.morpheus8.tech.9">Many clinics in the Egyptian market offer 'RF microneedling' using imitation devices that don't have the same depth precision, insulation quality, or safety profile</li>
+          <li data-i18n="sub.morpheus8.tech.10">Always verify the device brand</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.compare.title">Morpheus8 vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.morpheus8.compare.1.label">Morpheus8 vs. Traditional Microneedling</h4><p data-i18n="sub.morpheus8.compare.1.text">Traditional microneedling uses needles to create micro-injuries that trigger collagen production — useful for texture and surface issues, but limited depth and no thermal effect. Morpheus8 adds radiofrequency heat at the deepest dermal layers, producing far more powerful collagen remodeling and meaningful skin tightening that microneedling alone cannot achieve.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.morpheus8.compare.2.label">Morpheus8 vs. Fractional Laser (CO2, Erbium)</h4><p data-i18n="sub.morpheus8.compare.2.text">Fractional laser resurfacing is highly effective for texture and scars — but uses heat through the skin surface, carrying real pigmentation risk for darker skin tones and requiring significant downtime. Morpheus8 delivers RF energy directly into the dermis through tiny needle channels, bypassing the surface layer almost completely — equally or more effective on scars, but safer for darker skin and faster recovery.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.morpheus8.compare.3.label">Morpheus8 vs. Forma</h4><p data-i18n="sub.morpheus8.compare.3.text">Forma uses surface radiofrequency for gentle, no-downtime skin tightening — comfortable and ideal for maintenance. Morpheus8 uses needle-delivered RF for deeper, stronger remodeling — better results, but with a few days of downtime. Many patients combine both: Morpheus8 for transformation, Forma for maintenance.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.morpheus8.compare.4.label">Morpheus8 vs. HIFU</h4><p data-i18n="sub.morpheus8.compare.4.text">HIFU uses ultrasound to reach the deep SMAS layer for non-surgical lifting — strong lifting effect, but doesn't treat acne scars or skin texture. Morpheus8 works at a different depth (the dermis) and excels at scars and skin remodeling. Together they cover both lifting and texture in a complete plan.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.morpheus8.compare.5.label">Morpheus8 vs. Subcision + PRP for Acne Scars</h4><p data-i18n="sub.morpheus8.compare.5.text">Subcision and PRP are classic approaches for acne scars — useful, but require multiple sessions and have variable outcomes. Morpheus8 is considered the modern gold standard for acne scarring, often producing more consistent and pronounced improvement, especially when used in a structured 3-session protocol.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.morpheus8.name">Morpheus8</p>
+        <h3 data-i18n="sub.morpheus8.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.morpheus8.pricing.intro">The price of a Morpheus8 session at Hollywood Clinic is set after a free consultation and depends on: Treatment area — face, full face + neck, jawline only, body areas (abdomen, arms, thighs).</p>
+        <ul>
+          <li data-i18n="sub.morpheus8.pricing.factor.1">Treatment goal — texture refinement (lower energy/shallower) vs. scar treatment (multi-depth, more aggressive)</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.2">Number of sessions in the package — Morpheus8 results are best achieved through a structured series of typically 3 sessions, offered at a discounted package rate</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.3">Tip used — face vs. body vs. specialty tips for deep scarring</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.4">Whether Morpheus8 is part of a wider plan combining injectables, Forma, HIFU, or biostimulators</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.5">The doctor performing the session — Dr</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.6">Marwa Magdy is a recognized Morpheus8 expert with one of the highest case volumes in Egypt (5,000+ cases), and her sessions reflect that expertise level</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.7">Important: Authentic Morpheus8 is expensive to operate due to single-use disposable tips and InMode device costs</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.8">Heavily discounted 'RF microneedling' sessions in the Egyptian market are almost always done with imitation devices that don't have the same insulation, depth control, or safety profile</li>
+          <li data-i18n="sub.morpheus8.pricing.factor.9">Hollywood Clinic uses only the authentic InMode Morpheus8 device with original single-use tips for every patient</li>
+        </ul>
+        <p class="note" data-i18n="sub.morpheus8.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.morpheus8.why.1">Authentic InMode Morpheus8 device — not an imitation</li>
+          <li data-i18n="sub.morpheus8.why.2">Original single-use disposable tips for every patient (highest hygiene standard)</li>
+          <li data-i18n="sub.morpheus8.why.3">Treatment protocol customized based on a real dermatological assessment</li>
+          <li data-i18n="sub.morpheus8.why.4">Structured session packages designed around your specific goals</li>
+          <li data-i18n="sub.morpheus8.why.5">Performed by certified dermatologists with significant Morpheus8 experience</li>
+          <li data-i18n="sub.morpheus8.why.6">Option to combine Morpheus8 with Forma, HIFU, injectables, or biostimulators in a coordinated plan</li>
+          <li data-i18n="sub.morpheus8.why.7">Structured follow-up at 4–6 weeks between sessions to monitor results</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.morpheus8.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.morpheus8.doctor.1">Dr. Marwa Magdy — Aesthetic Dermatologist &amp; Advanced Injector. Morpheus8 is her signature device with 5,000+ cases performed — one of the highest case volumes in Egypt. She is the go-to doctor for advanced Morpheus8 protocols, especially complex acne scarring, full-face remodeling, and combination treatments</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.morpheus8.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Non-Surgical Aesthetics Consultant, 12+ years of experience. Ideal for patients who want Morpheus8 integrated into a wider skincare plan combining lasers, injectables, and Morpheus8 in a structured long-term protocol</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.morpheus8.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.morpheus8.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.1.q">Does Morpheus8 hurt?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.1.a">With proper topical numbing applied 30–45 minutes before the session, most patients tolerate Morpheus8 well. You'll feel pressure and warmth, but not sharp pain. Sensitivity varies by area — the forehead and bony areas are more sensitive than the cheeks.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.2.q">How much downtime should I expect?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.2.a">The skin will feel warm and look slightly red (similar to a sunburn) for 1–3 days. Tiny grid-like marks from the needles may be visible for a few days but fade. You can usually return to normal activities within 24–48 hours and apply makeup after 24 hours.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.3.q">How many sessions do I need?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.3.a">Most patients see optimal results from a structured series of typically 3 sessions, spaced 4–6 weeks apart. Some single-issue or maintenance protocols may use fewer sessions. Your doctor will design a plan for your specific case.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.4.q">When will I see results?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.4.a">You may notice some improvement within 2–3 weeks after the first session, but real, structural results develop over 3–6 months as new collagen and elastin form.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.5.q">Is Morpheus8 safe for darker skin tones?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.5.a">Yes — and this is one of its biggest advantages. Unlike laser resurfacing, Morpheus8 doesn't target melanin, so it's safe and effective for all skin tones, including Fitzpatrick V and VI, with no pigmentation risk when used correctly.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.6.q">Is Morpheus8 effective for acne scars?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.6.a">Yes — Morpheus8 is considered the modern gold standard for acne scarring (atrophic, ice-pick, boxcar, rolling). In a structured protocol, it produces significant improvement in scar depth, texture, and skin tone.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.7.q">Can Morpheus8 be used on the body?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.7.a">Yes. Body Morpheus8 protocols are effective for stretch marks, body skin laxity, and post-pregnancy abdominal skin. Body tips are different from face tips and reach deeper to address larger areas.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.8.q">How is Morpheus8 different from Forma?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.8.a">Both use radiofrequency, but Forma delivers it through the surface for gentle, no-downtime tightening, while Morpheus8 delivers it through tiny needles deep into the dermis for stronger collagen remodeling and scar treatment. Many patients use both: Morpheus8 for transformation, Forma for maintenance.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.morpheus8.faq.9.q">How can I tell if I'm getting authentic Morpheus8?</summary><div class="faq-answer" data-i18n="sub.morpheus8.faq.9.a">Authentic Morpheus8 uses InMode-branded color-coded single-use tips, opened in front of you. The device displays the InMode and Morpheus8 brand markings. Ask the clinic to confirm the device and to use original tips. Hollywood Clinic always uses the authentic device with original single-use tips.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

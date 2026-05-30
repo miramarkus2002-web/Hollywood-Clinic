@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Book your consultation online. Choose your treatment and preferred specialist. Confirmation within 2 hours.">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Hidden by default — JS reveals once previous step chosen */
+    .conditional { display: none; }
+    .conditional.visible { display: block; }
+  </style>
+</head>
+<body>
+
+    <!--NAV-->
+
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="booking.eyebrow">Online Booking</p>
+      <h1 data-i18n="booking.title">Reserve Your Consultation</h1>
+      <p data-i18n="booking.subtitle">Choose your preferred treatment, specialist, and time. We'll confirm within 2 hours.</p>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <span data-i18n="nav.book">Book Now</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container">
+      <div style="max-width:640px;margin:0 auto">
+        <form id="bookingForm" class="card fade-up" style="padding:2.5rem" novalidate>
+          <div class="form-group">
+            <label class="form-label" data-i18n="booking.form.name">Full Name</label>
+            <input type="text" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="booking.form.phone">Phone Number</label>
+            <input type="tel" name="phone" class="form-input" placeholder="+20 ..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="booking.form.email">Email Address</label>
+            <input type="email" name="email" class="form-input" required>
+          </div>
+
+          <!-- Step 1: Treatment category -->
+          <div class="form-group">
+            <label class="form-label" data-i18n="booking.form.treatment">Select Treatment</label>
+            <select name="treatment" id="treatmentSelect" class="form-select" required>
+              <option value="" data-i18n="booking.form.select">— Select —</option>
+              <option value="bodyshaping" data-i18n="treatment.bodyshaping.name">Body Shaping</option>
+              <option value="skincare" data-i18n="treatment.skincare.name">Skin Rejuvenation</option>
+              <option value="hair" data-i18n="treatment.hair.name">Hair Restoration</option>
+              <option value="votiva" data-i18n="treatment.votiva.name">Votiva</option>
+              <option value="laser" data-i18n="treatment.laser.name">Laser Treatments</option>
+              <option value="consultation" data-i18n="booking.form.consultation">Free Consultation</option>
+            </select>
+          </div>
+
+          <!-- Step 2: Specific procedure (conditional — only when treatment has subtreatments) -->
+          <div class="form-group conditional" id="subTreatmentGroup">
+            <label class="form-label" data-i18n="booking.form.subtreatment">Specific Procedure</label>
+            <select name="subtreatment" id="subtreatmentSelect" class="form-select">
+              <option value="" data-i18n="booking.form.subtreatment.any">— Any / Not sure —</option>
+            </select>
+          </div>
+
+          <!-- Preferred Doctor (conditional — only when treatment chosen) -->
+          <div class="form-group conditional" id="doctorGroup">
+            <label class="form-label" data-i18n="booking.form.doctor">Preferred Doctor</label>
+            <select name="doctor" id="doctorSelect" class="form-select">
+              <option value="" data-i18n="booking.form.doctor.any">— No preference (match me with the best specialist) —</option>
+            </select>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="form-group">
+              <label class="form-label" data-i18n="booking.form.date">Preferred Date</label>
+              <input type="date" name="date" class="form-input" required>
+              <p class="form-hint" id="dateFeedback" data-i18n="booking.form.date.hint">Open Sat – Thu · Closed Friday</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="booking.form.time">Preferred Time</label>
+              <select name="time" class="form-select" required>
+                <option value="">—</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="booking.form.message">Additional Notes (optional)</label>
+            <textarea name="message" class="form-textarea"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem;font-size:0.875rem" data-i18n="booking.form.submit">Request Appointment</button>
+
+          <p style="text-align:center;color:var(--muted);font-size:0.75rem;margin-top:1.25rem" data-i18n="booking.form.privacy">We respect your privacy. Your data is never shared.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    <!--FOOTER-->
+
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  (function () {
+    // ─── Doctor master list ──────────────────────────────────────────
+    const DOCTORS = {
+      sara:   { i18n: 'doctor.sara.name' },
+      rana:   { i18n: 'doctor.rana.name' },
+      ranais: { i18n: 'doctor.ranais.name' },
+      ehssan: { i18n: 'doctor.ehssan.name' },
+      marwa:  { i18n: 'doctor.marwa.name' },
+      nesma:  { i18n: 'doctor.nesma.name' },
+      hadeel: { i18n: 'doctor.hadeel.name' }
+    };
+
+    // ─── Treatment categories + doctor mapping ──────────────────────
+    // Mapping pulled from each treatment page's "Recommended Doctors" section.
+    const TREATMENTS = {
+      bodyshaping: {
+        doctors: ['sara', 'ranais', 'ehssan', 'marwa', 'rana'],
+        sub: {
+          'tesla-former':    { label_i18n: 'bs.tesla.name',          doctors: ['sara', 'ranais', 'ehssan'] },
+          'emtone':          { label_i18n: 'bs.emtone.name',         doctors: ['sara', 'ranais', 'ehssan'] },
+          'body-fx':         { label_i18n: 'bs.bodyfx.name',         doctors: ['sara', 'ranais', 'ehssan'] },
+          'clatuu-alpha':    { label_i18n: 'bs.clatuu.name',         doctors: ['sara', 'ranais', 'ehssan'] },
+          'hifu-body':       { label_i18n: 'bs.hifubody.name',       doctors: ['marwa', 'rana'] },
+          'morpheus8-body':  { label_i18n: 'bs.morpheus8body.name',  doctors: ['marwa', 'rana'] }
+        }
+      },
+      skincare: {
+        doctors: ['marwa', 'rana', 'nesma'],
+        sub: {
+          'botox':           { label_i18n: 'sub.botox.name',          doctors: ['marwa', 'rana', 'nesma'] },
+          'filler':          { label_i18n: 'sub.filler.name',         doctors: ['marwa', 'rana', 'nesma'] },
+          'biostimulators':  { label_i18n: 'sub.biostimulators.name', doctors: ['marwa', 'rana'] },
+          'skin-boosters':   { label_i18n: 'sub.skinboosters.name',   doctors: ['marwa', 'rana', 'nesma'] },
+          'morpheus8':       { label_i18n: 'sub.morpheus8.name',      doctors: ['marwa', 'rana'] },
+          'forma':           { label_i18n: 'sub.forma.name',          doctors: ['rana', 'marwa', 'nesma'] },
+          'hifu':            { label_i18n: 'sub.hifu.name',           doctors: ['marwa', 'rana'] },
+          'hydrafacial':     { label_i18n: 'sub.hydrafacial.name',    doctors: ['nesma', 'rana', 'marwa'] },
+          'iface':           { label_i18n: 'sub.iface.name',          doctors: ['marwa', 'rana', 'nesma'] }
+        }
+      },
+      hair: {
+        doctors: ['rana', 'nesma', 'marwa'],
+        sub: {
+          'exosomes':      { label_i18n: 'hr.exosomes.name', doctors: ['rana', 'nesma', 'marwa'] },
+          'growth-factor': { label_i18n: 'hr.gf.name',       doctors: ['rana', 'nesma', 'marwa'] }
+        }
+      },
+      votiva: {
+        doctors: ['rana', 'marwa', 'nesma'],
+        sub: {}
+      },
+      laser: {
+        doctors: ['nesma', 'rana', 'marwa'],
+        sub: {}
+      },
+      consultation: {
+        doctors: ['sara', 'rana', 'ranais', 'ehssan', 'marwa', 'nesma', 'hadeel'],
+        sub: {}
+      }
+    };
+
+    function t(key) {
+      if (window.I18N && typeof window.I18N.t === 'function') {
+        const val = window.I18N.t(key);
+        return val === key ? key : val;
+      }
+      return key;
+    }
+
+    const treatmentSel = document.getElementById('treatmentSelect');
+    const subGroup     = document.getElementById('subTreatmentGroup');
+    const subSel       = document.getElementById('subtreatmentSelect');
+    const doctorGroup  = document.getElementById('doctorGroup');
+    const doctorSel    = document.getElementById('doctorSelect');
+
+    function show(el) { el.classList.add('visible'); }
+    function hide(el) { el.classList.remove('visible'); }
+
+    function clearOptionsExceptFirst(select) {
+      while (select.options.length > 1) select.remove(1);
+    }
+
+    function renderSubtreatments(category) {
+      clearOptionsExceptFirst(subSel);
+      const cfg = TREATMENTS[category];
+      if (!cfg || !cfg.sub || Object.keys(cfg.sub).length === 0) {
+        hide(subGroup);
+        subSel.value = '';
+        return false;
+      }
+      for (const [key, info] of Object.entries(cfg.sub)) {
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.setAttribute('data-i18n', info.label_i18n);
+        opt.textContent = t(info.label_i18n);
+        subSel.appendChild(opt);
+      }
+      show(subGroup);
+      return true;
+    }
+
+    function renderDoctors(doctorKeys) {
+      clearOptionsExceptFirst(doctorSel);
+      if (!doctorKeys || doctorKeys.length === 0) {
+        hide(doctorGroup);
+        doctorSel.value = '';
+        return;
+      }
+      doctorKeys.forEach(function (key) {
+        const d = DOCTORS[key];
+        if (!d) return;
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.setAttribute('data-i18n', d.i18n);
+        opt.textContent = t(d.i18n);
+        doctorSel.appendChild(opt);
+      });
+      show(doctorGroup);
+    }
+
+    function onTreatmentChange() {
+      const cat = treatmentSel.value;
+      if (!cat || !TREATMENTS[cat]) {
+        hide(subGroup);
+        hide(doctorGroup);
+        subSel.value = '';
+        doctorSel.value = '';
+        return;
+      }
+      const cfg = TREATMENTS[cat];
+      renderSubtreatments(cat);
+      renderDoctors(cfg.doctors);
+      doctorSel.value = '';
+      if (window.I18N && window.I18N.apply) window.I18N.apply();
+    }
+
+    function onSubtreatmentChange() {
+      const cat = treatmentSel.value;
+      const sub = subSel.value;
+      const cfg = TREATMENTS[cat];
+      if (!cfg) return;
+      if (sub && cfg.sub[sub]) {
+        renderDoctors(cfg.sub[sub].doctors);
+      } else {
+        renderDoctors(cfg.doctors);
+      }
+      doctorSel.value = '';
+      if (window.I18N && window.I18N.apply) window.I18N.apply();
+    }
+
+    treatmentSel.addEventListener('change', onTreatmentChange);
+    subSel.addEventListener('change', onSubtreatmentChange);
+
+    // ─── Submission ────────────────────────────────────────────────
+    function isFriday(dateStr) {
+      if (!dateStr) return false;
+      // dateStr is YYYY-MM-DD; build at noon to avoid timezone edge cases
+      const d = new Date(dateStr + 'T12:00:00');
+      return d.getDay() === 5; // 0 = Sun, 5 = Fri
+    }
+
+    function fridayMessage(lang) {
+      return lang === 'ar'
+        ? 'العيادة مغلقة يوم الجمعة. من فضلكِ اختاري يوم من السبت إلى الخميس.'
+        : 'The clinic is closed on Fridays. Please choose a day from Saturday to Thursday.';
+    }
+
+    // ─── Date field ────────────────────────────────────────────────
+    // Day-name translations (Sunday = 0)
+    const DAY_NAMES_EN = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const DAY_NAMES_AR = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+
+    const dateInput = document.querySelector('input[name=date]');
+    const dateFeedback = document.getElementById('dateFeedback');
+
+    function formatPickedDate(iso) {
+      if (!iso) return null;
+      const d = new Date(iso + 'T12:00:00');
+      const dd = String(d.getDate()).padStart(2, '0');
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      const yyyy = d.getFullYear();
+      const lang = (window.I18N && window.I18N.current()) || 'en';
+      const names = lang === 'ar' ? DAY_NAMES_AR : DAY_NAMES_EN;
+      return { ddmmyyyy: `${dd}/${mm}/${yyyy}`, dayName: names[d.getDay()], dayIdx: d.getDay() };
+    }
+
+    function updateDateFeedback() {
+      const lang = (window.I18N && window.I18N.current()) || 'en';
+      const iso = dateInput.value;
+      if (!iso) {
+        dateFeedback.classList.remove('form-hint-error', 'form-hint-ok');
+        dateFeedback.textContent = lang === 'ar'
+          ? 'مفتوح من السبت إلى الخميس · الجمعة مغلق'
+          : 'Open Sat – Thu · Closed Friday';
+        dateFeedback.setAttribute('data-i18n', 'booking.form.date.hint');
+        return;
+      }
+      dateFeedback.removeAttribute('data-i18n');
+      const info = formatPickedDate(iso);
+      if (info.dayIdx === 5) {
+        dateFeedback.classList.remove('form-hint-ok');
+        dateFeedback.classList.add('form-hint-error');
+        dateFeedback.textContent = lang === 'ar'
+          ? `${info.ddmmyyyy} — ${info.dayName} (العيادة مغلقة). اختاري يوم تاني.`
+          : `${info.ddmmyyyy} — ${info.dayName} (clinic closed). Please pick another day.`;
+      } else {
+        dateFeedback.classList.remove('form-hint-error');
+        dateFeedback.classList.add('form-hint-ok');
+        dateFeedback.textContent = `${info.ddmmyyyy} — ${info.dayName}`;
+      }
+    }
+
+    dateInput.addEventListener('change', function () {
+      const lang = (window.I18N && window.I18N.current()) || 'en';
+      if (isFriday(this.value)) {
+        this.setCustomValidity(fridayMessage(lang));
+        this.reportValidity();
+        updateDateFeedback();
+        setTimeout(() => {
+          this.value = '';
+          this.setCustomValidity('');
+          updateDateFeedback();
+        }, 1500);
+      } else {
+        this.setCustomValidity('');
+        updateDateFeedback();
+      }
+    });
+
+    // Refresh on language toggle
+    const langBtn = document.querySelector('[data-lang-toggle]');
+    if (langBtn) langBtn.addEventListener('click', () => setTimeout(updateDateFeedback, 50));
+
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(this).entries());
+      const lang = (window.I18N && window.I18N.current()) || 'en';
+
+      if (!data.treatment) {
+        alert(lang === 'ar'
+          ? 'من فضلك اختاري العلاج أولاً.'
+          : 'Please select a treatment first.');
+        return;
+      }
+
+      if (isFriday(data.date)) {
+        alert(fridayMessage(lang));
+        return;
+      }
+
+      let doctorLabel = '';
+      if (data.doctor && DOCTORS[data.doctor]) {
+        doctorLabel = t(DOCTORS[data.doctor].i18n);
+      } else {
+        doctorLabel = t('booking.form.doctor.any');
+      }
+
+      const msg = lang === 'ar'
+        ? `شكراً ${data.name}! تم استلام طلب الحجز.\n\nالطبيب: ${doctorLabel}\n\nسنتواصل معكِ خلال ساعتين على ${data.phone}.`
+        : `Thank you, ${data.name}! Your appointment request has been received.\n\nDoctor: ${doctorLabel}\n\nWe'll contact you within 2 hours at ${data.phone}.`;
+      alert(msg);
+      this.reset();
+      hide(subGroup);
+      hide(doctorGroup);
+      updateDateFeedback();
+    });
+
+    dateInput.min = new Date().toISOString().split('T')[0];
+
+    // Deep-link: ?treatment=hair&sub=exosomes auto-selects
+    const params = new URLSearchParams(window.location.search);
+    const pre = params.get('treatment');
+    if (pre && TREATMENTS[pre]) {
+      treatmentSel.value = pre;
+      onTreatmentChange();
+      const preSub = params.get('sub');
+      if (preSub && TREATMENTS[pre].sub && TREATMENTS[pre].sub[preSub]) {
+        subSel.value = preSub;
+        onSubtreatmentChange();
+      }
+    }
+  })();
+  </script>
+</body>
+</html>

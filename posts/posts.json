@@ -1,0 +1,196 @@
+{
+  "_instructions": "To add a new blog post or video, add an entry to the 'posts' array below. For articles, create a matching .md file in /posts/. For videos, set 'type' to 'video' and add a 'videoUrl' (YouTube embed URL or direct .mp4). Newest posts first. 'file' can be a single filename (one language) OR an object like { en: 'post.md', ar: 'post.ar.md' } to serve different versions per language; if the Arabic file is missing the English one is used as fallback.",
+  "posts": [
+    {
+      "slug": "exosomes-hair-breakthrough",
+      "type": "article",
+      "title": {
+        "en": "Exosomes for Hair — The Biggest Breakthrough in Non-Surgical Hair Restoration",
+        "ar": "إكسوسومز للشعر — أكبر تطور في علاج الشعر بدون جراحة"
+      },
+      "excerpt": {
+        "en": "Authentic Korean exosomes are reshaping what's possible for hereditary hair loss. Here's the honest, unhyped explanation of what they actually do.",
+        "ar": "تقنية الإكسوسومز الكورية الأصلية تعيد رسم حدود ما يمكن تحقيقه لعلاج الصلع الوراثي. إليكِ الشرح الصادق بدون مبالغة لما تفعله فعلاً."
+      },
+      "date": "2026-05-20",
+      "author": "Dr. Rana Safwat",
+      "category": "Hair",
+      "readMinutes": 9,
+      "cover": "",
+      "file": {
+        "en": "exosomes-hair-breakthrough.md",
+        "ar": "exosomes-hair-breakthrough.ar.md"
+      }
+    },
+    {
+      "slug": "growth-factor-hair-explained",
+      "type": "article",
+      "title": {
+        "en": "Growth Factor for Hair — The Maintenance Treatment Every Woman Should Know About",
+        "ar": "حقن Growth Factor للشعر — العلاج الذي يجب أن تعرفه كل امرأة"
+      },
+      "excerpt": {
+        "en": "Why scalp injections outperform oral hair vitamins by a factor of 10 — and who benefits most from a Growth Factor course.",
+        "ar": "لماذا تتفوق حقن فروة الرأس على فيتامينات الشعر الفموية بعشرة أضعاف — ومن يستفيد أكثر من جلسات Growth Factor."
+      },
+      "date": "2026-05-18",
+      "author": "Dr. Nesma Samir",
+      "category": "Hair",
+      "readMinutes": 7,
+      "cover": "",
+      "file": {
+        "en": "growth-factor-hair-explained.md",
+        "ar": "growth-factor-hair-explained.ar.md"
+      }
+    },
+    {
+      "slug": "postpartum-hair-loss-guide",
+      "type": "article",
+      "title": {
+        "en": "Postpartum Hair Loss — Why It Happens and How to Stop It",
+        "ar": "تساقط الشعر بعد الولادة — لماذا يحدث وكيف توقفينه"
+      },
+      "excerpt": {
+        "en": "Three months after birth, your hair starts falling out in clumps. Here's why it's normal, when to worry, and what actually helps.",
+        "ar": "بعد ثلاثة أشهر من الولادة، يبدأ الشعر بالتساقط بكثافة. إليكِ لماذا هذا طبيعي، ومتى يجب القلق، وما الذي يساعد فعلاً."
+      },
+      "date": "2026-05-12",
+      "author": "Dr. Marwa Magdy",
+      "category": "Hair",
+      "readMinutes": 8,
+      "cover": "",
+      "file": {
+        "en": "postpartum-hair-loss-guide.md",
+        "ar": "postpartum-hair-loss-guide.ar.md"
+      }
+    },
+    {
+      "slug": "lip-fillers-guide-2026",
+      "type": "article",
+      "title": {
+        "en": "The Complete Guide to Natural Lip Fillers in 2026",
+        "ar": "الدليل الكامل لفيلر الشفاه الطبيعي 2026"
+      },
+      "excerpt": {
+        "en": "Everything you need to know before your first lip filler appointment — from product choice to aftercare.",
+        "ar": "كل ما تحتاجين معرفته قبل أول جلسة فيلر شفاه — من اختيار المنتج إلى العناية بعد الجلسة."
+      },
+      "date": "2026-04-22",
+      "author": "Dr. Layla Hassan",
+      "category": "Treatments",
+      "readMinutes": 7,
+      "cover": "assets/images/blog/lip-fillers-guide-2026.jpg",
+      "file": {
+        "en": "lip-fillers-guide-2026.md",
+        "ar": "lip-fillers-guide-2026.ar.md"
+      }
+    },
+    {
+      "slug": "behind-the-scenes-clinic-tour",
+      "type": "video",
+      "title": {
+        "en": "Behind the Scenes — A Tour of Hollywood Clinic",
+        "ar": "خلف الكواليس — جولة في هوليوود كلينك"
+      },
+      "excerpt": {
+        "en": "Step inside our Heliopolis clinic. Meet the team, see the technology, and discover what makes us different.",
+        "ar": "ادخلي عيادتنا في مصر الجديدة. تعرفي على الفريق، شاهدي التقنيات، واكتشفي ما يميزنا."
+      },
+      "date": "2026-04-10",
+      "author": "Hollywood Clinic",
+      "category": "Behind The Scenes",
+      "duration": "4:32",
+      "cover": "assets/images/blog/behind-the-scenes-clinic-tour.jpg",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "file": {
+        "en": "behind-the-scenes-clinic-tour.md",
+        "ar": "behind-the-scenes-clinic-tour.ar.md"
+      }
+    },
+    {
+      "slug": "botox-myths-debunked",
+      "type": "article",
+      "title": {
+        "en": "5 Botox Myths That Need to Go Away",
+        "ar": "5 خرافات عن البوتوكس يجب أن نتخلص منها"
+      },
+      "excerpt": {
+        "en": "No, Botox doesn't freeze your face. Yes, it's safe. Our specialist debunks the most common misconceptions.",
+        "ar": "لا، البوتوكس لا يجمد وجهكِ. نعم، إنه آمن. أخصائيتنا تفند أكثر المفاهيم الخاطئة شيوعاً."
+      },
+      "date": "2026-03-28",
+      "author": "Dr. Karim Salem",
+      "category": "Treatments",
+      "readMinutes": 5,
+      "cover": "assets/images/blog/botox-myths-debunked.jpg",
+      "file": {
+        "en": "botox-myths-debunked.md",
+        "ar": "botox-myths-debunked.ar.md"
+      }
+    },
+    {
+      "slug": "skincare-routine-30s",
+      "type": "article",
+      "title": {
+        "en": "The Skincare Routine Every Woman in Her 30s Needs",
+        "ar": "روتين العناية بالبشرة لكل امرأة في الثلاثينات"
+      },
+      "excerpt": {
+        "en": "Anti-aging starts earlier than you think. Here's the science-backed routine our dermatologists recommend.",
+        "ar": "مكافحة الشيخوخة تبدأ أبكر مما تظنين. إليكِ الروتين العلمي الذي يوصي به أطباؤنا."
+      },
+      "date": "2026-03-15",
+      "author": "Dr. Nadia Farouk",
+      "category": "Skincare",
+      "readMinutes": 6,
+      "cover": "",
+      "file": {
+        "en": "skincare-routine-30s.md",
+        "ar": "skincare-routine-30s.ar.md"
+      }
+    },
+    {
+      "slug": "client-story-noha",
+      "type": "video",
+      "title": {
+        "en": "Noha's Story — 6 Months After Body Shaping",
+        "ar": "قصة نهى — بعد 6 أشهر من نحت الجسم"
+      },
+      "excerpt": {
+        "en": "Meet Noha. She lost 18cm without surgery. Watch her honest review and full transformation.",
+        "ar": "تعرفي على نهى. خسرت 18 سم بدون جراحة. شاهدي مراجعتها الصادقة وتحولها الكامل."
+      },
+      "date": "2026-02-20",
+      "author": "Hollywood Clinic",
+      "category": "Client Stories",
+      "duration": "6:15",
+      "cover": "",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "file": {
+        "en": "client-story-noha.md",
+        "ar": "client-story-noha.ar.md"
+      }
+    },
+    {
+      "slug": "hair-loss-women-egypt",
+      "type": "article",
+      "title": {
+        "en": "Why Hair Loss in Women Is Rising in Egypt",
+        "ar": "لماذا يتزايد تساقط الشعر عند النساء في مصر"
+      },
+      "excerpt": {
+        "en": "Climate, diet, stress, and hormones — our trichologist explains the causes and proven treatments.",
+        "ar": "المناخ، الغذاء، التوتر، والهرمونات — خبيرنا يشرح الأسباب والعلاجات المثبتة."
+      },
+      "date": "2026-02-05",
+      "author": "Dr. Ahmed Mostafa",
+      "category": "Hair",
+      "readMinutes": 8,
+      "cover": "",
+      "file": {
+        "en": "hair-loss-women-egypt.md",
+        "ar": "hair-loss-women-egypt.ar.md"
+      }
+    }
+  ]
+}

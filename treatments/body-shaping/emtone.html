@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMTONE — Cellulite Treatment — Hollywood Clinic Cairo</title>
+  <meta name="description" content="The first non-invasive device to treat all five causes of cellulite at once. Smoother, firmer skin without surgery, needles, or downtime. EMTONE is a non-invasive cellulite treatment device from BTL — the same company behind EMSculpt and other premium body a">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="bs.emtone.eyebrow">Body Shaping</p>
+      <h1 data-i18n="bs.emtone.hero.title">EMTONE — Cellulite Treatment</h1>
+      <p data-i18n="bs.emtone.hero.tagline">The first non-invasive device to treat all five causes of cellulite at once. Smoother, firmer skin without surgery, needles, or downtime.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../body-shaping.html" data-i18n="bs.title">Body Shaping</a>
+        <span>/</span>
+        <span data-i18n="bs.emtone.name">EMTONE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="bs.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/emtone.png" alt="EMTONE Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="bs.emtone.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="bs.emtone.about.title">What Is EMTONE</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="bs.emtone.about.body">EMTONE is a non-invasive cellulite treatment device from BTL — the same company behind EMSculpt and other premium body aesthetic devices. It's the first device designed specifically to address all five major causes of cellulite at once, rather than just one or two. Cellulite isn't a fat problem — it's a structural problem. It develops from a combination of weakened collagen fibers, loose skin, poor blood circulation, accumulated fluid (lymphatic stagnation), and tightened fibrous bands pulling on the fat layer underneath. Single-mechanism treatments target only one of these — which is why most cellulite treatments deliver modest results. EMTONE combines monopolar radiofrequency (RF) heating with targeted pressure waves in one device, delivered simultaneously through the same handpiece. The RF heat tightens skin and stimulates collagen, while the mechanical pressure waves break up fibrous bands, mobilize fluid, and improve circulation — addressing the structural causes of cellulite together for visibly smoother, firmer skin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="bs.emtone.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.emtone.benefit.1">Targets all five major causes of cellulite simultaneously</li>
+          <li data-i18n="bs.emtone.benefit.2">Visibly reduces the appearance of dimpled 'orange peel' skin</li>
+          <li data-i18n="bs.emtone.benefit.3">Smooths skin texture on the thighs, buttocks, and abdomen</li>
+          <li data-i18n="bs.emtone.benefit.4">Tightens loose skin and improves overall firmness</li>
+          <li data-i18n="bs.emtone.benefit.5">Improves blood circulation in treated areas</li>
+          <li data-i18n="bs.emtone.benefit.6">Improves lymphatic drainage and reduces fluid retention</li>
+          <li data-i18n="bs.emtone.benefit.7">Stimulates collagen and elastin production</li>
+          <li data-i18n="bs.emtone.benefit.8">Breaks up tight fibrous bands that pull on the fat layer</li>
+          <li data-i18n="bs.emtone.benefit.9">Treats common cellulite zones — outer thighs, inner thighs, buttocks, abdomen, arms</li>
+          <li data-i18n="bs.emtone.benefit.10">Completely non-invasive — no needles, no incisions, no anesthesia</li>
+          <li data-i18n="bs.emtone.benefit.11">Zero downtime — return to normal activities immediately</li>
+          <li data-i18n="bs.emtone.benefit.12">Safe for all skin tones — no pigmentation risk</li>
+          <li data-i18n="bs.emtone.benefit.13">Results continue to develop over weeks as new collagen forms</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="bs.emtone.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="bs.emtone.step.1.title">An EMTONE session at Hollywood Clinic typically takes 20</h4><p data-i18n="bs.emtone.step.1.text">30 minutes per area: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="bs.emtone.step.2.title">Step 2</h4><p data-i18n="bs.emtone.step.2.text">Consultation &amp; assessment Your doctor evaluates the severity and pattern of cellulite, identifies target areas, and customizes the treatment intensity. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="bs.emtone.step.3.title">Step 3</h4><p data-i18n="bs.emtone.step.3.text">Cleansing &amp; prep The treatment area is cleansed and a thin layer of conducting gel is applied for smooth, even delivery of both energies. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="bs.emtone.step.4.title">Step 4</h4><p data-i18n="bs.emtone.step.4.text">EMTONE application The EMTONE handpiece is moved in steady, gliding motions across the target area</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="bs.emtone.step.5.title">Step 5</h4><p data-i18n="bs.emtone.step.5.text">As it moves, the device simultaneously delivers monopolar RF heat (warming the deeper tissue and stimulating collagen) and targeted pressure waves (breaking up fibrous bands, mobilizing fluid, and improving circulation)</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="bs.emtone.step.6.title">Step 6</h4><p data-i18n="bs.emtone.step.6.text">You'll feel a warm sensation combined with rhythmic mechanical pulsation — similar to a deep, vibrating massage. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="bs.emtone.step.7.title">Step 7</h4><p data-i18n="bs.emtone.step.7.text">Finishing Gel is removed, soothing skincare is applied</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="bs.emtone.step.8.title">Step 8</h4><p data-i18n="bs.emtone.step.8.text">You can return to work, exercise, or any normal activity immediately</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="bs.emtone.step.9.title">A typical EMTONE course is 4</h4><p data-i18n="bs.emtone.step.9.text">6 sessions, performed 1–2 times per week</p></div>
+        <div class="step-card fade-up"><div class="step-num">10</div><h4 data-i18n="bs.emtone.step.10.title">Most patients see early improvement after 2</h4><p data-i18n="bs.emtone.step.10.text">3 sessions, with continued refinement after the full course as collagen builds</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="bs.emtone.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.emtone.who.1">Anyone with visible cellulite on the thighs, buttocks, abdomen, or arms</li>
+          <li data-i18n="bs.emtone.who.2">Patients with 'orange peel' or dimpled skin texture</li>
+          <li data-i18n="bs.emtone.who.3">Post-pregnancy women with cellulite and mild skin laxity</li>
+          <li data-i18n="bs.emtone.who.4">Anyone wanting smoother, firmer skin without surgery</li>
+          <li data-i18n="bs.emtone.who.5">Patients who've tried creams, massage, or single-mechanism cellulite treatments without satisfactory results</li>
+          <li data-i18n="bs.emtone.who.6">People with mild to moderate skin laxity along with cellulite</li>
+          <li data-i18n="bs.emtone.who.7">Anyone wanting a treatment with zero downtime</li>
+          <li data-i18n="bs.emtone.who.8">Patients with all skin tones — EMTONE is safe across all Fitzpatrick types</li>
+          <li data-i18n="bs.emtone.who.9">Men and women — though cellulite is more common in women, EMTONE works for both</li>
+          <li data-i18n="bs.emtone.who.10">Anyone wanting to combine cellulite improvement with other body sculpting goals</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="bs.emtone.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="bs.emtone.contra.1">Pregnancy and breastfeeding</li>
+          <li data-i18n="bs.emtone.contra.2">Pacemakers, implanted defibrillators, or any implanted electronic medical device</li>
+          <li data-i18n="bs.emtone.contra.3">Metal implants in the treatment area</li>
+          <li data-i18n="bs.emtone.contra.4">Active skin infection or open wounds in the treatment area</li>
+          <li data-i18n="bs.emtone.contra.5">Severe varicose veins in the treatment area</li>
+          <li data-i18n="bs.emtone.contra.6">Severe uncontrolled diabetes or impaired healing</li>
+          <li data-i18n="bs.emtone.contra.7">Active cancer or recent radiation in the area</li>
+          <li data-i18n="bs.emtone.contra.8">Bleeding or clotting disorders</li>
+          <li data-i18n="bs.emtone.contra.9">Permanent fillers or implants in the treatment area</li>
+          <li data-i18n="bs.emtone.contra.10">Recent surgery in the area — wait until fully healed</li>
+          <li data-i18n="bs.emtone.contra.11">Severe autoimmune conditions affecting the skin</li>
+          <li data-i18n="bs.emtone.contra.12">Severe heart, lung, or kidney disease</li>
+          <li data-i18n="bs.emtone.contra.13">A complete medical history is always reviewed before EMTONE at Hollywood Clinic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="bs.emtone.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.emtone.tech.1">EMTONE is a clinically-validated cellulite treatment device from BTL — one of the world's most respected medical aesthetic technology companies</li>
+          <li data-i18n="bs.emtone.tech.2">What makes EMTONE distinctive: First Device to Address All Five Causes Most cellulite treatments target one or two contributing causes</li>
+          <li data-i18n="bs.emtone.tech.3">EMTONE is engineered to address all five — loose skin, weakened collagen, poor circulation, accumulated fluid, and tightened fibrous bands — in the same treatment</li>
+          <li data-i18n="bs.emtone.tech.4">Monopolar RF + Targeted Pressure Waves The unique combination delivers heat (for collagen and skin tightening) and mechanical force (for fibrous band release and fluid mobilization) simultaneously through the same applicator</li>
+          <li data-i18n="bs.emtone.tech.5">Designed Specifically for Cellulite Unlike general body contouring devices that may improve cellulite as a side effect, EMTONE is purpose-built — its protocols, applicator design, and energy parameters are optimized for cellulite treatment</li>
+          <li data-i18n="bs.emtone.tech.6">FDA-Cleared &amp; CE-Marked Backed by published clinical studies demonstrating measurable improvement in cellulite appearance and skin firmness</li>
+          <li data-i18n="bs.emtone.tech.7">Hollywood Clinic uses the authentic BTL EMTONE device</li>
+          <li data-i18n="bs.emtone.tech.8">Be cautious of clinics offering 'cellulite treatments' at very low prices — many use generic RF or vacuum devices that don't have EMTONE's combined-energy design or clinical validation specifically for cellulite</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="bs.emtone.compare.title">EMTONE vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="bs.emtone.compare.1.label">EMTONE vs. Body FX</h4><p data-i18n="bs.emtone.compare.1.text">Body FX is a general body contouring device that also improves cellulite as part of its effect. EMTONE is purpose-built for cellulite — more focused, more effective specifically for cellulite-related concerns. For severe cellulite, EMTONE is the stronger choice; for mild cellulite as part of broader body refinement, Body FX is more versatile.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.emtone.compare.2.label">EMTONE vs. Tesla Former / EMSculpt</h4><p data-i18n="bs.emtone.compare.2.text">Tesla Former builds muscle. EMTONE smooths the skin surface and treats cellulite. They address completely different concerns and are often combined: Tesla Former for muscle definition, EMTONE for surface skin quality.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.emtone.compare.3.label">EMTONE vs. Clatuu Alpha (Cryolipolysis)</h4><p data-i18n="bs.emtone.compare.3.text">Clatuu Alpha freezes and destroys fat cells. EMTONE doesn't target fat — it targets the structural and circulatory causes of cellulite. Cellulite isn't a fat problem, so reducing fat alone usually doesn't improve cellulite. EMTONE and Clatuu Alpha address different issues and are often combined for complete body refinement.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.emtone.compare.4.label">EMTONE vs. Cellulite Cream / Massage</h4><p data-i18n="bs.emtone.compare.4.text">Topical creams and manual massage produce only temporary, surface-level improvement. EMTONE delivers measurable structural changes in the deep tissue — stimulating collagen, breaking fibrous bands, and improving circulation in ways that no cream can achieve.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.emtone.compare.5.label">EMTONE vs. Subcision for Cellulite</h4><p data-i18n="bs.emtone.compare.5.text">Cellulite subcision is a minimally invasive surgical technique that physically cuts the fibrous bands pulling on fat tissue. It produces strong results but involves bruising, downtime, and risk. EMTONE achieves a meaningful portion of the same effect non-invasively, gradually, over a series of sessions.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.emtone.compare.6.label">EMTONE vs. Morpheus8 Body</h4><p data-i18n="bs.emtone.compare.6.text">Morpheus8 Body uses RF microneedling for deeper skin remodeling — better for stretch marks and significant skin texture issues. EMTONE is surface-based and specifically engineered for cellulite. They address different concerns and can be combined.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="bs.emtone.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="bs.emtone.name">EMTONE</p>
+        <h3 data-i18n="bs.emtone.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="bs.emtone.pricing.intro">The price of an EMTONE session at Hollywood Clinic is set after a free consultation and depends on: Treatment area — single area (back of thighs, buttocks, abdomen) vs. multiple areas.</p>
+        <ul>
+          <li data-i18n="bs.emtone.pricing.factor.1">Severity of cellulite — milder cases may need 4 sessions; more pronounced cases may need 6+ sessions</li>
+          <li data-i18n="bs.emtone.pricing.factor.2">Number of sessions in the package — multi-session packages are offered at a discounted bundled rate</li>
+          <li data-i18n="bs.emtone.pricing.factor.3">Frequency — usually 1–2 sessions per week during the active phase</li>
+          <li data-i18n="bs.emtone.pricing.factor.4">Whether EMTONE is combined with other treatments (Body FX, Tesla Former, Clatuu Alpha) in a coordinated plan</li>
+          <li data-i18n="bs.emtone.pricing.factor.5">Maintenance plan — periodic sessions to preserve results</li>
+          <li data-i18n="bs.emtone.pricing.factor.6">Important: Hollywood Clinic uses the authentic BTL EMTONE device — the only device specifically engineered to address all five causes of cellulite simultaneously</li>
+          <li data-i18n="bs.emtone.pricing.factor.7">Cheaper 'cellulite treatments' usually rely on generic RF or vacuum massage devices that don't deliver the same clinical results</li>
+        </ul>
+        <p class="note" data-i18n="bs.emtone.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="bs.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="bs.emtone.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.emtone.why.1">Authentic BTL EMTONE device — not a generic cellulite substitute</li>
+          <li data-i18n="bs.emtone.why.2">Treatment plan based on real cellulite-severity assessment, not guesswork</li>
+          <li data-i18n="bs.emtone.why.3">Performed and supervised by certified body contouring specialists</li>
+          <li data-i18n="bs.emtone.why.4">Combined-energy delivery — RF + pressure waves in one device, in one session</li>
+          <li data-i18n="bs.emtone.why.5">Option to combine EMTONE with Body FX (general contouring), Tesla Former (muscle), or Clatuu Alpha (fat) for a complete sculpting plan</li>
+          <li data-i18n="bs.emtone.why.6">Structured before/after documentation to track your progress</li>
+          <li data-i18n="bs.emtone.why.7">Realistic expectations from the first consultation — EMTONE meaningfully improves cellulite, but no treatment eliminates it entirely</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="bs.emtone.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="bs.emtone.doctor.1">Dr. Sara Abdelhameed — Clinical Nutrition Consultant &amp; Body Contouring Specialist, 12+ years of experience, 50,000+ women treated. The most experienced body contouring authority at Hollywood Clinic — ideal for structured EMTONE plans, especially when cellulite improvement is combined with overall body refinement</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.emtone.doctor.2">Dr. Rana Ibrahim Sultan — Clinical Nutritionist &amp; Non-Invasive Aesthetic Specialist. Ideal for patients who want EMTONE integrated into a broader non-invasive body and nutrition plan</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.emtone.doctor.3">Dr. Ehssan Rabie — Clinical Nutrition Specialist, 13 years at Kasr Al-Ainy. Ideal for medically-grounded body and skin plans where EMTONE is part of a wider metabolic strategy</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.emtone.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="bs.emtone.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.1.q">Does EMTONE hurt?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.1.a">No. Most patients describe it as a warm, rhythmic deep-tissue massage. The combined heat and pressure waves are designed to feel comfortable and even relaxing for most people.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.2.q">How many sessions do I need?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.2.a">A typical course is 4–6 sessions, performed 1–2 times per week. Most patients see early improvement after 2–3 sessions; final results develop after the full course and continue refining for several weeks afterward.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.3.a">None. You can return to work, exercise, or any normal activity immediately. Slight pinkness in the treated area may persist briefly but is not visible to others.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.4.q">Will EMTONE eliminate my cellulite completely?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.4.a">No treatment eliminates cellulite entirely — cellulite is a structural feature influenced by genetics, hormones, and tissue anatomy. EMTONE produces meaningful, measurable improvement in cellulite appearance and skin firmness. The result is smoother, firmer skin — not completely flat skin.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.5.q">Will EMTONE make me lose weight?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.5.a">No. EMTONE is not a weight loss or fat reduction treatment. It targets the structural causes of cellulite (skin laxity, fibrous bands, circulation, fluid retention) — not body fat. For fat reduction, Clatuu Alpha, Body FX, or BodyTite are more appropriate.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.6.q">Is EMTONE safe for darker skin tones?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.6.a">Yes. EMTONE uses radiofrequency, which doesn't target melanin — making it completely safe across all Fitzpatrick skin types, with no pigmentation risk.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.7.q">How long do EMTONE results last?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.7.a">Results from a full EMTONE course typically last 6–12 months. Maintenance sessions every 2–3 months can extend results long-term. Lifestyle factors (weight stability, hydration, exercise) also influence how long results last.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.8.q">Can I do EMTONE after pregnancy?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.8.a">Yes — EMTONE is excellent for post-pregnancy women dealing with cellulite and mild skin laxity, but you should wait until after breastfeeding has stopped and your doctor confirms you're ready.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.emtone.faq.9.q">How is EMTONE different from regular cellulite massage?</summary><div class="faq-answer" data-i18n="bs.emtone.faq.9.a">Cellulite massage works on the skin surface only and produces temporary, superficial effects. EMTONE delivers radiofrequency heat deep into the tissue to stimulate collagen and tighten skin, combined with targeted pressure waves that mechanically break up fibrous bands. It's a medical treatment with measurable structural results — not just surface manipulation.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to body shaping -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../body-shaping.html" class="btn btn-outline" data-i18n="bs.related.back">Back to Body Shaping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="bs.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="bs.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

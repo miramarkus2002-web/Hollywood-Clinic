@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Boosters in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Deep hydration, lasting glow, and improved skin quality — from within. Skin Boosters are micro-injections of pure or stabilized hyaluronic acid (and sometimes vitamins, peptides, and antioxid">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.skinboosters.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.skinboosters.hero.title">Skin Boosters in Egypt</h1>
+      <p data-i18n="sub.skinboosters.hero.tagline">Deep hydration, lasting glow, and improved skin quality — from within.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.skinboosters.name">Skin Boosters</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/skin-boosters.png" alt="Skin Boosters Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.skinboosters.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.skinboosters.about.title">What are Skin Boosters</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.skinboosters.about.body">Skin Boosters are micro-injections of pure or stabilized hyaluronic acid (and sometimes vitamins, peptides, and antioxidants) placed superficially into the skin. Unlike fillers, they don't reshape or add volume — they hydrate the skin from within, improve its elasticity, smoothness, and natural glow. Think of Skin Boosters as a deep, long-lasting hydration treatment delivered directly to where moisturizers and serums can't reach. They work at the level of the dermis, where they bind water, support collagen, and gradually transform skin quality over a series of sessions. At Hollywood Clinic Egypt, Skin Boosters are used for the face, neck, décolletage, hands, and even acne-scarred or sun-damaged skin — anywhere the skin needs to look healthier, brighter, and more luminous.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.skinboosters.benefit.1">Deep, long-lasting hydration from within the skin</li>
+          <li data-i18n="sub.skinboosters.benefit.2">Visible 'inner glow' and natural radiance</li>
+          <li data-i18n="sub.skinboosters.benefit.3">Improved skin elasticity and firmness</li>
+          <li data-i18n="sub.skinboosters.benefit.4">Smoother texture and refined skin grain</li>
+          <li data-i18n="sub.skinboosters.benefit.5">Reduction of fine lines and crepiness</li>
+          <li data-i18n="sub.skinboosters.benefit.6">Brighter, more even skin tone</li>
+          <li data-i18n="sub.skinboosters.benefit.7">Better skin quality on neck, décolletage, and back of hands (areas hard to treat otherwise)</li>
+          <li data-i18n="sub.skinboosters.benefit.8">Improves the look of sun-damaged and acne-scarred skin</li>
+          <li data-i18n="sub.skinboosters.benefit.9">Natural, gradual results — no dramatic changes</li>
+          <li data-i18n="sub.skinboosters.benefit.10">Minimal downtime — small injection points may stay visible for a few hours</li>
+          <li data-i18n="sub.skinboosters.benefit.11">Results build over 2–3 sessions and typically last 4 to 9 months</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.skinboosters.step.1.title">Consultation</h4><p data-i18n="sub.skinboosters.step.1.text">skin analysis, discussion of concerns, and selection of the appropriate Skin Booster product</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.skinboosters.step.2.title">Preparation</h4><p data-i18n="sub.skinboosters.step.2.text">cleansing of the area; topical numbing cream applied for 15–20 minutes</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.skinboosters.step.3.title">Injection</h4><p data-i18n="sub.skinboosters.step.3.text">multiple micro-injections placed evenly across the treatment area using a very fine needle</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.skinboosters.step.4.title">Session takes 20</h4><p data-i18n="sub.skinboosters.step.4.text">30 minutes</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.skinboosters.step.5.title">Optional combination</h4><p data-i18n="sub.skinboosters.step.5.text">may be combined with mesotherapy, micro-needling, or other treatments based on the plan</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="sub.skinboosters.step.6.title">Aftercare</h4><p data-i18n="sub.skinboosters.step.6.text">simple skincare guidelines for the next 24 hours</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="sub.skinboosters.step.7.title">Treatment plan</h4><p data-i18n="sub.skinboosters.step.7.text">Most Skin Boosters require a series of 2–3 sessions spaced about 4 weeks apart to build results, followed by maintenance sessions every 4–9 months</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="sub.skinboosters.step.8.title">Step 8</h4><p data-i18n="sub.skinboosters.step.8.text">Some products (like Profhilo) work with as few as 2 sessions</p></div>
+      </div>
+      <div class="aftercare-block fade-up">
+        <h4 data-i18n="sub.skinboosters.aftercare.title">Post-treatment Guidelines</h4>
+        <ul class="benefit-list aftercare-list">
+          <li data-i18n="sub.skinboosters.aftercare.1">Avoid makeup for 12 hours</li>
+          <li data-i18n="sub.skinboosters.aftercare.2">Avoid sun exposure, saunas, and intense exercise for 24–48 hours</li>
+          <li data-i18n="sub.skinboosters.aftercare.3">Apply sunscreen (SPF 50+) daily — protects your investment</li>
+          <li data-i18n="sub.skinboosters.aftercare.4">Tiny injection bumps fade within a few hours; mild redness within a day</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.skinboosters.who.1">Anyone with dry, dehydrated, or dull skin that doesn't respond to topical products</li>
+          <li data-i18n="sub.skinboosters.who.2">Patients with early signs of aging (fine lines, loss of glow, mild laxity)</li>
+          <li data-i18n="sub.skinboosters.who.3">People with sun-damaged or environmentally stressed skin</li>
+          <li data-i18n="sub.skinboosters.who.4">Those wanting to improve neck, décolletage, or hand skin quality</li>
+          <li data-i18n="sub.skinboosters.who.5">Patients with acne scars and uneven skin texture</li>
+          <li data-i18n="sub.skinboosters.who.6">Brides and event preparation (start 1–2 months before the event)</li>
+          <li data-i18n="sub.skinboosters.who.7">Anyone who wants improved skin quality without changing facial features</li>
+          <li data-i18n="sub.skinboosters.who.8">Patients of all ages from 25+ — for prevention or correction</li>
+          <li data-i18n="sub.skinboosters.who.9">Excellent for combining with Botox, fillers, or biostimulators for full rejuvenation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.skinboosters.contra.1">Pregnant or breastfeeding women</li>
+          <li data-i18n="sub.skinboosters.contra.2">Patients with active skin infections, eczema, or inflammation at the treatment site</li>
+          <li data-i18n="sub.skinboosters.contra.3">Anyone with a known allergy to hyaluronic acid</li>
+          <li data-i18n="sub.skinboosters.contra.4">Patients with autoimmune disorders — requires medical evaluation</li>
+          <li data-i18n="sub.skinboosters.contra.5">Patients on blood thinners or with bleeding disorders — requires medical clearance</li>
+          <li data-i18n="sub.skinboosters.contra.6">Anyone with a history of severe allergic reactions</li>
+          <li data-i18n="sub.skinboosters.contra.7">Active acne in the treatment area — should be controlled first</li>
+          <li data-i18n="sub.skinboosters.contra.8">History of keloid scarring — discuss with your doctor</li>
+          <li data-i18n="sub.skinboosters.contra.9">Patients undergoing chemotherapy or radiotherapy</li>
+          <li data-i18n="sub.skinboosters.contra.10">A full skin assessment and medical history is taken before every Skin Booster session at Hollywood Clinic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.skinboosters.tech.1">&amp; Brands of Skin Boosters at Hollywood Clinic Hollywood Clinic uses only internationally certified Skin Booster brands — sourced through licensed distributors with proper cold-chain storage</li>
+          <li data-i18n="sub.skinboosters.tech.2">Premium Brands We Use: Profhilo® (IBSA, Italy) — the most awarded Skin Booster worldwide</li>
+          <li data-i18n="sub.skinboosters.tech.3">A 'bio-remodeling' treatment using highly concentrated hyaluronic acid</li>
+          <li data-i18n="sub.skinboosters.tech.4">Just 2 sessions, 4 weeks apart</li>
+          <li data-i18n="sub.skinboosters.tech.5">Restylane Vital® and Vital Light (Galderma) — stabilized HA for hydration and skin quality, ideal for face, neck, and hands</li>
+          <li data-i18n="sub.skinboosters.tech.6">NCTF® 135 / 135 HA (Filorga) — a 'cocktail' of HA + 53 vitamins, amino acids, and antioxidants, popular as the 'glow injection.' Teosyal Redensity I® (Teoxane) — combines HA with amino acids, antioxidants, and minerals for revitalization</li>
+          <li data-i18n="sub.skinboosters.tech.7">Juvederm Volite® (Allergan) — long-lasting hydration with a single-session treatment lasting up to 9 months</li>
+          <li data-i18n="sub.skinboosters.tech.8">Choosing the Right Booster: Your doctor will choose the most suitable Skin Booster based on your skin type, primary concern, treatment area, and lifestyle — there's no single 'best' product, only the best product for your case</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.compare.title">Skin Boosters vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.skinboosters.compare.1.label">Skin Boosters vs. Botox</h4><p data-i18n="sub.skinboosters.compare.1.text">Botox treats muscles (expression lines). Skin Boosters treat skin quality (hydration, glow, elasticity). They don't compete — they're often combined.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.skinboosters.compare.2.label">Skin Boosters vs. Filler</h4><p data-i18n="sub.skinboosters.compare.2.text">Filler reshapes and adds volume. Skin Boosters don't change your shape — they improve the skin itself. A filler patient with dull skin still has dull skin; a Skin Booster patient has glowing skin without any change to features.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.skinboosters.compare.3.label">Skin Boosters vs. Biostimulators</h4><p data-i18n="sub.skinboosters.compare.3.text">Skin Boosters mainly hydrate and improve quality with HA. Biostimulators trigger collagen production for structural rejuvenation. Skin Boosters work faster but Biostimulators last longer and address deeper changes.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.skinboosters.compare.4.label">Skin Boosters vs. Mesotherapy</h4><p data-i18n="sub.skinboosters.compare.4.text">Mesotherapy is a category of injections that includes Skin Boosters. Some Skin Boosters (like NCTF) are technically advanced mesotherapy cocktails. The difference is in formulation, regulation, and clinical evidence — premium branded Skin Boosters have more research behind them.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.skinboosters.compare.5.label">Skin Boosters vs. Topical Skincare</h4><p data-i18n="sub.skinboosters.compare.5.text">Topical skincare works on the skin's surface. Skin Boosters are placed in the dermis, where serums and creams can't reach. They work alongside skincare, not in place of it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.skinboosters.name">Skin Boosters</p>
+        <h3 data-i18n="sub.skinboosters.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.skinboosters.pricing.intro">Skin Booster pricing at Hollywood Clinic depends on several factors and is set after a free consultation: Brand and product type (Profhilo, Restylane Vital, NCTF, Volite have different costs).</p>
+        <ul>
+          <li data-i18n="sub.skinboosters.pricing.factor.1">Treatment area (face only vs. face + neck + hands)</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.2">Number of sessions in your treatment plan</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.3">Whether you're choosing a package (often discounted) or single sessions</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.4">Combination with other treatments (Botox, filler, micro-needling)</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.5">Doctor's expertise level</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.6">Tip: Most Skin Boosters work best as a series (2–3 sessions), so consider the total program cost — not just one session</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.7">Hollywood Clinic offers package pricing that makes the full treatment more affordable than booking sessions separately</li>
+          <li data-i18n="sub.skinboosters.pricing.factor.8">Book a free consultation to receive a personalized treatment plan and an accurate quote</li>
+        </ul>
+        <p class="note" data-i18n="sub.skinboosters.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.skinboosters.why.1">Only premium international brands (Profhilo, Restylane Vital, NCTF, Teosyal Redensity I, Volite)</li>
+          <li data-i18n="sub.skinboosters.why.2">Sealed, labeled, traceable products — you see the packaging before treatment</li>
+          <li data-i18n="sub.skinboosters.why.3">Certified, internationally trained injectors with skin-quality expertise</li>
+          <li data-i18n="sub.skinboosters.why.4">Full skin analysis before recommending a product — no guessing</li>
+          <li data-i18n="sub.skinboosters.why.5">Smart combination protocols (Skin Boosters + micro-needling, or + Botox, or + LED) for compound results</li>
+          <li data-i18n="sub.skinboosters.why.6">Treatment-package pricing for better value on full programs</li>
+          <li data-i18n="sub.skinboosters.why.7">Realistic expectation-setting — we tell you what each product can and can't do</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.skinboosters.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.skinboosters.doctor.1">Dr. Marwa Magdy — Consultant in Dermatology &amp; Aesthetic Medicine. Signature expertise in Skin Boosters as part of combination treatment plans for face, neck, and hands</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.skinboosters.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Aesthetic Specialist. Wide experience in Skin Boosters integrated with mesotherapy and laser protocols</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.skinboosters.doctor.3">Dr. Nesma Samir — Laser Aesthetic Dermatology Specialist. Skin Boosters as part of her signature anti-aging and photoaging treatment protocols</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.skinboosters.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.skinboosters.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.1.q">What exactly is the difference between a Skin Booster and a filler?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.1.a">A filler reshapes (lips, cheeks, jaw); a Skin Booster doesn't change shape — it improves skin quality (hydration, glow, elasticity). They use similar materials (hyaluronic acid) but with different concentrations and placement depths.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.2.q">Will Skin Boosters make me look different?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.2.a">No — that's the beauty of it. Skin Boosters won't change your features. You'll look like yourself, but with healthier, brighter, more hydrated skin.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.3.q">How many sessions do I need?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.3.a">Most Skin Boosters require a series of 2–3 sessions, 4 weeks apart, to build the result. Some products (like Profhilo) work with just 2 sessions. Your doctor will design the right plan for you.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.4.q">How long do results last?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.4.a">Typically 4 to 9 months, depending on the product, your skin, and your lifestyle. Maintenance sessions every 4–9 months preserve the result.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.5.q">Does the procedure hurt?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.5.a">Topical numbing cream is applied beforehand, so most patients describe the discomfort as mild — small pricks at most.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.6.q">Is there downtime?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.6.a">Very little. Small injection bumps may be visible for a few hours; mild redness for up to 24 hours. You can wear makeup the next day.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.7.q">Can I do Skin Boosters before a wedding or event?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.7.a">Yes — but start at least 4–6 weeks before the event so results have time to develop. Don't book the last session in the same week as the event.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.8.q">Can Skin Boosters be combined with other treatments?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.8.a">Yes — they work beautifully alongside Botox, fillers, biostimulators, micro-needling, and LED. Hollywood Clinic specializes in combination treatment plans.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.skinboosters.faq.9.q">Are Skin Boosters safe?</summary><div class="faq-answer" data-i18n="sub.skinboosters.faq.9.a">Yes, when performed by a qualified injector using regulated brands. The products are made from hyaluronic acid, a substance the body produces naturally.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

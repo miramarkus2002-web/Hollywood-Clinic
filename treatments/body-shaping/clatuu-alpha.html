@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clatuu Alpha in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Advanced 360° cryolipolysis — fat freezing for stubborn pockets, with no needles, no surgery, and no downtime. Clatuu Alpha is an advanced cryolipolysis device — a non-surgical body contouring technology that uses controlled coolin">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="bs.clatuu.eyebrow">Body Shaping</p>
+      <h1 data-i18n="bs.clatuu.hero.title">Clatuu Alpha in Egypt</h1>
+      <p data-i18n="bs.clatuu.hero.tagline">Advanced 360° cryolipolysis — fat freezing for stubborn pockets, with no needles, no surgery, and no downtime.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../body-shaping.html" data-i18n="bs.title">Body Shaping</a>
+        <span>/</span>
+        <span data-i18n="bs.clatuu.name">Clatuu Alpha</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="bs.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/clatuu-alpha.png" alt="Clatuu Alpha Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="bs.clatuu.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="bs.clatuu.about.title">What Is Clatuu Alpha</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="bs.clatuu.about.body">Clatuu Alpha is an advanced cryolipolysis device — a non-surgical body contouring technology that uses controlled cooling to freeze and permanently destroy fat cells beneath the skin. It's the newest generation of the Clatuu family, built around 360° dual cooling applicators that surround the fat pocket from all sides, providing more uniform and efficient fat reduction than older single-direction cryolipolysis devices. The science behind it is simple: fat cells are more sensitive to cold than the skin, blood vessels, or nerves around them. By cooling targeted fat to a specific therapeutic temperature, the treated fat cells crystallize and undergo natural cell death (apoptosis). Over the following weeks, the body's lymphatic system gradually clears these dead fat cells out — and they're gone permanently. Clatuu Alpha is widely considered one of the most effective non-invasive fat reduction technologies on the market, alongside CoolSculpting, and is FDA-cleared and CE-certified. It's ideal for patients who want real fat reduction without surgery, needles, or downtime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.clatuu.benefit.1">Permanent destruction of treated fat cells — they don't come back</li>
+          <li data-i18n="bs.clatuu.benefit.2">Non-surgical and non-invasive — no incisions, no needles, no anesthesia</li>
+          <li data-i18n="bs.clatuu.benefit.3">No downtime — return to work, gym, and daily activities immediately. 360° applicators cover the fat pocket from multiple angles for more uniform reduction</li>
+          <li data-i18n="bs.clatuu.benefit.4">Two areas can often be treated simultaneously using dual handpieces (saving time)</li>
+          <li data-i18n="bs.clatuu.benefit.5">Effective on stubborn fat resistant to diet and exercise</li>
+          <li data-i18n="bs.clatuu.benefit.6">Visible contour improvement within 6–12 weeks</li>
+          <li data-i18n="bs.clatuu.benefit.7">Safe and well-tolerated for healthy adults</li>
+          <li data-i18n="bs.clatuu.benefit.8">Treats the abdomen, flanks (love handles), upper arms, inner/outer thighs, back fat, bra rolls, double chin (with dedicated smaller applicator)</li>
+          <li data-i18n="bs.clatuu.benefit.9">Long-lasting results when paired with stable weight maintenance</li>
+          <li data-i18n="bs.clatuu.benefit.10">Ideal for patients close to their target weight who want targeted contouring</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="bs.clatuu.step.1.title">A Clatuu Alpha session at Hollywood Clinic typically takes 35</h4><p data-i18n="bs.clatuu.step.1.text">70 minutes per treatment area, with two areas often treatable simultaneously: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="bs.clatuu.step.2.title">Step 2</h4><p data-i18n="bs.clatuu.step.2.text">Consultation &amp; area selection Your doctor identifies which fat pockets are good candidates for cryolipolysis (the fat must be pinchable and within the suitable size range), marks the treatment area, and selects the appropriate applicator size. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="bs.clatuu.step.3.title">Step 3</h4><p data-i18n="bs.clatuu.step.3.text">Protective gel pad A gel pad is placed over the skin to protect it from extreme cold during treatment. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="bs.clatuu.step.4.title">Step 4</h4><p data-i18n="bs.clatuu.step.4.text">Applicator placement The Clatuu Alpha applicator is placed on the target area</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="bs.clatuu.step.5.title">Step 5</h4><p data-i18n="bs.clatuu.step.5.text">The device uses suction to draw the fat pocket into the cooling chamber, then surrounds it with 360° controlled cooling. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="bs.clatuu.step.6.title">Cooling cycle During the first 5</h4><p data-i18n="bs.clatuu.step.6.text">10 minutes, you may feel intense cold and pulling — this fades quickly as the area becomes numb</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="bs.clatuu.step.7.title">Step 7</h4><p data-i18n="bs.clatuu.step.7.text">You can relax, read, or use your phone for the remainder of the session. 5</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="bs.clatuu.step.8.title">Step 8</h4><p data-i18n="bs.clatuu.step.8.text">Post-treatment massage After the applicator is removed, the doctor performs a 2-minute massage on the treated area</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="bs.clatuu.step.9.title">Step 9</h4><p data-i18n="bs.clatuu.step.9.text">This step has been shown to significantly improve the final fat reduction outcome</p></div>
+        <div class="step-card fade-up"><div class="step-num">10</div><h4 data-i18n="bs.clatuu.step.10.title">Most patients see initial results around 3 weeks, with the full result developing over 8</h4><p data-i18n="bs.clatuu.step.10.text">12 weeks as the body clears destroyed fat cells</p></div>
+        <div class="step-card fade-up"><div class="step-num">11</div><h4 data-i18n="bs.clatuu.step.11.title">Some patients benefit from a second session in the same area after 8</h4><p data-i18n="bs.clatuu.step.11.text">12 weeks for additional reduction</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.clatuu.who.1">Patients close to their target weight with stubborn fat pockets</li>
+          <li data-i18n="bs.clatuu.who.2">Anyone with pinchable fat that resists diet and exercise</li>
+          <li data-i18n="bs.clatuu.who.3">People who want fat reduction without surgery, needles, or downtime</li>
+          <li data-i18n="bs.clatuu.who.4">Patients with tight skin and localized fat — Clatuu Alpha works best when skin elasticity is good</li>
+          <li data-i18n="bs.clatuu.who.5">Anyone seeking treatment of specific zones: abdomen, flanks, inner/outer thighs, upper arms, bra rolls, back, double chin</li>
+          <li data-i18n="bs.clatuu.who.6">Patients with all skin tones — Cryolipolysis doesn't target melanin, so it's safe for darker skin</li>
+          <li data-i18n="bs.clatuu.who.7">Busy professionals who can't take time off for surgery or recovery</li>
+          <li data-i18n="bs.clatuu.who.8">Patients wanting a non-surgical alternative to liposuction</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="bs.clatuu.contra.1">Pregnancy and breastfeeding</li>
+          <li data-i18n="bs.clatuu.contra.2">Cryoglobulinemia, cold agglutinin disease, or paroxysmal cold hemoglobinuria — rare conditions where the body reacts dangerously to cold</li>
+          <li data-i18n="bs.clatuu.contra.3">Severe Raynaud's disease or cold urticaria (cold-induced hives)</li>
+          <li data-i18n="bs.clatuu.contra.4">Open wounds, active skin infection, or recent surgery in the treatment area</li>
+          <li data-i18n="bs.clatuu.contra.5">Hernia in the treatment area</li>
+          <li data-i18n="bs.clatuu.contra.6">Severely obese patients — Clatuu Alpha is not a weight-loss treatment</li>
+          <li data-i18n="bs.clatuu.contra.7">Active cancer or radiation therapy in the area</li>
+          <li data-i18n="bs.clatuu.contra.8">Severe varicose veins in the treatment area</li>
+          <li data-i18n="bs.clatuu.contra.9">Bleeding or clotting disorders, or current use of blood thinners — requires medical review</li>
+          <li data-i18n="bs.clatuu.contra.10">Loose skin with poor elasticity — fat reduction may worsen the appearance of loose skin; in these cases, BodyTite or surgical options may be more appropriate</li>
+          <li data-i18n="bs.clatuu.contra.11">A complete medical history and clinical assessment are always conducted before Clatuu Alpha at Hollywood Clinic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.clatuu.tech.1">Clatuu Alpha is the latest generation in the Clatuu cryolipolysis family, manufactured by Classys — a leading global medical aesthetic technology company</li>
+          <li data-i18n="bs.clatuu.tech.2">What makes Clatuu Alpha stand out: 360° Cooling Older cryolipolysis devices cool the fat pocket from one or two sides</li>
+          <li data-i18n="bs.clatuu.tech.3">Clatuu Alpha surrounds the fat from all sides for more uniform and efficient cooling — meaning more consistent results across the full treatment area</li>
+          <li data-i18n="bs.clatuu.tech.4">Dual Handpieces Two applicators can run simultaneously, treating two symmetrical areas (both flanks, both inner thighs) in a single session — cutting treatment time in half</li>
+          <li data-i18n="bs.clatuu.tech.5">Variety of Applicator Sizes Clatuu Alpha includes a range of applicator shapes and sizes, including a dedicated smaller applicator for the double chin and smaller body zones</li>
+          <li data-i18n="bs.clatuu.tech.6">Smart Sensors Built-in temperature and pressure sensors continuously monitor the treatment to maintain therapeutic cooling levels while protecting the skin</li>
+          <li data-i18n="bs.clatuu.tech.7">FDA-Cleared &amp; CE-Certified Globally validated technology with published clinical data</li>
+          <li data-i18n="bs.clatuu.tech.8">Hollywood Clinic uses the authentic Clatuu Alpha device by Classys</li>
+          <li data-i18n="bs.clatuu.tech.9">Be cautious of clinics offering 'cryolipolysis' or 'fat freezing' at significantly lower prices — many use older, less effective cooling devices, or even unbranded knockoffs that don't reach the therapeutic cooling temperature needed to destroy fat cells, leading to disappointing results or even skin injuries</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.compare.title">Clatuu Alpha vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="bs.clatuu.compare.1.label">Clatuu Alpha vs. CoolSculpting</h4><p data-i18n="bs.clatuu.compare.1.text">Both are FDA-cleared cryolipolysis platforms. CoolSculpting (Allergan) was the first mainstream device. Clatuu Alpha is the newer generation, with 360° cooling instead of one-direction cooling, which gives more uniform results across the treatment area. In our clinical experience, both deliver excellent fat reduction outcomes.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.clatuu.compare.2.label">Clatuu Alpha vs. Body FX</h4><p data-i18n="bs.clatuu.compare.2.text">Body FX is non-invasive RF (heat-based) that combines fat reduction, cellulite improvement, and skin tightening in one device. Clatuu Alpha uses cold instead of heat, and focuses on fat reduction — it doesn't tighten skin. For patients with fat AND mild skin laxity, Body FX may be a more complete option; for pure fat reduction, Clatuu Alpha is often more effective per session.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.clatuu.compare.3.label">Clatuu Alpha vs. BodyTite</h4><p data-i18n="bs.clatuu.compare.3.text">BodyTite is a minimally invasive procedure with a tiny incision and local anesthesia — it removes fat AND tightens skin much more aggressively than non-invasive options. Clatuu Alpha is fully non-invasive, painless, no downtime, but less aggressive. The choice depends on how much fat you need to reduce and whether skin tightening is also a goal.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.clatuu.compare.4.label">Clatuu Alpha vs. Tesla Former / EMSculpt</h4><p data-i18n="bs.clatuu.compare.4.text">Tesla Former and similar electromagnetic devices stimulate muscle contractions to build muscle and reduce fat — they're better for muscle definition (abs, glutes). Clatuu Alpha is purely fat reduction. Many patients combine the two for body sculpting: Clatuu Alpha to reduce fat, then Tesla Former to build the muscle underneath.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.clatuu.compare.5.label">Clatuu Alpha vs. Ultrasound Cavitation</h4><p data-i18n="bs.clatuu.compare.5.text">Cavitation uses ultrasound waves to disrupt fat cells. It produces gentler, more modest fat reduction than cryolipolysis. Clatuu Alpha is significantly more effective per session, with published clinical data supporting permanent fat-cell destruction.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.clatuu.compare.6.label">Clatuu Alpha vs. Mesotherapy / Fat-Dissolving Injections</h4><p data-i18n="bs.clatuu.compare.6.text">Fat-dissolving injections (Aqualyx, Lemon Bottle, deoxycholic acid) work well in small specific areas like the double chin. Clatuu Alpha is more efficient for larger areas like the abdomen or thighs. Both can be combined in a comprehensive plan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="bs.clatuu.name">Clatuu Alpha</p>
+        <h3 data-i18n="bs.clatuu.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="bs.clatuu.pricing.intro">The price of a Clatuu Alpha session at Hollywood Clinic is set after a free consultation and depends on: Number of areas treated — single area vs. multiple areas in one session.</p>
+        <ul>
+          <li data-i18n="bs.clatuu.pricing.factor.1">Size of the applicator used — larger applicators cover bigger zones at a higher rate</li>
+          <li data-i18n="bs.clatuu.pricing.factor.2">Whether dual handpieces are used for two areas simultaneously</li>
+          <li data-i18n="bs.clatuu.pricing.factor.3">Single session vs. package — most patients benefit from a 2-session protocol per area, offered at a discounted bundled rate</li>
+          <li data-i18n="bs.clatuu.pricing.factor.4">Whether Clatuu Alpha is part of a wider plan combining muscle toning (Tesla Former), skin tightening (Body FX), or surgical options</li>
+          <li data-i18n="bs.clatuu.pricing.factor.5">Important: Authentic Clatuu Alpha is a premium medical device</li>
+          <li data-i18n="bs.clatuu.pricing.factor.6">Be cautious of clinics offering very low-priced 'fat freezing' sessions — they often use older or unbranded cooling devices that don't reach the therapeutic cooling temperature needed to destroy fat cells</li>
+          <li data-i18n="bs.clatuu.pricing.factor.7">Worse, some imitation devices have caused skin frostbite injuries</li>
+          <li data-i18n="bs.clatuu.pricing.factor.8">Hollywood Clinic uses only the original Clatuu Alpha by Classys</li>
+        </ul>
+        <p class="note" data-i18n="bs.clatuu.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="bs.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.clatuu.why.1">Authentic Clatuu Alpha 360° device by Classys — not an imitation or older cryolipolysis copy</li>
+          <li data-i18n="bs.clatuu.why.2">Treatment customized based on real assessment of fat thickness, skin elasticity, and your goals</li>
+          <li data-i18n="bs.clatuu.why.3">Performed by certified specialists experienced in body contouring</li>
+          <li data-i18n="bs.clatuu.why.4">Manual post-treatment massage protocol (clinically shown to improve results)</li>
+          <li data-i18n="bs.clatuu.why.5">Structured follow-up at 4, 8, and 12 weeks to track results</li>
+          <li data-i18n="bs.clatuu.why.6">Option to combine with Tesla Former, Body FX, EMTONE, or surgical body options in a coordinated plan</li>
+          <li data-i18n="bs.clatuu.why.7">Honest assessment — if you're not a good cryolipolysis candidate, we'll tell you and recommend a more suitable option</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="bs.clatuu.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="bs.clatuu.doctor.1">Dr. Sara Abdelhameed — Clinical Nutrition Consultant &amp; Body Contouring Specialist. 12+ years of experience, 50,000+ women treated. Ideal for designing Clatuu Alpha protocols integrated into a complete body-shaping and nutrition plan</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.clatuu.doctor.2">Dr. Rana Ibrahim Sultan — Clinical Nutritionist &amp; Non-Invasive Aesthetic Specialist. Expert in combination protocols using cryolipolysis alongside other body sculpting technologies</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.clatuu.doctor.3">Dr. Ehssan Rabie — Clinical Nutrition Specialist with 13 years at Kasr Al-Ainy. Strong fit for patients who want their Clatuu Alpha sessions backed by serious clinical nutrition guidance for long-term results</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.clatuu.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="bs.clatuu.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.1.q">Does Clatuu Alpha hurt?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.1.a">During the first 5–10 minutes you'll feel intense cold and pulling sensation, which fades as the area becomes numb. The remainder of the session is comfortable. The 2-minute post-treatment massage can feel uncomfortable but is brief. Most patients tolerate the session well.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.2.q">How long does a session take?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.2.a">Typically 35–70 minutes per cycle, depending on applicator size. Two areas can often be treated simultaneously using dual handpieces.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.3.a">None. You may have temporary redness, mild swelling, bruising, or tingling/numbness in the treated area for a few days to a few weeks. These are all normal and don't prevent normal activities.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.4.q">When will I see results?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.4.a">Initial changes are typically visible around 3 weeks, with full results developing over 8–12 weeks as the body clears destroyed fat cells through the lymphatic system.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.5.q">How many sessions will I need?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.5.a">Many patients see clear improvement after one session, but most achieve optimal results with two sessions per area, spaced 8–12 weeks apart.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.6.q">Are the results permanent?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.6.a">Yes — fat cells destroyed by Clatuu Alpha are gone permanently and don't regenerate. However, remaining fat cells can still grow if you gain significant weight, so maintaining a stable weight protects your result long-term.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.7.q">Is Clatuu Alpha a weight-loss treatment?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.7.a">No — it's a contouring treatment for stubborn fat pockets, not a weight-loss solution. Best candidates are within a reasonable range of their target weight.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.8.q">Is it safe for darker skin tones?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.8.a">Yes — completely. Cryolipolysis cools the fat without targeting melanin in the skin, so it's safe for all skin tones.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.9.q">How is Clatuu Alpha different from older cryolipolysis devices?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.9.a">Clatuu Alpha uses 360° dual cooling that surrounds the fat pocket from all sides — older devices cool from one or two sides only. This gives more uniform and efficient fat reduction. Clatuu Alpha also has dual handpieces for simultaneous treatment of two areas, saving time.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.clatuu.faq.10.q">Can I combine Clatuu Alpha with other body treatments?</summary><div class="faq-answer" data-i18n="bs.clatuu.faq.10.a">Yes — Clatuu Alpha pairs excellently with Tesla Former (for muscle building under the slimmer area), Body FX (for cellulite and surface skin tightening), and EMTONE (for cellulite). Many patients design a complete sculpting plan combining 2–3 technologies.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to body shaping -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../body-shaping.html" class="btn btn-outline" data-i18n="bs.related.back">Back to Body Shaping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="bs.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="bs.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

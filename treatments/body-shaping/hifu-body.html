@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIFU Body in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Non-surgical body lifting with focused ultrasound. Tightens skin on the abdomen, arms, knees, buttocks, and thighs — no surgery, no needles, no downtime. HIFU Body is the body-specific version of HIFU (High-Intensity Focused Ultrasound) — the same technology used for non-su">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="bs.hifubody.eyebrow">Body Shaping</p>
+      <h1 data-i18n="bs.hifubody.hero.title">HIFU Body in Egypt</h1>
+      <p data-i18n="bs.hifubody.hero.tagline">Non-surgical body lifting with focused ultrasound. Tightens skin on the abdomen, arms, knees, buttocks, and thighs — no surgery, no needles, no downtime.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../body-shaping.html" data-i18n="bs.title">Body Shaping</a>
+        <span>/</span>
+        <span data-i18n="bs.hifubody.name">HIFU Body</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="bs.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/hifu-body.png" alt="HIFU Body Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="bs.hifubody.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="bs.hifubody.about.title">What Is HIFU Body</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="bs.hifubody.about.body">HIFU Body is the body-specific version of HIFU (High-Intensity Focused Ultrasound) — the same technology used for non-surgical face lifting, but engineered with deeper applicators and higher-energy parameters for the thicker skin and larger surface areas of the body. HIFU works by delivering ultrasound energy in tiny, precise focal points beneath the skin's surface. The targeted tissue is heated to a temperature that triggers contraction of existing collagen and stimulates the production of new collagen and elastin. Because the energy bypasses the skin surface entirely, there's no damage to the outer layer — no peeling, no marks, no recovery time. Body HIFU applicators reach deeper than face applicators — typically 6mm, 9mm, and 13mm depths (versus 1.5mm, 3.0mm, and 4.5mm on the face). This is necessary because body skin is thicker and the structural layers requiring lifting are located deeper. The result is a gradual, natural-looking body skin tightening effect that develops over 2–3 months and continues to improve as new collagen forms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.hifubody.benefit.1">Non-surgical body skin lifting and tightening</li>
+          <li data-i18n="bs.hifubody.benefit.2">Lifts and firms the post-pregnancy abdomen</li>
+          <li data-i18n="bs.hifubody.benefit.3">Tightens loose arm skin ('bingo wings') without surgery</li>
+          <li data-i18n="bs.hifubody.benefit.4">Lifts and refines the buttocks (non-surgical butt lift)</li>
+          <li data-i18n="bs.hifubody.benefit.5">Smooths and tightens loose skin above the knees</li>
+          <li data-i18n="bs.hifubody.benefit.6">Tightens inner and outer thigh skin</li>
+          <li data-i18n="bs.hifubody.benefit.7">Improves overall body skin firmness</li>
+          <li data-i18n="bs.hifubody.benefit.8">Stimulates natural collagen and elastin production</li>
+          <li data-i18n="bs.hifubody.benefit.9">Reaches deeper tissue than non-ultrasound treatments</li>
+          <li data-i18n="bs.hifubody.benefit.10">Results typically last 12–18 months with proper maintenance</li>
+          <li data-i18n="bs.hifubody.benefit.11">No needles</li>
+          <li data-i18n="bs.hifubody.benefit.12">No surgery</li>
+          <li data-i18n="bs.hifubody.benefit.13">No scars</li>
+          <li data-i18n="bs.hifubody.benefit.14">No downtime</li>
+          <li data-i18n="bs.hifubody.benefit.15">Safe for all skin tones — no pigmentation risk</li>
+          <li data-i18n="bs.hifubody.benefit.16">Often a single treatment delivers visible improvement</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="bs.hifubody.step.1.title">A HIFU Body session at Hollywood Clinic typically takes 45</h4><p data-i18n="bs.hifubody.step.1.text">90 minutes depending on the area treated: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="bs.hifubody.step.2.title">Step 2</h4><p data-i18n="bs.hifubody.step.2.text">Consultation &amp; assessment Your doctor evaluates body skin laxity, identifies target areas, and determines the appropriate depths and intensity for your case. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="bs.hifubody.step.3.title">Step 3</h4><p data-i18n="bs.hifubody.step.3.text">Cleansing &amp; preparation The treatment area is cleansed and ultrasound gel is applied to allow smooth contact and accurate energy transmission. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="bs.hifubody.step.4.title">Step 4</h4><p data-i18n="bs.hifubody.step.4.text">HIFU Body application The HIFU handpiece is moved across the treatment area</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="bs.hifubody.step.5.title">Step 5</h4><p data-i18n="bs.hifubody.step.5.text">The device delivers focused ultrasound energy to one of three body depths — 6mm, 9mm, or 13mm — depending on the area and desired effect</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="bs.hifubody.step.6.title">Step 6</h4><p data-i18n="bs.hifubody.step.6.text">You may feel brief warm pulses during energy delivery; mild discomfort is normal and well-tolerated, especially with body areas where skin sensation is less concentrated than the face. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="bs.hifubody.step.7.title">Step 7</h4><p data-i18n="bs.hifubody.step.7.text">Cooling &amp; finishing The gel is removed and soothing skincare is applied</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="bs.hifubody.step.8.title">Step 8</h4><p data-i18n="bs.hifubody.step.8.text">You can immediately return to your normal activities</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="bs.hifubody.step.9.title">Most patients see subtle results within days, but the major lifting effect develops over 2</h4><p data-i18n="bs.hifubody.step.9.text">3 months as new collagen forms</p></div>
+        <div class="step-card fade-up"><div class="step-num">10</div><h4 data-i18n="bs.hifubody.step.10.title">Step 10</h4><p data-i18n="bs.hifubody.step.10.text">Some patients benefit from a single annual session per body area; others combine HIFU Body with smaller maintenance treatments</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.hifubody.who.1">Patients with mild to moderate body skin laxity (abdomen, arms, thighs, buttocks, knees)</li>
+          <li data-i18n="bs.hifubody.who.2">Post-pregnancy women with loose abdominal skin (not requiring surgery)</li>
+          <li data-i18n="bs.hifubody.who.3">Post-weight-loss patients with mild residual skin laxity</li>
+          <li data-i18n="bs.hifubody.who.4">Anyone with loose upper arm skin who wants non-surgical tightening</li>
+          <li data-i18n="bs.hifubody.who.5">Patients wanting a non-surgical buttock lift effect</li>
+          <li data-i18n="bs.hifubody.who.6">People with loose knee or thigh skin</li>
+          <li data-i18n="bs.hifubody.who.7">Those who don't want needles, threads, or surgical procedures</li>
+          <li data-i18n="bs.hifubody.who.8">Patients with all skin tones — no pigmentation risk</li>
+          <li data-i18n="bs.hifubody.who.9">People who want long-lasting results from a single annual treatment</li>
+          <li data-i18n="bs.hifubody.who.10">Anyone wanting to extend the results of body procedures (post-liposuction, post-BodyTite) or to delay surgery</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="bs.hifubody.contra.1">Pregnancy and breastfeeding</li>
+          <li data-i18n="bs.hifubody.contra.2">Pacemakers or implanted electronic medical devices</li>
+          <li data-i18n="bs.hifubody.contra.3">Severe or uncontrolled diabetes or impaired healing capacity</li>
+          <li data-i18n="bs.hifubody.contra.4">Active skin infection, severe acne, or open wounds in the treatment area</li>
+          <li data-i18n="bs.hifubody.contra.5">Severe body skin laxity that would only respond to surgery — HIFU Body has its limits; significant excess skin needs surgical removal (tummy tuck, arm lift)</li>
+          <li data-i18n="bs.hifubody.contra.6">Metal implants in the area being treated</li>
+          <li data-i18n="bs.hifubody.contra.7">Recent abdominal surgery (caesarean, tummy tuck, hernia repair) — wait for full healing</li>
+          <li data-i18n="bs.hifubody.contra.8">Permanent fillers or implants in the treatment area</li>
+          <li data-i18n="bs.hifubody.contra.9">Active cancer or radiation therapy in the area</li>
+          <li data-i18n="bs.hifubody.contra.10">Severe autoimmune skin conditions in the treatment area</li>
+          <li data-i18n="bs.hifubody.contra.11">Hernias in the treatment area</li>
+          <li data-i18n="bs.hifubody.contra.12">Bleeding or clotting disorders</li>
+          <li data-i18n="bs.hifubody.contra.13">A full medical history and skin assessment are always conducted before HIFU Body at Hollywood Clinic</li>
+          <li data-i18n="bs.hifubody.contra.14">Patients with very advanced sagging are honestly advised when surgical body procedures would be a better fit</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.compare.title">HIFU Body vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="bs.hifubody.compare.1.label">HIFU Body vs. Other Body Treatments</h4><p data-i18n="bs.hifubody.compare.1.text">HIFU Body vs. Morpheus8 Body Morpheus8 Body uses RF microneedling at the dermis level — best for stretch marks, skin texture, and body skin remodeling, with a few days of downtime. HIFU Body uses focused ultrasound to reach deeper tissue for non-surgical body lifting — stronger lifting effect, no downtime, but no stretch mark treatment. They're often combined for comprehensive body skin improvement.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.hifubody.compare.2.label">HIFU Body vs. Body FX</h4><p data-i18n="bs.hifubody.compare.2.text">Body FX uses surface RF + vacuum + electrical pulses for gentle fat reduction and skin tightening. HIFU Body works much deeper for stronger lifting and tightening. Different goals: Body FX for ongoing comfortable maintenance; HIFU Body for an annual deep lift.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.hifubody.compare.3.label">HIFU Body vs. BodyTite</h4><p data-i18n="bs.hifubody.compare.3.text">BodyTite is a minimally invasive procedure (tiny incision, local anesthesia) that removes fat AND tightens skin in one procedure — strong results in one session with a few days of downtime. HIFU Body is fully non-invasive with no downtime but doesn't remove any fat. For patients with both fat and loose skin, BodyTite often delivers a more comprehensive result; for those with only loose skin (no excess fat), HIFU Body alone may be ideal.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.hifubody.compare.4.label">HIFU Body vs. Tummy Tuck (Abdominoplasty)</h4><p data-i18n="bs.hifubody.compare.4.text">A tummy tuck removes excess skin completely and tightens abdominal muscles — needed for patients with substantial skin redundancy or post-pregnancy muscle separation. HIFU Body tightens existing skin but cannot remove excess skin. For mild post-pregnancy abdomen, HIFU Body is an excellent non-surgical option; for severe cases, surgery is still the right answer.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.hifubody.compare.5.label">HIFU Body vs. Tesla Former / EMSculpt</h4><p data-i18n="bs.hifubody.compare.5.text">Tesla Former builds muscle. HIFU Body tightens skin. Completely different layers and goals — often combined: Tesla Former for muscle, HIFU Body for skin on top.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="bs.hifubody.name">HIFU Body</p>
+        <h3 data-i18n="bs.hifubody.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="bs.hifubody.pricing.intro">The price of a HIFU Body session at Hollywood Clinic is set after a free consultation and depends on: Treatment area — abdomen, arms, thighs, knees, buttocks, single area or multiple areas.</p>
+        <ul>
+          <li data-i18n="bs.hifubody.pricing.factor.1">Number of ultrasound shots delivered — HIFU pricing is often based on the number of shots, which depends on the area size and number of depths used</li>
+          <li data-i18n="bs.hifubody.pricing.factor.2">Whether the protocol uses one body depth or all three (6mm + 9mm + 13mm)</li>
+          <li data-i18n="bs.hifubody.pricing.factor.3">Single session vs. annual package — HIFU Body is typically performed once a year for the average patient</li>
+          <li data-i18n="bs.hifubody.pricing.factor.4">Whether HIFU Body is part of a wider plan combining Morpheus8 Body, Body FX, or BodyTite</li>
+          <li data-i18n="bs.hifubody.pricing.factor.5">Critical note: HIFU Body prices vary hugely in the Egyptian market — and almost entirely for one reason: device authenticity</li>
+          <li data-i18n="bs.hifubody.pricing.factor.6">Authentic medical-grade HIFU devices are expensive to operate, which is reflected in pricing</li>
+          <li data-i18n="bs.hifubody.pricing.factor.7">Heavily discounted body HIFU sessions are almost always done with imitation devices that don't reach the deeper body depths and won't produce real body skin tightening results</li>
+          <li data-i18n="bs.hifubody.pricing.factor.8">Hollywood Clinic uses only authentic, FDA-cleared HIFU technology with proper body cartridges</li>
+        </ul>
+        <p class="note" data-i18n="bs.hifubody.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="bs.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.hifubody.why.1">Authentic, medical-grade HIFU technology — not a cheap imitation</li>
+          <li data-i18n="bs.hifubody.why.2">Full three-depth body protocol (6mm + 9mm + 13mm) for complete body skin tightening</li>
+          <li data-i18n="bs.hifubody.why.3">Customized treatment plan based on your specific body skin laxity pattern</li>
+          <li data-i18n="bs.hifubody.why.4">Performed and supervised by certified dermatologists experienced in HIFU</li>
+          <li data-i18n="bs.hifubody.why.5">Honest medical assessment — patients with advanced sagging are referred to surgical options when appropriate</li>
+          <li data-i18n="bs.hifubody.why.6">Option to combine HIFU Body with Morpheus8 Body, Body FX, EMTONE, Tesla Former, or BodyTite in a coordinated plan</li>
+          <li data-i18n="bs.hifubody.why.7">Structured follow-up at 2 and 3 months to monitor collagen response</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="bs.hifubody.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="bs.hifubody.doctor.1">Dr. Marwa Magdy — Aesthetic Dermatologist &amp; Advanced Injector. Advanced HIFU experience for both face and body lifting, and an expert in combination protocols (HIFU Body + Morpheus8 Body, HIFU Body + injectables for post-pregnancy plans)</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.hifubody.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Non-Surgical Aesthetics Consultant, 12+ years of experience. Ideal for patients who want HIFU Body as part of a long-term anti-aging and body plan with structured maintenance</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.hifubody.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="bs.hifubody.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.1.q">Does HIFU Body hurt?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.1.a">Body areas typically have less concentrated nerve sensitivity than the face, so HIFU Body is usually better tolerated than face HIFU. You'll feel warm pulses during energy delivery — uncomfortable for some patients but well within normal tolerance for most. Topical numbing can be used for sensitive cases.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.2.q">How long does a HIFU Body session take?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.2.a">Typically 45–90 minutes depending on the size of the treatment area and the protocol depth used.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.3.a">No. There may be mild redness or temporary tingling immediately after the session, but no peeling, marks, or recovery time. You can return to normal activities the same day.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.4.q">When will I see results?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.4.a">Some patients notice subtle changes within days, but the major lifting effect develops over 2–3 months as new collagen forms — and continues improving for up to 6 months.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.5.q">How long do HIFU Body results last?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.5.a">Typically 12–18 months. Most patients schedule a HIFU Body session once a year per area to maintain results.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.6.q">Is HIFU Body safe for darker skin?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.6.a">Yes — completely. HIFU uses ultrasound, which doesn't target melanin, so there's no risk of pigmentation. It's safe for all Fitzpatrick skin types.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.7.q">Can HIFU Body replace a tummy tuck?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.7.a">Not exactly. A surgical tummy tuck remains the gold standard for very advanced abdominal skin laxity, excess skin removal, and muscle separation repair. HIFU Body offers a meaningful non-surgical alternative for patients with mild to moderate post-pregnancy abdominal laxity — or for those wanting to delay surgery.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.8.q">Will HIFU Body help with stretch marks?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.8.a">HIFU Body is not the primary treatment for stretch marks — it tightens skin but doesn't directly remodel stretch mark texture. For stretch marks specifically, Morpheus8 Body is the better choice. Combining the two often produces the best result: Morpheus8 Body for the stretch marks, HIFU Body for the overall skin tightening.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.9.q">How is HIFU Body different from HIFU Face?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.9.a">Same technology, deeper depths for the body (6/9/13mm vs 1.5/3.0/4.5mm for face). The face targets the SMAS layer specifically; the body targets deeper fascial layers. Different applicators, different protocols — both produce non-surgical lifting via collagen stimulation. How can I tell if I'**</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.hifubody.faq.10.q">m getting authentic HIFU Body?</summary><div class="faq-answer" data-i18n="bs.hifubody.faq.10.a">Authentic medical HIFU Body devices deliver focused ultrasound with measurable energy points, multi-depth precision, and visible markings on the device screen. Authentic platforms include Ultraformer, Ultherapy, and similar FDA-approved devices with proper body cartridges. Always ask the clinic about the device. Hollywood Clinic uses only authentic medical-grade HIFU technology.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to body shaping -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../body-shaping.html" class="btn btn-outline" data-i18n="bs.related.back">Back to Body Shaping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="bs.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="bs.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

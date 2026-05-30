@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body FX in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="InMode Body FX is a non-invasive body contouring device from InMode — the same medical aesthetic company behind BodyTite, Morph">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="bs.bodyfx.eyebrow">Body Shaping</p>
+      <h1 data-i18n="bs.bodyfx.hero.title">Body FX in Egypt</h1>
+      <p data-i18n="bs.bodyfx.hero.tagline">InMode</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../body-shaping.html" data-i18n="bs.title">Body Shaping</a>
+        <span>/</span>
+        <span data-i18n="bs.bodyfx.name">Body FX</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="bs.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/body-fx.png" alt="Body FX Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="bs.bodyfx.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="bs.bodyfx.about.title">What Is Body FX</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="bs.bodyfx.about.body">Body FX is a non-invasive body contouring device from InMode — the same medical aesthetic company behind BodyTite, Morpheus8, and Forma. It combines three powerful technologies in one device: radiofrequency (RF) heating, negative pressure (vacuum), and high-voltage pulses, all working together to reduce stubborn fat, improve cellulite appearance, and tighten loose skin on the body. Unlike surgical or minimally invasive options, Body FX requires no incisions, no needles, no anesthesia, and no downtime — you can walk in, complete a session, and walk out to resume your normal day. The device is FDA-approved and globally recognized as a safe, effective non-invasive contouring platform. Body FX works best as part of a structured series of sessions, where each treatment builds on the last to gradually reduce fat thickness, improve skin texture, and refine body contour over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.bodyfx.benefit.1">Non-invasive fat reduction in stubborn pockets</li>
+          <li data-i18n="bs.bodyfx.benefit.2">Visible improvement in cellulite appearance</li>
+          <li data-i18n="bs.bodyfx.benefit.3">Tightens loose skin on the body — particularly post-pregnancy or post-weight-loss</li>
+          <li data-i18n="bs.bodyfx.benefit.4">Smooths skin texture on the abdomen, thighs, arms, and buttocks</li>
+          <li data-i18n="bs.bodyfx.benefit.5">Stimulates natural collagen and elastin production</li>
+          <li data-i18n="bs.bodyfx.benefit.6">Painless — most patients describe it as a warm, suction-massage sensation</li>
+          <li data-i18n="bs.bodyfx.benefit.7">Zero downtime — return to your normal activities immediately</li>
+          <li data-i18n="bs.bodyfx.benefit.8">Safe for all skin tones — no pigmentation risk</li>
+          <li data-i18n="bs.bodyfx.benefit.9">Treats areas like the abdomen, flanks, thighs, knees, arms, back, and buttocks</li>
+          <li data-i18n="bs.bodyfx.benefit.10">Ideal as maintenance after surgical procedures (liposuction, BodyTite, tummy tuck)</li>
+          <li data-i18n="bs.bodyfx.benefit.11">Results continue to improve over weeks and months as collagen rebuilds</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="bs.bodyfx.step.1.title">A Body FX session at Hollywood Clinic typically takes 30</h4><p data-i18n="bs.bodyfx.step.1.text">60 minutes depending on the size of the treatment area: 1</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="bs.bodyfx.step.2.title">Step 2</h4><p data-i18n="bs.bodyfx.step.2.text">Consultation &amp; area mapping Your doctor evaluates your goals, identifies target zones (abdomen, thighs, arms, etc.), and customizes the treatment protocol. 2</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="bs.bodyfx.step.3.title">Step 3</h4><p data-i18n="bs.bodyfx.step.3.text">Cleansing &amp; prep The treatment area is cleansed and a thin layer of conducting gel is applied for smooth, even RF delivery. 3</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="bs.bodyfx.step.4.title">Step 4</h4><p data-i18n="bs.bodyfx.step.4.text">Body FX application The Body FX handpiece is moved across the target area, simultaneously delivering RF heat to warm the deeper layers, negative pressure (vacuum) to lift the tissue and improve circulation, and brief high-voltage pulses to disrupt fat cells</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="bs.bodyfx.step.5.title">Step 5</h4><p data-i18n="bs.bodyfx.step.5.text">The skin gradually warms to therapeutic temperature, and you'll feel a warm massage with gentle suction. 4</p></div>
+        <div class="step-card fade-up"><div class="step-num">6</div><h4 data-i18n="bs.bodyfx.step.6.title">Step 6</h4><p data-i18n="bs.bodyfx.step.6.text">Finishing Gel is removed, soothing skincare is applied</p></div>
+        <div class="step-card fade-up"><div class="step-num">7</div><h4 data-i18n="bs.bodyfx.step.7.title">Step 7</h4><p data-i18n="bs.bodyfx.step.7.text">You can return to work, exercise, or daily activities immediately</p></div>
+        <div class="step-card fade-up"><div class="step-num">8</div><h4 data-i18n="bs.bodyfx.step.8.title">Step 8</h4><p data-i18n="bs.bodyfx.step.8.text">Body FX is most effective as a structured course of multiple sessions, typically performed once a week</p></div>
+        <div class="step-card fade-up"><div class="step-num">9</div><h4 data-i18n="bs.bodyfx.step.9.title">Step 9</h4><p data-i18n="bs.bodyfx.step.9.text">Your doctor will design a plan based on your goals and target areas</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.bodyfx.who.1">Patients with stubborn localized fat pockets resistant to diet and exercise</li>
+          <li data-i18n="bs.bodyfx.who.2">Anyone with cellulite on the thighs, buttocks, or abdomen</li>
+          <li data-i18n="bs.bodyfx.who.3">Mild to moderate skin laxity on the body</li>
+          <li data-i18n="bs.bodyfx.who.4">Post-pregnancy women looking to refine the abdomen and waist</li>
+          <li data-i18n="bs.bodyfx.who.5">Post-weight-loss patients with mild residual loose skin</li>
+          <li data-i18n="bs.bodyfx.who.6">Anyone wanting body contouring without needles, incisions, or downtime</li>
+          <li data-i18n="bs.bodyfx.who.7">Patients who want to maintain results after liposuction, BodyTite, or a tummy tuck</li>
+          <li data-i18n="bs.bodyfx.who.8">People with all skin tones — Body FX is safe across all Fitzpatrick types</li>
+          <li data-i18n="bs.bodyfx.who.9">Men and women — works equally well for both</li>
+          <li data-i18n="bs.bodyfx.who.10">Anyone wanting a gradual, natural-looking improvement over a series of sessions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="bs.bodyfx.contra.1">Pregnancy and breastfeeding</li>
+          <li data-i18n="bs.bodyfx.contra.2">Pacemakers, implanted defibrillators, or any implanted electronic medical device</li>
+          <li data-i18n="bs.bodyfx.contra.3">Metal implants in the treatment area</li>
+          <li data-i18n="bs.bodyfx.contra.4">Active skin infection or open wounds in the treatment area</li>
+          <li data-i18n="bs.bodyfx.contra.5">Severe uncontrolled diabetes or impaired healing capacity</li>
+          <li data-i18n="bs.bodyfx.contra.6">Severe varicose veins in the treatment area</li>
+          <li data-i18n="bs.bodyfx.contra.7">Active cancer or recent radiation in the area</li>
+          <li data-i18n="bs.bodyfx.contra.8">Severe autoimmune conditions affecting the skin</li>
+          <li data-i18n="bs.bodyfx.contra.9">Permanent fillers in the treatment area — Body FX is generally safe with hyaluronic acid fillers, but permanent implants are a contraindication</li>
+          <li data-i18n="bs.bodyfx.contra.10">Recent surgery in the area — wait until fully healed</li>
+          <li data-i18n="bs.bodyfx.contra.11">Bleeding or clotting disorders</li>
+          <li data-i18n="bs.bodyfx.contra.12">A complete medical history is always reviewed before Body FX at Hollywood Clinic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.bodyfx.tech.1">Body FX is part of the InMode advanced body platform, alongside BodyTite, Morpheus8 Body, and Plus</li>
+          <li data-i18n="bs.bodyfx.tech.2">What makes Body FX distinctive: 3-in-1 Combined Technology Body FX is one of very few devices that delivers radiofrequency, negative pressure (vacuum), and high-voltage pulses simultaneously — each component working synergistically with the others</li>
+          <li data-i18n="bs.bodyfx.tech.3">ACE Technology Real-time temperature feedback (Acquire, Control, Extend) ensures the skin reaches and maintains the therapeutic temperature precisely — not too cold to be ineffective, not too hot to be uncomfortable or unsafe</li>
+          <li data-i18n="bs.bodyfx.tech.4">Vacuum-Assisted Targeting The negative pressure component lifts the tissue toward the energy applicator, ensuring more uniform and effective treatment of the fat layer</li>
+          <li data-i18n="bs.bodyfx.tech.5">FDA-Approved &amp; Globally Validated Body FX has documented safety and efficacy data from clinical studies worldwide</li>
+          <li data-i18n="bs.bodyfx.tech.6">Hollywood Clinic uses the authentic InMode Body FX device</li>
+          <li data-i18n="bs.bodyfx.tech.7">Be cautious of clinics offering 'RF body contouring' or 'vacuum cavitation' at very low prices — these often use generic devices without the same temperature control or combined-technology design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.compare.title">Body FX vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="bs.bodyfx.compare.1.label">Body FX vs. Clatuu Alpha (Cryolipolysis)</h4><p data-i18n="bs.bodyfx.compare.1.text">Clatuu Alpha freezes and permanently destroys fat cells — strong fat reduction but no skin tightening. Body FX combines RF heating, vacuum, and electrical pulses for gradual fat reduction PLUS skin tightening in one device. Best combined: Clatuu Alpha for serious fat removal, Body FX for refinement and skin tightening.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.bodyfx.compare.2.label">Body FX vs. Tesla Former / EMSculpt</h4><p data-i18n="bs.bodyfx.compare.2.text">Tesla Former builds muscle through electromagnetic stimulation. Body FX reduces fat and tightens skin. They address completely different layers and goals — used together they create comprehensive sculpting (Tesla Former for muscle, Body FX for fat and skin).</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.bodyfx.compare.3.label">Body FX vs. EMTONE</h4><p data-i18n="bs.bodyfx.compare.3.text">EMTONE is purpose-built for cellulite — combining RF with targeted pressure waves. Body FX also improves cellulite, but as one part of a broader contouring effect. For severe cellulite, EMTONE is more focused; for general body refinement with mild cellulite, Body FX is the more versatile choice.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.bodyfx.compare.4.label">Body FX vs. BodyTite</h4><p data-i18n="bs.bodyfx.compare.4.text">BodyTite is a minimally invasive procedure (tiny incision, local anesthesia) that liquefies and aspirates fat AND tightens skin — significantly stronger results in one session, but with days of downtime. Body FX is fully non-invasive with no downtime, but works gradually over multiple sessions. Many patients use Body FX for maintenance after a BodyTite procedure.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="bs.bodyfx.compare.5.label">Body FX vs. Morpheus8 Body</h4><p data-i18n="bs.bodyfx.compare.5.text">Morpheus8 Body uses RF microneedling for deeper skin remodeling and stronger collagen response — better for stretch marks and significant skin issues, but with a few days of downtime. Body FX is fully surface-based with no downtime — gentler, more about ongoing maintenance and fat reduction.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="bs.bodyfx.name">Body FX</p>
+        <h3 data-i18n="bs.bodyfx.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="bs.bodyfx.pricing.intro">The price of a Body FX session at Hollywood Clinic is set after a free consultation and depends on: Treatment area — single area (abdomen, thighs, arms) vs. multiple areas.</p>
+        <ul>
+          <li data-i18n="bs.bodyfx.pricing.factor.1">Number of sessions in the package — Body FX typically requires 6–8 sessions for optimal results, offered at discounted bundled pricing</li>
+          <li data-i18n="bs.bodyfx.pricing.factor.2">Frequency — usually 1 session per week during the active phase</li>
+          <li data-i18n="bs.bodyfx.pricing.factor.3">Whether Body FX is combined with other treatments (Clatuu Alpha, Tesla Former, EMTONE, Morpheus8 Body) in a coordinated plan</li>
+          <li data-i18n="bs.bodyfx.pricing.factor.4">Doctor's expertise level</li>
+          <li data-i18n="bs.bodyfx.pricing.factor.5">Important: Hollywood Clinic uses the authentic InMode Body FX device with ACE temperature feedback technology</li>
+          <li data-i18n="bs.bodyfx.pricing.factor.6">Be cautious of clinics offering 'RF body sculpting' at significantly lower prices — they may use older RF devices or generic substitutes without the same combined technology, safety controls, or efficacy</li>
+        </ul>
+        <p class="note" data-i18n="bs.bodyfx.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="bs.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="bs.bodyfx.why.1">Authentic InMode Body FX device — not a generic RF substitute</li>
+          <li data-i18n="bs.bodyfx.why.2">Treatment customized based on body composition and target areas</li>
+          <li data-i18n="bs.bodyfx.why.3">Performed and supervised by certified body contouring specialists</li>
+          <li data-i18n="bs.bodyfx.why.4">ACE temperature control technology — comfortable and safe</li>
+          <li data-i18n="bs.bodyfx.why.5">Option to combine Body FX with Clatuu Alpha, Tesla Former, EMTONE, or Morpheus8 Body in a coordinated plan</li>
+          <li data-i18n="bs.bodyfx.why.6">Structured session schedule and before/after documentation</li>
+          <li data-i18n="bs.bodyfx.why.7">Honest assessment — if a different treatment is the better answer, the doctor will tell you</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="bs.bodyfx.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="bs.bodyfx.doctor.1">Dr. Sara Abdelhameed — Clinical Nutrition Consultant &amp; Body Contouring Specialist, 12+ years of experience, 50,000+ women treated. The most experienced body contouring authority at Hollywood Clinic — ideal for structured Body FX plans combined with nutrition guidance</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.bodyfx.doctor.2">Dr. Rana Ibrahim Sultan — Clinical Nutritionist &amp; Non-Invasive Aesthetic Specialist. Ideal for patients who want Body FX integrated into a wider non-invasive body and nutrition plan</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="bs.bodyfx.doctor.3">Dr. Ehssan Rabie — Clinical Nutrition Specialist, 13 years at Kasr Al-Ainy. Ideal for medically-grounded body contouring plans where Body FX is part of a wider metabolic strategy</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="bs.bodyfx.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="bs.bodyfx.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.1.q">Does Body FX hurt?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.1.a">No. Most patients describe it as a warm massage with a gentle pulling/suction sensation. The high-voltage pulse phases produce a brief, snap-like sensation but are very tolerable. No anesthesia is required.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.2.q">How many sessions do I need?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.2.a">A typical course is 6–8 sessions, performed once a week. Some patients see early changes after 3–4 sessions; final results usually take the full course plus another 4–6 weeks for collagen rebuilding.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.3.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.3.a">None. You can return to work, exercise, or any normal activity immediately. Slight redness in the treated area may persist for an hour or two, but it's not visible to others and resolves quickly.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.4.q">Is Body FX a weight loss treatment?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.4.a">No. Body FX is a contouring treatment — it reduces fat thickness in treated areas and tightens skin, but it doesn't treat overall body weight. The best candidates are within a reasonable range of their target weight.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.5.q">Will Body FX help with cellulite?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.5.a">Yes — Body FX delivers measurable improvement in cellulite appearance over a series of sessions. For severe cellulite cases, EMTONE may be a more focused choice; combining the two often produces the strongest result.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.6.q">Is Body FX safe for darker skin tones?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.6.a">Yes. Body FX uses radiofrequency, which doesn't target melanin — making it completely safe across all Fitzpatrick skin types, with no pigmentation risk.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.7.q">Can I do Body FX after a liposuction or BodyTite procedure?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.7.a">Yes — Body FX is excellent as a maintenance treatment after liposuction, BodyTite, or a tummy tuck. Your doctor will advise you on the right waiting period before starting (usually 4–6 weeks).</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="bs.bodyfx.faq.8.q">How is Body FX different from generic RF body sculpting?</summary><div class="faq-answer" data-i18n="bs.bodyfx.faq.8.a">Body FX is an InMode-engineered device with ACE temperature feedback technology and combined RF + vacuum + high-voltage pulse delivery in one device. Generic 'RF body machines' typically lack one or more of these components, the temperature control, or the clinical safety data. Hollywood Clinic uses only the authentic device.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to body shaping -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../body-shaping.html" class="btn btn-outline" data-i18n="bs.related.back">Back to Body Shaping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="bs.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="bs.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

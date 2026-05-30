@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botox in Egypt — Hollywood Clinic Cairo</title>
+  <meta name="description" content="Smooth wrinkles, refresh your features, and slow down the signs of aging — naturally. Botox is a purified protein injection that temporarily relaxes specific facial muscles, smoothing out dynamic wrinkles —">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .treatment-hero-image { width: 100%; max-width: 760px; aspect-ratio: 16/10; margin: 0 auto 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(11,29,58,0.25); }
+    .treatment-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .benefit-list { list-style: none; padding: 0; max-width: 760px; margin: 0 auto; }
+    .benefit-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; font-size: 0.9375rem; line-height: 1.6; }
+    .benefit-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .contra-list li::before { content: '!'; color: #B45309; font-weight: 700; flex-shrink: 0; background: rgba(180,83,9,0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+    .step-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.75rem; }
+    .step-num { font-family: var(--font-heading); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+    .step-card h4 { color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-heading); }
+    .step-card p { font-size: 0.875rem; color: var(--body); line-height: 1.6; }
+    .aftercare-block { max-width: 760px; margin: 2.5rem auto 0; padding: 1.5rem; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 1rem; }
+    .aftercare-block h4 { font-family: var(--font-heading); color: var(--navy); margin-bottom: 1rem; text-align: center; font-size: 1.0625rem; }
+    .aftercare-list li { padding: 0.5rem 0; border-bottom: 1px dashed rgba(201,168,76,0.25); font-size: 0.875rem; }
+    .aftercare-list li:last-child { border-bottom: none; }
+    .pricing-factors-card { max-width: 600px; margin: 0 auto; padding: 2.5rem; background: linear-gradient(135deg, #0B1D3A 0%, #142E54 100%); color: var(--white); border-radius: 1.25rem; }
+    .pricing-factors-card .label { font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; text-align: center; }
+    .pricing-factors-card h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; text-align: center; color: var(--white); }
+    .pricing-factors-card .intro { font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; opacity: 0.85; text-align: center; }
+    .pricing-factors-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+    .pricing-factors-card ul li { padding: 0.625rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9375rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5; }
+    .pricing-factors-card ul li:last-child { border-bottom: none; }
+    .pricing-factors-card ul li::before { content: '•'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-factors-card .note { font-size: 0.8125rem; opacity: 0.7; text-align: center; margin-bottom: 1.5rem; font-style: italic; }
+    .compare-grid { display: grid; gap: 1rem; max-width: 900px; margin: 0 auto; }
+    @media (min-width: 720px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
+    .compare-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.5rem; }
+    .compare-card h4 { font-family: var(--font-heading); color: var(--gold); font-size: 1.0625rem; margin-bottom: 0.75rem; }
+    .compare-card p { font-size: 0.9375rem; line-height: 1.6; color: var(--body); }
+    .doctor-card { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 1rem; padding: 1.25rem 1.5rem; max-width: 760px; margin: 0 auto 1rem; }
+    .doctor-card p { font-size: 0.9375rem; line-height: 1.7; color: var(--body); margin: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--sky-dark); border-radius: 0.75rem; padding: 0; overflow: hidden; }
+    .faq-item summary { cursor: pointer; padding: 1.125rem 1.5rem; font-family: var(--font-heading); font-size: 1rem; color: var(--navy); list-style: none; position: relative; padding-right: 3rem; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.25rem; font-weight: 300; transition: transform 0.25s ease; }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.25rem; font-size: 0.9375rem; line-height: 1.7; color: var(--body); }
+    body[dir="rtl"] .faq-item summary { padding-right: 1.5rem; padding-left: 3rem; }
+    body[dir="rtl"] .faq-item summary::after { right: auto; left: 1.5rem; }
+    .draft-notice { max-width: 760px; margin: 0 auto 2rem; padding: 0.75rem 1rem; background: rgba(34,197,94,0.08); border: 1px dashed rgba(34,197,94,0.4); border-radius: 0.5rem; font-size: 0.75rem; color: #166534; text-align: center; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!--NAV-->
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="lux-line"></div>
+      <p class="eyebrow" data-i18n="sub.botox.eyebrow">Skin Rejuvenation</p>
+      <h1 data-i18n="sub.botox.hero.title">Botox in Egypt</h1>
+      <p data-i18n="sub.botox.hero.tagline">Smooth wrinkles, refresh your features, and slow down the signs of aging — naturally.</p>
+      <div class="breadcrumb">
+        <a href="../../index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <a href="../../treatments.html" data-i18n="nav.treatments">Treatments</a>
+        <span>/</span>
+        <a href="../skin-rejuvenation.html" data-i18n="rejuv.title">Skin Rejuvenation</a>
+        <span>/</span>
+        <span data-i18n="sub.botox.name">Botox</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-cream">
+    <div class="container">
+      <p class="draft-notice" data-i18n="rejuv.full-content-loaded">✓ Full medical content — verified for SEO and patient information.</p>
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <div class="treatment-hero-image fade-up">
+          <img src="../../assets/images/sub-treatments/botox.png" alt="Botox Treatment">
+        </div>
+        <div class="fade-up d1">
+          <div class="lux-line"></div>
+          <p class="eyebrow" data-i18n="sub.botox.about.eyebrow">About</p>
+          <h2 class="section-title" data-i18n="sub.botox.about.title">What is Botox</h2>
+          <p style="font-size:1.0625rem;line-height:1.8;color:var(--body);margin-top:1.5rem" data-i18n="sub.botox.about.body">Botox is a purified protein injection that temporarily relaxes specific facial muscles, smoothing out dynamic wrinkles — the lines that appear when you smile, frown, or raise your eyebrows. It's one of the most studied and most performed aesthetic treatments in the world, with a long, well-documented safety record when administered by a qualified medical specialist. At Hollywood Clinic Egypt, Botox is performed by certified, internationally trained injectors. Each treatment is preceded by a full facial assessment to design a dose and injection map that fits your unique anatomy and goals — not a one-size-fits-all template. Botox is not just for wrinkles. It's also widely used for jawline slimming, gummy smile correction, lip flip, neck bands, excessive sweating (hyperhidrosis), and even therapeutic indications like chronic migraines and bruxism (teeth grinding).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.benefits.eyebrow">Why It Works</p>
+        <h2 class="section-title" data-i18n="sub.botox.benefits.title">Benefits &amp; Results</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.botox.benefit.1">Smooths forehead lines, frown lines (11 lines), and crow's feet</li>
+          <li data-i18n="sub.botox.benefit.2">Lifts and softens the eyebrow area for a fresher, more open look</li>
+          <li data-i18n="sub.botox.benefit.3">Slims and softens the jawline (masseter Botox) for facial contouring</li>
+          <li data-i18n="sub.botox.benefit.4">Treats gummy smile, neck bands, and lip flip</li>
+          <li data-i18n="sub.botox.benefit.5">Treats hyperhidrosis (excessive underarm or palm sweating)</li>
+          <li data-i18n="sub.botox.benefit.6">Reduces chronic migraines and tension headaches (therapeutic use)</li>
+          <li data-i18n="sub.botox.benefit.7">Treats teeth grinding (bruxism) and jaw clenching</li>
+          <li data-i18n="sub.botox.benefit.8">Results appear within 3 to 7 days and typically last 3 to 6 months</li>
+          <li data-i18n="sub.botox.benefit.9">No downtime — you can return to work and normal activities the same day</li>
+          <li data-i18n="sub.botox.benefit.10">Subtle, natural results — you look refreshed, not frozen</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.process.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="sub.botox.process.title">How the Session Works</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="step-card fade-up"><div class="step-num">1</div><h4 data-i18n="sub.botox.step.1.title">Consultation</h4><p data-i18n="sub.botox.step.1.text">full facial assessment, discussion of goals, and a personalized injection map</p></div>
+        <div class="step-card fade-up"><div class="step-num">2</div><h4 data-i18n="sub.botox.step.2.title">Preparation</h4><p data-i18n="sub.botox.step.2.text">gentle cleansing of the area; topical numbing cream is applied if needed</p></div>
+        <div class="step-card fade-up"><div class="step-num">3</div><h4 data-i18n="sub.botox.step.3.title">Injection</h4><p data-i18n="sub.botox.step.3.text">ultra-fine needles are used; the procedure typically takes 10–20 minutes</p></div>
+        <div class="step-card fade-up"><div class="step-num">4</div><h4 data-i18n="sub.botox.step.4.title">Aftercare guidance</h4><p data-i18n="sub.botox.step.4.text">simple do's and don'ts for the next 24 hours</p></div>
+        <div class="step-card fade-up"><div class="step-num">5</div><h4 data-i18n="sub.botox.step.5.title">Follow-up</h4><p data-i18n="sub.botox.step.5.text">a review session 2 weeks later to fine-tune results if needed</p></div>
+      </div>
+      <div class="aftercare-block fade-up">
+        <h4 data-i18n="sub.botox.aftercare.title">Post-treatment Guidelines</h4>
+        <ul class="benefit-list aftercare-list">
+          <li data-i18n="sub.botox.aftercare.1">Avoid touching, rubbing, or massaging the area for 24 hours</li>
+          <li data-i18n="sub.botox.aftercare.2">Stay upright for at least 4 hours</li>
+          <li data-i18n="sub.botox.aftercare.3">Avoid intense exercise, saunas, and steam rooms for 24 hours</li>
+          <li data-i18n="sub.botox.aftercare.4">Avoid alcohol and blood-thinning medications for 24 hours</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.who.eyebrow">Who It's For</p>
+        <h2 class="section-title" data-i18n="sub.botox.who.title">Who Is It For?</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.botox.who.1">Anyone with visible dynamic wrinkles (forehead lines, frown lines, crow's feet)</li>
+          <li data-i18n="sub.botox.who.2">Patients in their late 20s and beyond looking for preventative aesthetics</li>
+          <li data-i18n="sub.botox.who.3">Those wanting a slimmer or more defined jawline (masseter reduction)</li>
+          <li data-i18n="sub.botox.who.4">Patients with a gummy smile or asymmetrical smile</li>
+          <li data-i18n="sub.botox.who.5">People suffering from chronic migraines or teeth grinding</li>
+          <li data-i18n="sub.botox.who.6">Patients with excessive sweating in underarms, palms, or feet</li>
+          <li data-i18n="sub.botox.who.7">Anyone who wants a refreshed look without surgery or downtime</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contraindications -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.contra.eyebrow">Safety First</p>
+        <h2 class="section-title" data-i18n="sub.botox.contra.title">Contraindications</h2>
+      </div>
+      <ul class="benefit-list contra-list fade-up">
+          <li data-i18n="sub.botox.contra.1">Pregnant or breastfeeding women</li>
+          <li data-i18n="sub.botox.contra.2">Patients with neuromuscular disorders (myasthenia gravis, ALS, Lambert-Eaton syndrome)</li>
+          <li data-i18n="sub.botox.contra.3">Anyone with an active skin infection at the injection site</li>
+          <li data-i18n="sub.botox.contra.4">Patients with a known allergy to botulinum toxin or its components</li>
+          <li data-i18n="sub.botox.contra.5">Patients on certain medications (some antibiotics, muscle relaxants) — must be discussed with the doctor</li>
+          <li data-i18n="sub.botox.contra.6">Patients with bleeding disorders or on strong blood thinners (requires medical clearance)</li>
+          <li data-i18n="sub.botox.contra.7">Anyone with unrealistic expectations or psychological conditions affecting body image — a careful pre-treatment conversation is essential</li>
+          <li data-i18n="sub.botox.contra.8">A full medical history is taken before every Botox session at Hollywood Clinic to ensure the treatment is both safe and appropriate for you</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology / Brands -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.tech.eyebrow">Quality You Can Trust</p>
+        <h2 class="section-title" data-i18n="sub.botox.tech.title">Technology &amp; Brands</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.botox.tech.1">Hollywood Clinic uses internationally certified, FDA-approved botulinum toxin brands only — sourced through licensed distributors and stored under strict cold-chain conditions</li>
+          <li data-i18n="sub.botox.tech.2">The choice of brand depends on the patient's needs, treatment area, and the doctor's clinical recommendation</li>
+          <li data-i18n="sub.botox.tech.3">Botox® (Allergan, USA) — the original and most-studied brand worldwide</li>
+          <li data-i18n="sub.botox.tech.4">Dysport® (Galderma) — known for faster onset and a softer diffusion pattern</li>
+          <li data-i18n="sub.botox.tech.5">Xeomin® — a 'naked' toxin formula with no complexing proteins</li>
+          <li data-i18n="sub.botox.tech.6">Your doctor will recommend the most suitable brand for your case during your consultation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.compare.eyebrow">Treatment Comparisons</p>
+        <h2 class="section-title" data-i18n="sub.botox.compare.title">Botox vs. Other Treatments</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card fade-up"><h4 data-i18n="sub.botox.compare.1.label">Botox vs. Filler</h4><p data-i18n="sub.botox.compare.1.text">Botox relaxes muscles to smooth dynamic wrinkles (lines from expressions). Filler adds volume to areas that have lost it (cheeks, lips, under-eye) and treats static wrinkles. They're often combined for a complete result.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.botox.compare.2.label">Botox vs. Skin Boosters</h4><p data-i18n="sub.botox.compare.2.text">Botox targets muscles. Skin Boosters target skin quality — hydration, glow, and elasticity from within. Different goals, often used together.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.botox.compare.3.label">Botox vs. Biostimulators</h4><p data-i18n="sub.botox.compare.3.text">Botox is a temporary muscle relaxer. Biostimulators stimulate your own collagen production for gradual, longer-lasting rejuvenation. Botox treats expression lines; biostimulators improve overall skin firmness and structure.</p></div>
+        <div class="compare-card fade-up"><h4 data-i18n="sub.botox.compare.4.label">Botox vs. Surgical Facelift</h4><p data-i18n="sub.botox.compare.4.text">Botox is a 15-minute non-surgical refresh, lasting 3–6 months, with no downtime. A facelift is a surgical procedure with major results and weeks of recovery. Botox is the right choice for early to moderate aging.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing factors -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.pricing.eyebrow">Investment</p>
+        <h2 class="section-title" data-i18n="sub.botox.pricing.title">What Affects the Cost</h2>
+      </div>
+      <div class="pricing-factors-card fade-up">
+        <p class="label" data-i18n="sub.botox.name">Botox</p>
+        <h3 data-i18n="sub.botox.pricing.cardtitle">Pricing Factors</h3>
+        <p class="intro" data-i18n="sub.botox.pricing.intro">Botox pricing at Hollywood Clinic is set after a free in-clinic consultation, because every face is different.</p>
+        <ul>
+          <li data-i18n="sub.botox.pricing.factor.1">The final price depends on several factors: Number of units required (units are the standard measure of Botox dosage)</li>
+          <li data-i18n="sub.botox.pricing.factor.2">Treatment areas (forehead only vs. full upper face vs. jawline vs. full face)</li>
+          <li data-i18n="sub.botox.pricing.factor.3">Brand of Botox used (Botox® Allergan, Dysport®, Xeomin®)</li>
+          <li data-i18n="sub.botox.pricing.factor.4">Doctor's level of expertise and certification</li>
+          <li data-i18n="sub.botox.pricing.factor.5">Whether you're combining Botox with other treatments (fillers, skin boosters)</li>
+          <li data-i18n="sub.botox.pricing.factor.6">Important: Be very cautious of extremely cheap Botox offers — they often involve unverified products, diluted doses, or non-medical injectors</li>
+          <li data-i18n="sub.botox.pricing.factor.7">Botox is a medical procedure, and price should reflect product quality and injector qualification</li>
+          <li data-i18n="sub.botox.pricing.factor.8">To get an accurate quote for your case, book a free consultation with Hollywood Clinic</li>
+        </ul>
+        <p class="note" data-i18n="sub.botox.pricing.note">Final pricing is determined after a free consultation, because every case is different.</p>
+        <a href="../../booking.html" class="btn btn-primary" style="width:100%" data-i18n="rejuv.book.free">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hollywood Clinic + Doctors -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.why.eyebrow">Why Hollywood Clinic</p>
+        <h2 class="section-title" data-i18n="sub.botox.why.title">Why Choose Hollywood Clinic</h2>
+      </div>
+      <ul class="benefit-list fade-up">
+          <li data-i18n="sub.botox.why.1">Certified, internationally trained injectors only — never delegated to non-medical staff</li>
+          <li data-i18n="sub.botox.why.2">FDA-approved Botox brands from licensed distributors, with verified cold-chain storage</li>
+          <li data-i18n="sub.botox.why.3">Full facial assessment before every treatment — no copy-paste protocols</li>
+          <li data-i18n="sub.botox.why.4">Strong focus on natural, identity-preserving results — no frozen face</li>
+          <li data-i18n="sub.botox.why.5">Free follow-up visit 2 weeks after treatment to fine-tune results</li>
+          <li data-i18n="sub.botox.why.6">Privacy, hygiene, and patient comfort built into every step</li>
+      </ul>
+      <div style="max-width:760px;margin:3rem auto 0;text-align:center" class="fade-up">
+        <div class="lux-line"></div>
+        <h3 style="font-family:var(--font-heading);color:var(--navy);font-size:1.5rem;margin-bottom:1.5rem" data-i18n="sub.botox.doctors.title">Recommended Doctors</h3>
+      </div>
+      <div style="max-width:780px;margin:0 auto">
+          <div class="doctor-card fade-up"><p data-i18n="sub.botox.doctor.1">Dr. Marwa Magdy — Consultant in Dermatology &amp; Aesthetic Medicine. Advanced injector with internationally certified training and signature combination protocols</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.botox.doctor.2">Dr. Rana Safwat — Dermatology, Laser &amp; Aesthetic Specialist. Extensive experience in advanced Botox techniques for face and therapeutic indications</p></div>
+          <div class="doctor-card fade-up"><p data-i18n="sub.botox.doctor.3">Dr. Nesma Samir — Laser Aesthetic Dermatology Specialist. Strong commitment to natural Botox results with no facial distortion</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-sky">
+    <div class="container">
+      <div class="text-center mb-14 fade-up">
+        <div class="lux-line"></div>
+        <p class="eyebrow" data-i18n="sub.botox.faq.eyebrow">FAQ</p>
+        <h2 class="section-title" data-i18n="sub.botox.faq.title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.1.q">Is Botox safe?</summary><div class="faq-answer" data-i18n="sub.botox.faq.1.a">Yes, when administered by a qualified medical professional using FDA-approved products. Botox has decades of clinical use and one of the strongest safety records in aesthetic medicine.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.2.q">Will Botox make my face look frozen?</summary><div class="faq-answer" data-i18n="sub.botox.faq.2.a">No — not when it's done correctly. A skilled injector dosing precisely for your face will give you smoother lines while keeping all your natural expressions.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.3.q">How long do Botox results last?</summary><div class="faq-answer" data-i18n="sub.botox.faq.3.a">Results typically last 3 to 6 months. Some areas (like masseter for jawline slimming) last longer. With repeated treatments, the effect can last longer over time.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.4.q">How long does the procedure take?</summary><div class="faq-answer" data-i18n="sub.botox.faq.4.a">The injection itself takes 10–20 minutes. Including consultation, plan on about 30–45 minutes in clinic.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.5.q">Is there any downtime?</summary><div class="faq-answer" data-i18n="sub.botox.faq.5.a">No downtime. You can return to work and normal activities the same day. Just follow simple aftercare guidelines for 24 hours.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.6.q">When will I see results?</summary><div class="faq-answer" data-i18n="sub.botox.faq.6.a">Results start showing within 3–5 days and reach their peak around 2 weeks after the session.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.7.q">Can men get Botox?</summary><div class="faq-answer" data-i18n="sub.botox.faq.7.a">Absolutely. Botox for men is widely performed at Hollywood Clinic, with adjusted dosing and injection patterns suited to male facial anatomy.</div></details>
+        <details class="faq-item fade-up"><summary data-i18n="sub.botox.faq.8.q">What if I don't like my results?</summary><div class="faq-answer" data-i18n="sub.botox.faq.8.a">Botox is temporary — its effect gradually wears off. At Hollywood Clinic, you also get a free 2-week follow-up to fine-tune the result if needed.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to skin rejuvenation -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="text-center fade-up">
+        <a href="../skin-rejuvenation.html" class="btn btn-outline" data-i18n="rejuv.related.back">Back to Skin Rejuvenation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      </div>
+      <h2 data-i18n="rejuv.cta2.title">Ready to Get Started?</h2>
+      <p data-i18n="rejuv.cta2.subtitle">Free consultation with our specialists. Personalized plan.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="../../booking.html" class="btn btn-primary" data-i18n="nav.book">Book Now</a>
+        <a href="tel:+201000007176" class="btn btn-ghost-light" data-i18n="nav.callus">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
